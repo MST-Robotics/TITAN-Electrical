@@ -1,0 +1,454 @@
+EESchema Schematic File Version 4
+LIBS:Program_Board_V1-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:+12V #PWR0101
+U 1 1 5B7C8A78
+P 3550 5350
+F 0 "#PWR0101" H 3550 5200 50  0001 C CNN
+F 1 "+12V" H 3565 5523 50  0000 C CNN
+F 2 "" H 3550 5350 50  0001 C CNN
+F 3 "" H 3550 5350 50  0001 C CNN
+	1    3550 5350
+	-1   0    0    1   
+$EndComp
+$Comp
+L LT8330HS6TRMPBF:LT8330 U1
+U 1 1 5B821790
+P 4850 5550
+F 0 "U1" H 5450 5800 50  0000 C CNN
+F 1 "LT8330" H 5450 5700 50  0000 C CNN
+F 2 "LT8330HS6TRMPBF:TSOT-23_S6" H 6850 5900 50  0001 L BNN
+F 3 "" H 4500 4500 50  0001 L BNN
+F 4 "LT8330" H 6000 5050 50  0001 L BNN "Field4"
+F 5 "LT8330" H 6000 5050 50  0001 L BNN "Field5"
+	1    4850 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_CAN_LIN:MCP2515-EST U4
+U 1 1 5B821925
+P 4600 2450
+F 0 "U4" H 4600 3428 50  0000 C CNN
+F 1 "MCP2515-EST" H 4600 3337 50  0000 C CNN
+F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 4600 1550 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf" H 4700 1650 50  0001 C CNN
+	1    4600 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L URT_cache:ATA6560,1 U5
+U 1 1 5B822EF5
+P 6050 2150
+F 0 "U5" H 6050 2715 50  0000 C CNN
+F 1 "ATA6560,1" H 6050 2624 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 6050 2650 50  0001 C CNN
+F 3 "" H 6050 2650 50  0001 C CNN
+	1    6050 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Analog_Switch:ADG419BN U2
+U 1 1 5B82319F
+P 2800 2000
+F 0 "U2" H 2800 2242 50  0000 C CNN
+F 1 "ADG419BN" H 2800 2151 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 2800 1700 50  0001 C CNN
+F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/ADG419.pdf" H 2800 1800 50  0001 C CNN
+	1    2800 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Analog_Switch:ADG419BN U3
+U 1 1 5B8232FA
+P 2800 2700
+F 0 "U3" H 2800 2942 50  0000 C CNN
+F 1 "ADG419BN" H 2800 2851 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 2800 2400 50  0001 C CNN
+F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/ADG419.pdf" H 2800 2500 50  0001 C CNN
+	1    2800 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 5B82337C
+P 4500 6300
+F 0 "#PWR0102" H 4500 6050 50  0001 C CNN
+F 1 "GND" H 4505 6127 50  0000 C CNN
+F 2 "" H 4500 6300 50  0001 C CNN
+F 3 "" H 4500 6300 50  0001 C CNN
+	1    4500 6300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Male J4
+U 1 1 5B823405
+P 3250 4550
+F 0 "J4" V 3100 4500 50  0000 C CNN
+F 1 "Conn_01x04_Male" V 3200 4500 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3250 4550 50  0001 C CNN
+F 3 "~" H 3250 4550 50  0001 C CNN
+	1    3250 4550
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Analog_Switch:ADG419BN U6
+U 1 1 5B832EE9
+P 2800 4100
+F 0 "U6" H 2800 4342 50  0000 C CNN
+F 1 "ADG419BN" H 2800 4251 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 2800 3800 50  0001 C CNN
+F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/ADG419.pdf" H 2800 3900 50  0001 C CNN
+	1    2800 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Analog_Switch:ADG419BN U7
+U 1 1 5B8330B4
+P 2800 3400
+F 0 "U7" H 2800 3642 50  0000 C CNN
+F 1 "ADG419BN" H 2800 3551 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 2800 3100 50  0001 C CNN
+F 3 "http://www.analog.com/media/en/technical-documentation/data-sheets/ADG419.pdf" H 2800 3200 50  0001 C CNN
+	1    2800 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L MCU_Module:Arduino_Nano_v3.x A1
+U 1 1 5B833B0D
+P 1700 2100
+F 0 "A1" H 1700 1014 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 1700 923 50  0000 C CNN
+F 2 "Module:Arduino_Nano" H 1850 1150 50  0001 L CNN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 1700 1100 50  0001 C CNN
+	1    1700 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x08_Male J1
+U 1 1 5B833C38
+P 9850 4250
+F 0 "J1" H 9956 4728 50  0000 C CNN
+F 1 "Conn_01x08_Male" H 9956 4637 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 9850 4250 50  0001 C CNN
+F 3 "~" H 9850 4250 50  0001 C CNN
+	1    9850 4250
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1200 2300 1000 2300
+Wire Wire Line
+	1000 2300 1000 700 
+Wire Wire Line
+	1000 700  4000 700 
+Wire Wire Line
+	4000 700  4000 1850
+Wire Wire Line
+	1200 2400 900  2400
+Wire Wire Line
+	900  2400 900  800 
+Wire Wire Line
+	900  800  3900 800 
+Wire Wire Line
+	3900 800  3900 1950
+Wire Wire Line
+	3900 1950 4000 1950
+Wire Wire Line
+	1200 2500 800  2500
+Wire Wire Line
+	800  2500 800  1000
+Wire Wire Line
+	800  1000 3700 1000
+Wire Wire Line
+	1100 2200 1100 900 
+Wire Wire Line
+	1100 900  3800 900 
+Wire Wire Line
+	3800 900  3800 2050
+Wire Wire Line
+	1100 2200 1200 2200
+Wire Wire Line
+	3700 2150 4000 2150
+Wire Wire Line
+	3700 1000 3700 2150
+Wire Wire Line
+	4000 2050 3800 2050
+Wire Wire Line
+	9650 3850 9300 3850
+Wire Wire Line
+	6550 2250 9200 2250
+Wire Wire Line
+	9200 3950 9650 3950
+Wire Wire Line
+	2200 2100 2500 2100
+Wire Wire Line
+	2200 2200 2300 2200
+Wire Wire Line
+	2300 2200 2300 2800
+Wire Wire Line
+	2300 2800 2500 2800
+Wire Wire Line
+	1200 2000 700  2000
+Wire Wire Line
+	700  2000 700  3500
+Wire Wire Line
+	700  3500 2500 3500
+Wire Wire Line
+	1200 2100 600  2100
+Wire Wire Line
+	600  4200 2500 4200
+Wire Wire Line
+	600  2100 600  4200
+Wire Wire Line
+	3150 4350 3150 4300
+Wire Wire Line
+	3150 4300 3100 4300
+Wire Wire Line
+	3250 4350 3250 3600
+Wire Wire Line
+	3250 3600 3100 3600
+Wire Wire Line
+	3350 4350 3350 2900
+Wire Wire Line
+	3350 2900 3100 2900
+Wire Wire Line
+	3450 4350 3450 2200
+Wire Wire Line
+	3450 2200 3100 2200
+Wire Wire Line
+	5550 1850 5450 1850
+Wire Wire Line
+	5450 1850 5450 1950
+Wire Wire Line
+	5450 1950 5200 1950
+Wire Wire Line
+	5200 1850 5300 1850
+Wire Wire Line
+	5300 1850 5300 2450
+Wire Wire Line
+	5300 2450 5550 2450
+Wire Wire Line
+	9300 2050 9300 3850
+Wire Wire Line
+	6550 2050 9300 2050
+Wire Wire Line
+	9200 2250 9200 3950
+$Comp
+L Device:C_Small 4.7micro1
+U 1 1 5B854760
+P 3950 5450
+F 0 "4.7micro1" H 4042 5496 50  0000 L CNN
+F 1 "C_Small" H 4042 5405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3950 5450 50  0001 C CNN
+F 3 "~" H 3950 5450 50  0001 C CNN
+	1    3950 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small 4.7micro2
+U 1 1 5B854802
+P 6850 5100
+F 0 "4.7micro2" H 6758 5054 50  0000 R CNN
+F 1 "C_Small" H 6758 5145 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6850 5100 50  0001 C CNN
+F 3 "~" H 6850 5100 50  0001 C CNN
+	1    6850 5100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C_Small 1micro1
+U 1 1 5B8548DE
+P 6050 6000
+F 0 "1micro1" H 5650 6050 50  0000 L CNN
+F 1 "C_Small" H 5650 5950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6050 6000 50  0001 C CNN
+F 3 "~" H 6050 6000 50  0001 C CNN
+	1    6050 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C1
+U 1 1 5B85494A
+P 6650 5550
+F 0 "C1" H 6742 5596 50  0000 L CNN
+F 1 "4.7pico" H 6742 5505 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6650 5550 50  0001 C CNN
+F 3 "~" H 6650 5550 50  0001 C CNN
+	1    6650 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R 34.8k1
+U 1 1 5B854A1F
+P 6350 5950
+F 0 "34.8k1" H 6420 5996 50  0000 L CNN
+F 1 "R" H 6420 5905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6280 5950 50  0001 C CNN
+F 3 "~" H 6350 5950 50  0001 C CNN
+	1    6350 5950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R 1M1
+U 1 1 5B854AE9
+P 6350 5550
+F 0 "1M1" H 6420 5596 50  0000 L CNN
+F 1 "R" H 6420 5505 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6280 5550 50  0001 C CNN
+F 3 "~" H 6350 5550 50  0001 C CNN
+	1    6350 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:L 6.8micro1
+U 1 1 5B854B3B
+P 5350 5000
+F 0 "6.8micro1" H 5403 5046 50  0000 L CNN
+F 1 "L" H 5403 4955 50  0000 L CNN
+F 2 "Inductor_SMD:L_0603_1608Metric" H 5350 5000 50  0001 C CNN
+F 3 "~" H 5350 5000 50  0001 C CNN
+	1    5350 5000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:D_Zener D1
+U 1 1 5B854CBA
+P 6000 4850
+F 0 "D1" H 6000 5066 50  0000 C CNN
+F 1 "D_Zener" H 6000 4975 50  0000 C CNN
+F 2 "Diode_SMD:D_0603_1608Metric" H 6000 4850 50  0001 C CNN
+F 3 "~" H 6000 4850 50  0001 C CNN
+	1    6000 4850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3550 5350 3550 5250
+Wire Wire Line
+	3550 5250 3950 5250
+Wire Wire Line
+	3950 5250 3950 5350
+Wire Wire Line
+	3950 5550 3950 5650
+Wire Wire Line
+	3950 5650 4500 5650
+Wire Wire Line
+	3950 5250 4950 5250
+Wire Wire Line
+	6150 5250 6150 5750
+Wire Wire Line
+	6150 5750 6000 5750
+Connection ~ 3950 5250
+Wire Wire Line
+	5200 5000 4950 5000
+Wire Wire Line
+	4950 5000 4950 5250
+Connection ~ 4950 5250
+Wire Wire Line
+	4950 5250 6150 5250
+Wire Wire Line
+	4950 5250 4950 5350
+Wire Wire Line
+	4950 5350 6000 5350
+Wire Wire Line
+	6000 5350 6000 5550
+Wire Wire Line
+	4850 5550 4850 5100
+Wire Wire Line
+	4850 5100 5500 5100
+Wire Wire Line
+	5500 5100 5500 5000
+Wire Wire Line
+	5500 5000 5750 5000
+Wire Wire Line
+	5750 5000 5750 4850
+Wire Wire Line
+	5750 4850 5850 4850
+Connection ~ 5500 5000
+Wire Wire Line
+	4500 5150 4500 5650
+Connection ~ 4500 5650
+Wire Wire Line
+	4500 5650 4850 5650
+Wire Wire Line
+	6350 5400 6350 5350
+Wire Wire Line
+	6350 5350 6650 5350
+Wire Wire Line
+	6650 5350 6650 5450
+Wire Wire Line
+	6650 5650 6650 5750
+Wire Wire Line
+	6650 5750 6350 5750
+Wire Wire Line
+	6350 5750 6350 5700
+Wire Wire Line
+	6000 5650 6050 5650
+Wire Wire Line
+	6050 5650 6050 5900
+Wire Wire Line
+	6050 6100 6050 6200
+Wire Wire Line
+	6050 6200 6350 6200
+Wire Wire Line
+	6350 6200 6350 6100
+Wire Wire Line
+	6350 5800 6350 5750
+Connection ~ 6350 5750
+Wire Wire Line
+	6350 5350 6350 5150
+Connection ~ 6350 5350
+Wire Wire Line
+	6350 5150 4500 5150
+Wire Wire Line
+	4500 5650 4500 6200
+Wire Wire Line
+	4500 6200 6050 6200
+Connection ~ 6050 6200
+Wire Wire Line
+	6850 5200 6850 6200
+Wire Wire Line
+	6850 6200 6350 6200
+Connection ~ 6350 6200
+Connection ~ 6350 5150
+Wire Wire Line
+	6850 5000 6850 4950
+Wire Wire Line
+	6850 4950 6350 4950
+Wire Wire Line
+	6350 4950 6350 5150
+Wire Wire Line
+	6150 4850 6350 4850
+Wire Wire Line
+	6350 4850 6350 4950
+Connection ~ 6350 4950
+Wire Wire Line
+	4850 5750 4750 5750
+Wire Wire Line
+	4750 5750 4750 5900
+Wire Wire Line
+	4750 5900 5900 5900
+Wire Wire Line
+	5900 5900 5900 5850
+Wire Wire Line
+	5900 5850 6250 5850
+Wire Wire Line
+	6250 5850 6250 5750
+Wire Wire Line
+	6250 5750 6350 5750
+Wire Wire Line
+	4500 6300 4500 6200
+Connection ~ 4500 6200
+$EndSCHEMATC
