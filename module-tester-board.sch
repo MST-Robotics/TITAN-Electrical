@@ -6,8 +6,8 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 1
 Title "module-tester-board"
-Date "2018-09-16"
-Rev "0.0.3"
+Date "2018-09-17"
+Rev "0.0.4"
 Comp "Missouri University of Science and Technology - Underwater Robotics Team"
 Comment1 "Board for testing ROV modules away from ROV."
 Comment2 "https://github.com/MST-Robotics/TITAN-Electrical.git"
@@ -39,7 +39,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf" H 8000 2500 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L URT_cache:ATA6560,1 U5
+L ATA6560_1:ATA6560,1 U5
 U 1 1 5B822EF5
 P 9550 3000
 F 0 "U5" H 9550 3565 50  0000 C CNN
@@ -269,12 +269,12 @@ Wire Wire Line
 $Comp
 L power:+12V #PWR?
 U 1 1 5B9166AE
-P 6200 6550
-F 0 "#PWR?" H 6200 6400 50  0001 C CNN
-F 1 "+12V" H 6200 6700 50  0000 C CNN
-F 2 "" H 6200 6550 50  0001 C CNN
-F 3 "" H 6200 6550 50  0001 C CNN
-	1    6200 6550
+P 6100 6550
+F 0 "#PWR?" H 6100 6400 50  0001 C CNN
+F 1 "+12V" H 6100 6700 50  0000 C CNN
+F 2 "" H 6100 6550 50  0001 C CNN
+F 3 "" H 6100 6550 50  0001 C CNN
+	1    6100 6550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -324,10 +324,6 @@ F 3 "" H 3550 4550 50  0001 C CNN
 	1    3550 4550
 	1    0    0    -1  
 $EndComp
-Text GLabel 6350 6650 1    50   Input ~ 0
-48V
-Text GLabel 12000 7050 1    50   Input ~ 0
-48V
 $Comp
 L power:GND #PWR?
 U 1 1 5B950373
@@ -372,16 +368,6 @@ F 3 "" H 7900 4200 50  0001 C CNN
 	1    7900 4200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	11700 7500 12450 7500
-Wire Wire Line
-	11700 7400 12450 7400
-Wire Wire Line
-	11600 7400 11700 7400
-Wire Wire Line
-	11600 7500 11700 7500
-Wire Wire Line
-	11500 7500 11600 7500
 Connection ~ 11700 7300
 Wire Wire Line
 	11700 7300 11700 7400
@@ -416,8 +402,6 @@ Wire Wire Line
 	3750 7400 3750 7950
 Wire Wire Line
 	6350 7400 6350 7950
-Wire Wire Line
-	6350 6850 6350 6650
 Connection ~ 6350 6850
 Wire Wire Line
 	6350 7200 6350 6850
@@ -668,7 +652,7 @@ Text Notes 4500 8450 0    100  Italic 0
 48V Regulator
 Text Notes 9800 8300 0    100  Italic 0
 R5485 Header and Selection Switches
-Text Notes 3000 4900 0    100  Italic 0
+Text Notes 2950 4800 0    100  Italic 0
 Arduino Nano
 Text Notes 6550 4600 0    100  Italic 0
 CAN Communication using MCP2515 and ATA6560
@@ -678,8 +662,6 @@ Wire Notes Line
 	15000 2650 13050 2650
 Wire Notes Line
 	13050 4600 15000 4600
-Wire Notes Line
-	4350 1850 2600 1850
 Wire Notes Line
 	2600 4950 4350 4950
 Wire Notes Line
@@ -694,13 +676,10 @@ Wire Notes Line
 	13100 8450 9500 8450
 Wire Notes Line
 	9500 6750 13100 6750
-Connection ~ 11600 7500
 Wire Wire Line
 	11600 7500 11600 7700
-Connection ~ 11700 7400
 Wire Wire Line
 	11700 7400 11700 7500
-Connection ~ 11700 7500
 Wire Wire Line
 	11700 7500 11700 7700
 Wire Wire Line
@@ -708,9 +687,8 @@ Wire Wire Line
 Connection ~ 3750 7000
 Wire Wire Line
 	3750 7000 3750 7100
-Connection ~ 6200 7000
 Wire Wire Line
-	6200 7000 6200 6550
+	6100 7000 6100 6550
 Wire Wire Line
 	6150 7950 6350 7950
 Wire Wire Line
@@ -743,7 +721,7 @@ Wire Wire Line
 Connection ~ 4600 7850
 Connection ~ 4900 7500
 Wire Wire Line
-	3750 7000 6200 7000
+	3750 7000 6100 7000
 Wire Wire Line
 	3750 7400 4950 7400
 Wire Wire Line
@@ -885,4 +863,39 @@ Wire Notes Line
 	15000 2650 15000 4600
 Wire Notes Line
 	13050 2650 13050 4600
+$Comp
+L power:+48V #PWR?
+U 1 1 5BA0A724
+P 6350 6550
+F 0 "#PWR?" H 6350 6400 50  0001 C CNN
+F 1 "+48V" H 6350 6700 50  0000 C CNN
+F 2 "" H 6350 6550 50  0001 C CNN
+F 3 "" H 6350 6550 50  0001 C CNN
+	1    6350 6550
+	1    0    0    -1  
+$EndComp
+Connection ~ 6100 7000
+Wire Wire Line
+	6100 7000 6200 7000
+Wire Wire Line
+	6350 6550 6350 6850
+$Comp
+L power:+48V #PWR?
+U 1 1 5BA1B324
+P 12000 7050
+F 0 "#PWR?" H 12000 6900 50  0001 C CNN
+F 1 "+48V" H 12000 7200 50  0000 C CNN
+F 2 "" H 12000 7050 50  0001 C CNN
+F 3 "" H 12000 7050 50  0001 C CNN
+	1    12000 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11500 7500 12450 7500
+Wire Wire Line
+	11600 7400 12450 7400
+Text Notes 3300 4950 0    50   Italic 0
+Main uC\n
+Wire Notes Line
+	4350 1850 2600 1850
 $EndSCHEMATC
