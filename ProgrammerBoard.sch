@@ -2,17 +2,17 @@ EESchema Schematic File Version 4
 LIBS:ProgrammerBoard-cache
 EELAYER 26 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr B 17000 11000
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
-Comment4 ""
+Title "Programmer Board"
+Date "2018-09-19"
+Rev "0.0.2"
+Comp "Missouri University of Science and Techology - Underwater Robotics"
+Comment1 "This board is the programmer for Titan Modules"
+Comment2 "https://github.com/MST-Robotics/TITAN-Electrical.git"
+Comment3 "programmer"
+Comment4 "NOTICE: The Missouri S&T Underwater Robotics Team makes no claim to the accuracy or usability of this document. Email mstrobotics@mst.edu for more information. Printed copies are not maintained."
 $EndDescr
 $Comp
 L Interface_USB:FT232RL IC1
@@ -26,12 +26,12 @@ F 3 "http://www.ftdichip.com/Products/ICs/FT232RL.htm" H 3450 2850 50  0001 C CN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:USB_B_Micro J?
+L Connector:USB_B_Micro J1
 U 1 1 5B7F2F5E
 P 1750 2450
-F 0 "J?" H 1805 2917 50  0000 C CNN
+F 0 "J1" H 1805 2917 50  0000 C CNN
 F 1 "USB_B_Micro" H 1805 2826 50  0000 C CNN
-F 2 "" H 1900 2400 50  0001 C CNN
+F 2 "Connector_USB:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal" H 1900 2400 50  0001 C CNN
 F 3 "~" H 1900 2400 50  0001 C CNN
 	1    1750 2450
 	1    0    0    -1  
@@ -46,7 +46,7 @@ U 1 1 5B7F330A
 P 2250 2250
 F 0 "F1" V 2053 2250 50  0000 C CNN
 F 1 "500mA" V 2144 2250 50  0000 C CNN
-F 2 "" V 2180 2250 50  0001 C CNN
+F 2 "Fuse:Fuse_0402_1005Metric" V 2180 2250 50  0001 C CNN
 F 3 "~" H 2250 2250 50  0001 C CNN
 	1    2250 2250
 	0    1    1    0   
@@ -54,10 +54,10 @@ $EndComp
 Wire Wire Line
 	2050 2250 2100 2250
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR0101
 U 1 1 5B7F3E74
 P 1900 2900
-F 0 "#PWR?" H 1900 2650 50  0001 C CNN
+F 0 "#PWR0101" H 1900 2650 50  0001 C CNN
 F 1 "Earth" H 1900 2750 50  0001 C CNN
 F 2 "" H 1900 2900 50  0001 C CNN
 F 3 "~" H 1900 2900 50  0001 C CNN
@@ -69,10 +69,10 @@ Wire Wire Line
 Wire Wire Line
 	1750 2900 1900 2900
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR0102
 U 1 1 5B7F436B
 P 3950 4050
-F 0 "#PWR?" H 3950 3800 50  0001 C CNN
+F 0 "#PWR0102" H 3950 3800 50  0001 C CNN
 F 1 "Earth" H 3950 3900 50  0001 C CNN
 F 2 "" H 3950 4050 50  0001 C CNN
 F 3 "~" H 3950 4050 50  0001 C CNN
@@ -95,10 +95,10 @@ Wire Wire Line
 	3650 3850 3650 3900
 Connection ~ 3650 3900
 $Comp
-L power:Earth #PWR?
+L power:Earth #PWR0103
 U 1 1 5B7F45BE
 P 2350 3750
-F 0 "#PWR?" H 2350 3500 50  0001 C CNN
+F 0 "#PWR0103" H 2350 3500 50  0001 C CNN
 F 1 "Earth" H 2350 3600 50  0001 C CNN
 F 2 "" H 2350 3750 50  0001 C CNN
 F 3 "~" H 2350 3750 50  0001 C CNN
@@ -108,10 +108,10 @@ $EndComp
 Wire Wire Line
 	2650 3550 2350 3550
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0104
 U 1 1 5B7F5369
 P 3350 1700
-F 0 "#PWR?" H 3350 1550 50  0001 C CNN
+F 0 "#PWR0104" H 3350 1550 50  0001 C CNN
 F 1 "+5V" H 3365 1873 50  0000 C CNN
 F 2 "" H 3350 1700 50  0001 C CNN
 F 3 "" H 3350 1700 50  0001 C CNN
@@ -124,20 +124,18 @@ U 1 1 5B7F5A97
 P 4800 2350
 F 0 "C1" V 4548 2350 50  0000 C CNN
 F 1 "100nF" V 4639 2350 50  0000 C CNN
-F 2 "" H 4838 2200 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4838 2200 50  0001 C CNN
 F 3 "~" H 4800 2350 50  0001 C CNN
 	1    4800 2350
 	1    0    0    -1  
 $EndComp
-Text Notes 4800 2300 1    50   ~ 0
-RESET
 $Comp
 L Device:R R1
 U 1 1 5B7F5F0D
 P 5600 2900
 F 0 "R1" H 5670 2946 50  0000 L CNN
 F 1 "1K" H 5670 2855 50  0000 L CNN
-F 2 "" V 5530 2900 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5530 2900 50  0001 C CNN
 F 3 "~" H 5600 2900 50  0001 C CNN
 	1    5600 2900
 	1    0    0    -1  
@@ -148,7 +146,7 @@ U 1 1 5B7F5F7D
 P 5950 2900
 F 0 "R2" H 6020 2946 50  0000 L CNN
 F 1 "1K" H 6020 2855 50  0000 L CNN
-F 2 "" V 5880 2900 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 5880 2900 50  0001 C CNN
 F 3 "~" H 5950 2900 50  0001 C CNN
 	1    5950 2900
 	1    0    0    -1  
@@ -164,10 +162,10 @@ Wire Wire Line
 Wire Wire Line
 	5950 2750 5950 2500
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0105
 U 1 1 5B7F6C85
 P 5600 1850
-F 0 "#PWR?" H 5600 1700 50  0001 C CNN
+F 0 "#PWR0105" H 5600 1700 50  0001 C CNN
 F 1 "+5V" H 5615 2023 50  0000 C CNN
 F 2 "" H 5600 1850 50  0001 C CNN
 F 3 "" H 5600 1850 50  0001 C CNN
@@ -175,10 +173,10 @@ F 3 "" H 5600 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0106
 U 1 1 5B7F6CC2
 P 5950 1850
-F 0 "#PWR?" H 5950 1700 50  0001 C CNN
+F 0 "#PWR0106" H 5950 1700 50  0001 C CNN
 F 1 "+5V" H 5965 2023 50  0000 C CNN
 F 2 "" H 5950 1850 50  0001 C CNN
 F 3 "" H 5950 1850 50  0001 C CNN
@@ -190,12 +188,12 @@ Wire Wire Line
 Wire Wire Line
 	5950 2200 5950 1850
 $Comp
-L Connector:Conn_01x08_Male J?
+L Connector:Conn_01x08_Male J2
 U 1 1 5B875270
 P 5250 1550
-F 0 "J?" H 5400 2050 50  0000 C CNN
-F 1 "8_Pin" H 5350 1950 50  0000 C CNN
-F 2 "" H 5250 1550 50  0001 C CNN
+F 0 "J2" H 5400 2050 50  0000 C CNN
+F 1 "Jumper_For_RJ45" H 5350 1950 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_1x08_P1.27mm_Vertical" H 5250 1550 50  0001 C CNN
 F 3 "~" H 5250 1550 50  0001 C CNN
 	1    5250 1550
 	-1   0    0    1   
@@ -205,23 +203,23 @@ Wire Wire Line
 Wire Wire Line
 	4350 2250 4250 2250
 $Comp
-L Device:R R100
+L Device:R R3
 U 1 1 5B87B2E1
 P 4500 1750
-F 0 "R100" V 4600 1750 50  0000 C CNN
-F 1 "R3" V 4700 1750 50  0000 C CNN
-F 2 "" V 4430 1750 50  0001 C CNN
+F 0 "R3" V 4600 1750 50  0000 C CNN
+F 1 "100" V 4700 1750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4430 1750 50  0001 C CNN
 F 3 "~" H 4500 1750 50  0001 C CNN
 	1    4500 1750
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R100
+L Device:R R4
 U 1 1 5B87B57E
 P 4500 1650
-F 0 "R100" V 4293 1650 50  0000 C CNN
-F 1 "R4" V 4384 1650 50  0000 C CNN
-F 2 "" V 4430 1650 50  0001 C CNN
+F 0 "R4" V 4293 1650 50  0000 C CNN
+F 1 "100" V 4384 1650 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4430 1650 50  0001 C CNN
 F 3 "~" H 4500 1650 50  0001 C CNN
 	1    4500 1650
 	0    1    1    0   
@@ -253,23 +251,23 @@ Wire Wire Line
 Wire Wire Line
 	2350 3750 2350 3550
 $Comp
-L Device:LED TX
+L Device:LED TX1
 U 1 1 5B9A0C7A
 P 5950 2350
-F 0 "TX" V 5988 2233 50  0000 R CNN
+F 0 "TX1" V 5988 2233 50  0000 R CNN
 F 1 "Green" V 5897 2233 50  0000 R CNN
-F 2 "" H 5950 2350 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 5950 2350 50  0001 C CNN
 F 3 "~" H 5950 2350 50  0001 C CNN
 	1    5950 2350
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:LED RX
+L Device:LED RX1
 U 1 1 5B9A36D9
 P 5600 2350
-F 0 "RX" V 5650 2250 50  0000 R CNN
+F 0 "RX1" V 5650 2250 50  0000 R CNN
 F 1 "Blue" V 5550 2250 50  0000 R CNN
-F 2 "" H 5600 2350 50  0001 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" H 5600 2350 50  0001 C CNN
 F 3 "~" H 5600 2350 50  0001 C CNN
 	1    5600 2350
 	0    -1   -1   0   
@@ -289,10 +287,10 @@ Wire Wire Line
 Wire Wire Line
 	3350 1850 3350 1800
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0107
 U 1 1 5BA3C5A4
 P 4850 1100
-F 0 "#PWR?" H 4850 950 50  0001 C CNN
+F 0 "#PWR0107" H 4850 950 50  0001 C CNN
 F 1 "+5V" H 4865 1273 50  0000 C CNN
 F 2 "" H 4850 1100 50  0001 C CNN
 F 3 "" H 4850 1100 50  0001 C CNN
@@ -302,10 +300,10 @@ $EndComp
 Wire Wire Line
 	4850 1150 4850 1100
 $Comp
-L power:GNDREF #PWR?
+L power:GNDREF #PWR0108
 U 1 1 5BA3ECA2
 P 4850 1300
-F 0 "#PWR?" H 4850 1050 50  0001 C CNN
+F 0 "#PWR0108" H 4850 1050 50  0001 C CNN
 F 1 "GNDREF" H 4855 1127 50  0000 C CNN
 F 2 "" H 4850 1300 50  0001 C CNN
 F 3 "" H 4850 1300 50  0001 C CNN
@@ -319,10 +317,10 @@ Wire Wire Line
 Wire Wire Line
 	4850 1150 5050 1150
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0109
 U 1 1 5BA44B93
 P 2400 2000
-F 0 "#PWR?" H 2400 1850 50  0001 C CNN
+F 0 "#PWR0109" H 2400 1850 50  0001 C CNN
 F 1 "+5V" H 2415 2173 50  0000 C CNN
 F 2 "" H 2400 2000 50  0001 C CNN
 F 3 "" H 2400 2000 50  0001 C CNN
