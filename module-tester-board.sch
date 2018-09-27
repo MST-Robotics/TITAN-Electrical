@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 1
 Title "module-tester-board"
 Date "2018-09-26"
-Rev "0.0.6"
+Rev "0.0.7"
 Comp "Missouri University of Science and Technology - Underwater Robotics Team"
 Comment1 "Board for testing ROV modules away from ROV."
 Comment2 "https://github.com/MST-Robotics/TITAN-Electrical.git"
@@ -39,7 +39,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf" H 8000 2500 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L URT_cache:ATA6560,1 U5
+L ATA6560_1:ATA6560,1 U5
 U 1 1 5B822EF5
 P 9550 3000
 F 0 "U5" H 9550 3565 50  0000 C CNN
@@ -510,7 +510,7 @@ L Device:R R6
 U 1 1 5B9C6559
 P 13850 3250
 F 0 "R6" H 13920 3296 50  0000 L CNN
-F 1 "1k" H 13920 3205 50  0000 L CNN
+F 1 "100k" H 13920 3205 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 13780 3250 50  0001 C CNN
 F 3 "~" H 13850 3250 50  0001 C CNN
 	1    13850 3250
@@ -532,7 +532,7 @@ L Device:C C7
 U 1 1 5B9C66F4
 P 13850 3700
 F 0 "C7" H 13965 3746 50  0000 L CNN
-F 1 "100uF" H 13965 3655 50  0000 L CNN
+F 1 "1uF" H 13965 3655 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 13888 3550 50  0001 C CNN
 F 3 "~" H 13850 3700 50  0001 C CNN
 	1    13850 3700
