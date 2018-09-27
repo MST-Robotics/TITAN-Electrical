@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 1
 Title "module-tester-board"
 Date "2018-09-26"
-Rev "0.0.6"
+Rev "0.0.7"
 Comp "Missouri University of Science and Technology - Underwater Robotics Team"
 Comment1 "Board for testing ROV modules away from ROV."
 Comment2 "https://github.com/MST-Robotics/TITAN-Electrical.git"

@@ -6,8 +6,8 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 1
 Title "module-tester-board"
-Date "2018-09-26"
-Rev "0.0.7"
+Date "2018-09-27"
+Rev "0.0.8"
 Comp "Missouri University of Science and Technology - Underwater Robotics Team"
 Comment1 "Board for testing ROV modules away from ROV."
 Comment2 "https://github.com/MST-Robotics/TITAN-Electrical.git"
@@ -570,9 +570,9 @@ Wire Wire Line
 	13850 3050 13850 3100
 Wire Wire Line
 	13850 3500 14050 3500
-Text GLabel 3000 3050 0    50   Input ~ 0
-RX0
 Text GLabel 3000 3150 0    50   Input ~ 0
+RX0
+Text GLabel 3000 3250 0    50   Input ~ 0
 RX1
 Wire Wire Line
 	6750 3850 7100 3850
@@ -887,7 +887,7 @@ Main uC\n
 Wire Notes Line
 	4350 1850 2600 1850
 NoConn ~ 7300 3700
-Text GLabel 3000 3250 0    50   Input ~ 0
+Text GLabel 3000 3050 0    50   Input ~ 0
 INT
 $Comp
 L Device:D_Schottky D1
