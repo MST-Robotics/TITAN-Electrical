@@ -1,4 +1,4 @@
-update=9/27/2018 12:50:56 PM
+update=9/30/2018 6:04:21 PM
 version=1
 last_client=kicad
 [general]
@@ -33,11 +33,11 @@ LibDir=
 [eeschema/libraries]
 [schematic_editor]
 version=1
-PageLayoutDescrFile=C:/urt/kicad-stuff/layouts/standard-11x17.kicad_wks
+PageLayoutDescrFile=C:/Users/Sean/Documents/Underwater Robotics/KiCAD UR Fall 2018/kicad-stuff/layouts/standard-11x17.kicad_wks
 PlotDirectoryName=../plots/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
 SpiceAjustPassiveValues=0
-LabSize=50
+LabSize=100
 ERC_TestSimilarLabels=1
