@@ -1,0 +1,120 @@
+EESchema Schematic File Version 4
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L URT_cache:ATA6560,1 U?
+U 1 1 5BB15004
+P 5700 3500
+F 0 "U?" H 5700 4065 50  0000 C CNN
+F 1 "ATA6560,1" H 5700 3974 50  0000 C CNN
+F 2 "" H 5700 4000 50  0001 C CNN
+F 3 "" H 5700 4000 50  0001 C CNN
+	1    5700 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface_USB:FT232RL U?
+U 1 1 5BB150DA
+P 7700 3500
+F 0 "U?" H 8350 4600 50  0000 C CNN
+F 1 "FT232RL" H 8350 4700 50  0000 C CNN
+F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 7700 3500 50  0001 C CNN
+F 3 "http://www.ftdichip.com/Products/ICs/FT232RL.htm" H 7700 3500 50  0001 C CNN
+	1    7700 3500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector:USB_B J?
+U 1 1 5BB15529
+P 9500 3800
+F 0 "J?" H 9271 3791 50  0000 R CNN
+F 1 "USB_B" H 9271 3700 50  0000 R CNN
+F 2 "" H 9650 3750 50  0001 C CNN
+F 3 " ~" H 9650 3750 50  0001 C CNN
+	1    9500 3800
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 3800 8850 3800
+Wire Wire Line
+	8850 3800 8850 3900
+Wire Wire Line
+	8850 3900 9200 3900
+Wire Wire Line
+	9200 3800 8900 3800
+Wire Wire Line
+	8900 3800 8900 3750
+Wire Wire Line
+	8900 3750 8800 3750
+Wire Wire Line
+	8800 3750 8800 3900
+Wire Wire Line
+	8800 3900 8500 3900
+$Comp
+L power:GND #PWR?
+U 1 1 5BB158B3
+P 9500 4500
+F 0 "#PWR?" H 9500 4250 50  0001 C CNN
+F 1 "GND" H 9505 4327 50  0000 C CNN
+F 2 "" H 9500 4500 50  0001 C CNN
+F 3 "" H 9500 4500 50  0001 C CNN
+	1    9500 4500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9600 4200 9500 4200
+Connection ~ 9500 4200
+Wire Wire Line
+	9500 4200 9500 4500
+$Comp
+L power:+5V #PWR?
+U 1 1 5BB15E5B
+P 7600 4850
+F 0 "#PWR?" H 7600 4700 50  0001 C CNN
+F 1 "+5V" H 7615 5023 50  0000 C CNN
+F 2 "" H 7600 4850 50  0001 C CNN
+F 3 "" H 7600 4850 50  0001 C CNN
+	1    7600 4850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7600 4500 7600 4850
+$Comp
+L Device:C C?
+U 1 1 5BB1614E
+P 8650 4550
+F 0 "C?" H 8765 4596 50  0000 L CNN
+F 1 "C" H 8765 4505 50  0000 L CNN
+F 2 "" H 8688 4400 50  0001 C CNN
+F 3 "~" H 8650 4550 50  0001 C CNN
+	1    8650 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 4200 8650 4200
+Wire Wire Line
+	8650 4200 8650 4400
+$Comp
+L power:GND #PWR?
+U 1 1 5BB162E4
+P 8650 4700
+F 0 "#PWR?" H 8650 4450 50  0001 C CNN
+F 1 "GND" H 8655 4527 50  0000 C CNN
+F 2 "" H 8650 4700 50  0001 C CNN
+F 3 "" H 8650 4700 50  0001 C CNN
+	1    8650 4700
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
