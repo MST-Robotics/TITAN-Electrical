@@ -1,4 +1,4 @@
-Take in CAN, RS45 and 2 differentially signalled camera signals from 8-pin CAT-5 tether 
+Take in CAN, RS485 and 2 differentially signalled camera signals from 8-pin CAT-5 tether 
 and connect to 2 displays through RCA connectors and computer through 2 USBs
 CAN-Serial
 Serial-USB
