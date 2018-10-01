@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 1
 Title "module-tester-board"
 Date "2018-09-30"
-Rev "0.0.9"
+Rev "0.0.10"
 Comp "Missouri University of Science and Technology - Underwater Robotics Team"
 Comment1 "Board for testing ROV modules away from ROV."
 Comment2 "https://github.com/MST-Robotics/TITAN-Electrical.git"
@@ -63,13 +63,13 @@ $EndComp
 $Comp
 L Connector:Conn_01x04_Male J4
 U 1 1 5B823405
-P 11500 7900
-F 0 "J4" V 11350 7850 50  0000 C CNN
-F 1 "Conn_01x04_Male" V 11450 7850 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 11500 7900 50  0001 C CNN
-F 3 "~" H 11500 7900 50  0001 C CNN
-	1    11500 7900
-	0    -1   -1   0   
+P 11600 7900
+F 0 "J4" V 11450 7850 50  0000 C CNN
+F 1 "Conn_01x04_Male" V 11550 7850 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 11600 7900 50  0001 C CNN
+F 3 "~" H 11600 7900 50  0001 C CNN
+	1    11600 7900
+	0    1    -1   0   
 $EndComp
 $Comp
 L MCU_Module:Arduino_Nano_v3.x A1
@@ -85,13 +85,13 @@ $EndComp
 $Comp
 L Connector:Conn_01x08_Male J1
 U 1 1 5B833C38
-P 12650 7500
-F 0 "J1" V 12400 7450 50  0000 C CNN
-F 1 "Conn_01x08_Male" V 12550 7450 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 12650 7500 50  0001 C CNN
-F 3 "~" H 12650 7500 50  0001 C CNN
-	1    12650 7500
-	-1   0    0    1   
+P 12650 7400
+F 0 "J1" V 12400 7350 50  0000 C CNN
+F 1 "Conn_01x08_Male" V 12550 7350 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 12650 7400 50  0001 C CNN
+F 3 "~" H 12650 7400 50  0001 C CNN
+	1    12650 7400
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	8900 2700 8900 2800
@@ -185,50 +185,6 @@ Wire Wire Line
 	6150 7400 6150 7650
 Wire Wire Line
 	6150 7850 6150 7950
-$Comp
-L Switch:SW_SPST SW1
-U 1 1 5B890B45
-P 10650 7150
-F 0 "SW1" H 10200 7150 50  0000 C CNN
-F 1 "SW_SPST" H 9900 7150 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_DIP_SPSTx04_Slide_9.78x12.34mm_W7.62mm_P2.54mm" H 10650 7150 50  0001 C CNN
-F 3 "" H 10650 7150 50  0001 C CNN
-	1    10650 7150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_SPST SW2
-U 1 1 5B8959F9
-P 10650 7300
-F 0 "SW2" H 10200 7300 50  0000 C CNN
-F 1 "SW_SPST" H 9900 7300 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_DIP_SPSTx04_Slide_9.78x12.34mm_W7.62mm_P2.54mm" H 10650 7300 50  0001 C CNN
-F 3 "" H 10650 7300 50  0001 C CNN
-	1    10650 7300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_SPST SW3
-U 1 1 5B895A49
-P 10650 7450
-F 0 "SW3" H 10100 7450 50  0000 C CNN
-F 1 "SW_SPST" H 9800 7450 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_DIP_SPSTx04_Slide_9.78x12.34mm_W7.62mm_P2.54mm" H 10650 7450 50  0001 C CNN
-F 3 "" H 10650 7450 50  0001 C CNN
-	1    10650 7450
-	1    0    0    -1  
-$EndComp
-$Comp
-L Switch:SW_SPST SW4
-U 1 1 5B895AAF
-P 10650 7600
-F 0 "SW4" H 10100 7600 50  0000 C CNN
-F 1 "SW_SPST" H 9800 7600 50  0000 C CNN
-F 2 "Button_Switch_THT:SW_DIP_SPSTx04_Slide_9.78x12.34mm_W7.62mm_P2.54mm" H 10650 7600 50  0001 C CNN
-F 3 "" H 10650 7600 50  0001 C CNN
-	1    10650 7600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3500 4500 3500 4450
 $Comp
@@ -288,17 +244,17 @@ Text GLabel 3000 4150 0    50   Input ~ 0
 SCK
 Text GLabel 3000 3350 0    50   Input ~ 0
 PWM0
-Text GLabel 10450 7450 0    50   Input ~ 0
+Text GLabel 10250 7500 0    50   Input ~ 0
 PWM0
 Text GLabel 3000 3450 0    50   Input ~ 0
 PWM1
-Text GLabel 10450 7600 0    50   Input ~ 0
+Text GLabel 10250 7600 0    50   Input ~ 0
 PWM1
-Text GLabel 10450 7150 0    50   Input ~ 0
+Text GLabel 10250 7300 0    50   Input ~ 0
 A0
 Text GLabel 4000 3450 2    50   Input ~ 0
 A0
-Text GLabel 10450 7300 0    50   Input ~ 0
+Text GLabel 10250 7400 0    50   Input ~ 0
 A1
 Text GLabel 4000 3550 2    50   Input ~ 0
 A1
@@ -325,17 +281,7 @@ F 3 "" H 12450 7800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10850 7450 11500 7450
-Wire Wire Line
-	11500 7450 11500 7500
-Wire Wire Line
-	11600 7300 11600 7400
-Wire Wire Line
-	10850 7300 11600 7300
-Wire Wire Line
-	11700 7150 11700 7300
-Wire Wire Line
-	10850 7150 11700 7150
+	10850 7500 11500 7500
 Wire Wire Line
 	12450 7300 11700 7300
 Text GLabel 12450 7100 0    50   Input ~ 0
@@ -357,10 +303,8 @@ F 3 "" H 7900 4200 50  0001 C CNN
 	1    7900 4200
 	1    0    0    -1  
 $EndComp
-Connection ~ 11700 7300
 Wire Wire Line
 	11700 7300 11700 7400
-Connection ~ 11600 7400
 Wire Wire Line
 	11600 7400 11600 7500
 Connection ~ 11500 7500
@@ -533,7 +477,7 @@ U 1 1 5B9C66F4
 P 13850 3700
 F 0 "C7" H 13965 3746 50  0000 L CNN
 F 1 "1uF" H 13965 3655 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 13888 3550 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 13888 3550 50  0001 C CNN
 F 3 "~" H 13850 3700 50  0001 C CNN
 	1    13850 3700
 	1    0    0    -1  
@@ -951,4 +895,21 @@ Wire Notes Line
 	15100 6650 13850 6650
 Wire Notes Line
 	13850 5550 15100 5550
+$Comp
+L Switch:SW_DIP_x04 SW1
+U 1 1 5BB6B3B3
+P 10550 7500
+F 0 "SW1" H 10550 7967 50  0000 C CNN
+F 1 "SW_DIP_x04" H 10550 7876 50  0000 C CNN
+F 2 "Button_Switch_THT:SW_DIP_SPSTx04_Slide_9.78x12.34mm_W7.62mm_P2.54mm" H 10550 7500 50  0001 C CNN
+F 3 "" H 10550 7500 50  0001 C CNN
+	1    10550 7500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11700 7300 10850 7300
+Connection ~ 11700 7300
+Wire Wire Line
+	10850 7400 11600 7400
+Connection ~ 11600 7400
 $EndSCHEMATC
