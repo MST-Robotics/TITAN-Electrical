@@ -428,7 +428,7 @@ F 3 "" H 13400 2350 50  0001 C CNN
 	1    13400 2350
 	1    0    0    -1  
 $EndComp
-Text Notes 13500 1250 0    100  ~ 0
+Text Notes 13950 1250 0    100  ~ 0
 Power Outputs
 $Comp
 L Sensor_Current:ACS758xCB-050B-PFF U1
@@ -671,10 +671,6 @@ Wire Notes Line width 10 style solid
 	9350 4100 9350 1050
 Wire Notes Line width 10 style solid
 	11400 1050 9350 1050
-Wire Notes Line width 10 style solid
-	15100 1050 15100 3400
-Wire Notes Line width 10 style solid
-	12950 1050 12950 3400
 Text Notes 13300 4300 0    100  ~ 0
 Microcontroller 328p\n
 Wire Notes Line width 10 style solid
@@ -828,7 +824,7 @@ Thermocouple Amplifier
 Text Notes 5550 5350 0    75   ~ 0
 TC Input
 Wire Notes Line width 10 style solid
-	8500 4200 8500 6100
+	8450 4150 8450 6050
 Wire Notes Line width 10 style solid
 	5300 6050 5300 4150
 Text Notes 5350 6000 0    75   ~ 0
@@ -1047,7 +1043,7 @@ L Device:Crystal Y1
 U 1 1 5BB39D19
 P 6600 8800
 F 0 "Y1" V 6300 8850 50  0000 L CNN
-F 1 "16Mhz" V 6400 8850 50  0000 L CNN
+F 1 "20Mhz" V 6400 8850 50  0000 L CNN
 F 2 "Crystal:Resonator_SMD-3Pin_7.2x3.0mm" H 6600 8800 50  0001 C CNN
 F 3 "~" H 6600 8800 50  0001 C CNN
 	1    6600 8800
@@ -1241,41 +1237,41 @@ $EndComp
 $Comp
 L power:+5V #PWR0154
 U 1 1 5BD12ECA
-P 10400 5350
-F 0 "#PWR0154" H 10400 5200 50  0001 C CNN
-F 1 "+5V" H 10415 5523 50  0000 C CNN
-F 2 "" H 10400 5350 50  0001 C CNN
-F 3 "" H 10400 5350 50  0001 C CNN
-	1    10400 5350
+P 9350 5250
+F 0 "#PWR0154" H 9350 5100 50  0001 C CNN
+F 1 "+5V" H 9365 5423 50  0000 C CNN
+F 2 "" H 9350 5250 50  0001 C CNN
+F 3 "" H 9350 5250 50  0001 C CNN
+	1    9350 5250
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GNDREF #PWR0155
 U 1 1 5BD13331
-P 10400 5850
-F 0 "#PWR0155" H 10400 5600 50  0001 C CNN
-F 1 "GNDREF" H 10405 5677 50  0000 C CNN
-F 2 "" H 10400 5850 50  0001 C CNN
-F 3 "" H 10400 5850 50  0001 C CNN
-	1    10400 5850
+P 9350 5750
+F 0 "#PWR0155" H 9350 5500 50  0001 C CNN
+F 1 "GNDREF" H 9355 5577 50  0000 C CNN
+F 2 "" H 9350 5750 50  0001 C CNN
+F 3 "" H 9350 5750 50  0001 C CNN
+	1    9350 5750
 	1    0    0    -1  
 $EndComp
-Text GLabel 10300 5550 0    50   Input ~ 0
+Text GLabel 9250 5450 0    50   Input ~ 0
 TX
-Text GLabel 10300 5650 0    50   Input ~ 0
+Text GLabel 9250 5550 0    50   Input ~ 0
 RX
 Wire Wire Line
-	10400 5750 10400 5850
-Text Notes 9750 5200 0    100  ~ 0
+	9350 5650 9350 5750
+Text Notes 8700 5100 0    100  ~ 0
 Programmer Interface\n\n
 Wire Notes Line width 10 style solid
-	9700 4850 11500 4850
+	8650 4750 10450 4750
 Wire Notes Line width 10 style solid
-	11500 4850 11500 6150
+	10450 4750 10450 6050
 Wire Notes Line width 10 style solid
-	11500 6150 9700 6150
+	10450 6050 8650 6050
 Wire Notes Line width 10 style solid
-	9700 6150 9700 4850
+	8650 6050 8650 4750
 Text GLabel 14600 6800 2    50   Input ~ 0
 TX
 Text GLabel 14600 6700 2    50   Input ~ 0
@@ -1292,7 +1288,7 @@ Wire Wire Line
 	10350 8300 10600 8300
 Wire Wire Line
 	10350 8100 10600 8100
-Text Notes 9850 6500 0    100  ~ 20
+Text Notes 8800 6400 0    100  ~ 20
 VERIFY PIN ORDER!!!\n\n
 $Comp
 L power:GNDREF #PWR0101
@@ -1431,12 +1427,12 @@ $EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 J11
 U 1 1 5BC119E5
-P 13650 2900
-F 0 "J11" H 13729 2892 50  0000 L CNN
-F 1 "MainBoard" H 13729 2801 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 13650 2900 50  0001 C CNN
-F 3 "~" H 13650 2900 50  0001 C CNN
-	1    13650 2900
+P 13750 2850
+F 0 "J11" H 13829 2842 50  0000 L CNN
+F 1 "5V_1" H 13829 2751 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 13750 2850 50  0001 C CNN
+F 3 "~" H 13750 2850 50  0001 C CNN
+	1    13750 2850
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1476,12 +1472,12 @@ Connection ~ 13400 2350
 $Comp
 L power:GNDREF #PWR0128
 U 1 1 5BC891E9
-P 14300 2350
-F 0 "#PWR0128" H 14300 2100 50  0001 C CNN
-F 1 "GNDREF" H 14305 2177 50  0000 C CNN
-F 2 "" H 14300 2350 50  0001 C CNN
-F 3 "" H 14300 2350 50  0001 C CNN
-	1    14300 2350
+P 14300 3400
+F 0 "#PWR0128" H 14300 3150 50  0001 C CNN
+F 1 "GNDREF" H 14305 3227 50  0000 C CNN
+F 2 "" H 14300 3400 50  0001 C CNN
+F 3 "" H 14300 3400 50  0001 C CNN
+	1    14300 3400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -1517,37 +1513,28 @@ Wire Wire Line
 	14300 2100 14300 2350
 Wire Wire Line
 	14350 2350 14300 2350
-Connection ~ 14300 2350
-Wire Notes Line width 10 style solid
-	12950 3400 15100 3400
-Wire Notes Line width 10 style solid
-	12950 1050 15100 1050
 $Comp
 L power:GNDREF #PWR0151
 U 1 1 5BD165BD
-P 13400 3000
-F 0 "#PWR0151" H 13400 2750 50  0001 C CNN
-F 1 "GNDREF" H 13405 2827 50  0000 C CNN
-F 2 "" H 13400 3000 50  0001 C CNN
-F 3 "" H 13400 3000 50  0001 C CNN
-	1    13400 3000
+P 13400 2950
+F 0 "#PWR0151" H 13400 2700 50  0001 C CNN
+F 1 "GNDREF" H 13405 2777 50  0000 C CNN
+F 2 "" H 13400 2950 50  0001 C CNN
+F 3 "" H 13400 2950 50  0001 C CNN
+	1    13400 2950
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR0156
 U 1 1 5BD1698D
-P 13400 2900
-F 0 "#PWR0156" H 13400 2750 50  0001 C CNN
-F 1 "+5V" H 13415 3073 50  0000 C CNN
-F 2 "" H 13400 2900 50  0001 C CNN
-F 3 "" H 13400 2900 50  0001 C CNN
-	1    13400 2900
+P 13400 2800
+F 0 "#PWR0156" H 13400 2650 50  0001 C CNN
+F 1 "+5V" H 13415 2973 50  0000 C CNN
+F 2 "" H 13400 2800 50  0001 C CNN
+F 3 "" H 13400 2800 50  0001 C CNN
+	1    13400 2800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	13400 2900 13450 2900
-Wire Wire Line
-	13400 3000 13450 3000
 Wire Wire Line
 	1350 8150 1550 8150
 Wire Wire Line
@@ -1676,22 +1663,22 @@ Wire Wire Line
 $Comp
 L Connector:Conn_01x05_Female J1
 U 1 1 5C07B09A
-P 10600 5550
-F 0 "J1" H 10628 5576 50  0000 L CNN
-F 1 "PROG" H 10628 5485 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 10600 5550 50  0001 C CNN
-F 3 "~" H 10600 5550 50  0001 C CNN
-	1    10600 5550
+P 9550 5450
+F 0 "J1" H 9578 5476 50  0000 L CNN
+F 1 "PROG" H 9578 5385 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 9550 5450 50  0001 C CNN
+F 3 "~" H 9550 5450 50  0001 C CNN
+	1    9550 5450
 	1    0    0    -1  
 $EndComp
-Text GLabel 10300 5450 0    50   Input ~ 0
+Text GLabel 9250 5350 0    50   Input ~ 0
 RESET
 Wire Wire Line
-	10300 5450 10400 5450
+	9250 5350 9350 5350
 Wire Wire Line
-	10300 5550 10400 5550
+	9250 5450 9350 5450
 Wire Wire Line
-	10300 5650 10400 5650
+	9250 5550 9350 5550
 Text Notes 2400 1250 0    100  ~ 0
 Power Shutoff Bias
 Wire Notes Line width 10 style solid
@@ -2017,12 +2004,267 @@ F 3 "~" H 10900 8850 50  0001 C CNN
 	1    10900 8850
 	1    0    0    -1  
 $EndComp
-Text GLabel 10600 8850 0    50   Input ~ 0
+Text GLabel 10500 8850 0    50   Input ~ 0
 CANH
-Text GLabel 10600 8950 0    50   Input ~ 0
+Text GLabel 10500 8950 0    50   Input ~ 0
+CANL
+$Comp
+L Connector:Screw_Terminal_01x02 J19
+U 1 1 5BC06F28
+P 14550 2500
+F 0 "J19" H 14630 2492 50  0000 L CNN
+F 1 "12V_1" H 14630 2401 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 14550 2500 50  0001 C CNN
+F 3 "~" H 14550 2500 50  0001 C CNN
+	1    14550 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J20
+U 1 1 5BC06F2F
+P 14550 2750
+F 0 "J20" H 14630 2742 50  0000 L CNN
+F 1 "12V_2" H 14630 2651 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 14550 2750 50  0001 C CNN
+F 3 "~" H 14550 2750 50  0001 C CNN
+	1    14550 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J21
+U 1 1 5BC06F36
+P 14550 3000
+F 0 "J21" H 14630 2992 50  0000 L CNN
+F 1 "12V_3" H 14630 2901 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 14550 3000 50  0001 C CNN
+F 3 "~" H 14550 3000 50  0001 C CNN
+	1    14550 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J22
+U 1 1 5BC06F3D
+P 14550 3250
+F 0 "J22" H 14629 3242 50  0000 L CNN
+F 1 "12V_4" H 14629 3151 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 14550 3250 50  0001 C CNN
+F 3 "~" H 14550 3250 50  0001 C CNN
+	1    14550 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	14250 2250 14250 2500
+Wire Wire Line
+	14250 3250 14350 3250
+Connection ~ 14250 2250
+Wire Wire Line
+	14350 2500 14250 2500
+Connection ~ 14250 2500
+Wire Wire Line
+	14250 2500 14250 2750
+Wire Wire Line
+	14350 2750 14250 2750
+Connection ~ 14250 2750
+Wire Wire Line
+	14250 2750 14250 3000
+Wire Wire Line
+	14350 3000 14250 3000
+Connection ~ 14250 3000
+Wire Wire Line
+	14250 3000 14250 3250
+Wire Wire Line
+	14300 2350 14300 2600
+Connection ~ 14300 2350
+Wire Wire Line
+	14350 3350 14300 3350
+Connection ~ 14300 3350
+Wire Wire Line
+	14300 3350 14300 3400
+Wire Wire Line
+	14350 3100 14300 3100
+Connection ~ 14300 3100
+Wire Wire Line
+	14300 3100 14300 3350
+Wire Wire Line
+	14350 2850 14300 2850
+Connection ~ 14300 2850
+Wire Wire Line
+	14300 2850 14300 3100
+Wire Wire Line
+	14350 2600 14300 2600
+Connection ~ 14300 2600
+Wire Wire Line
+	14300 2600 14300 2850
+$Comp
+L power:GNDREF #PWR0105
+U 1 1 5BD155AD
+P 15200 2500
+F 0 "#PWR0105" H 15200 2250 50  0001 C CNN
+F 1 "GNDREF" H 15205 2327 50  0000 C CNN
+F 2 "" H 15200 2500 50  0001 C CNN
+F 3 "" H 15200 2500 50  0001 C CNN
+	1    15200 2500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J23
+U 1 1 5BD155B3
+P 15450 1600
+F 0 "J23" H 15530 1592 50  0000 L CNN
+F 1 "48V_1" H 15530 1501 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 15450 1600 50  0001 C CNN
+F 3 "~" H 15450 1600 50  0001 C CNN
+	1    15450 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J24
+U 1 1 5BD155BA
+P 15450 1850
+F 0 "J24" H 15530 1842 50  0000 L CNN
+F 1 "48V_2" H 15530 1751 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 15450 1850 50  0001 C CNN
+F 3 "~" H 15450 1850 50  0001 C CNN
+	1    15450 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J25
+U 1 1 5BD155C1
+P 15450 2100
+F 0 "J25" H 15530 2092 50  0000 L CNN
+F 1 "48V_3" H 15530 2001 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 15450 2100 50  0001 C CNN
+F 3 "~" H 15450 2100 50  0001 C CNN
+	1    15450 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J26
+U 1 1 5BD155C8
+P 15450 2350
+F 0 "J26" H 15529 2342 50  0000 L CNN
+F 1 "48V_4" H 15529 2251 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 15450 2350 50  0001 C CNN
+F 3 "~" H 15450 2350 50  0001 C CNN
+	1    15450 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	15150 2350 15250 2350
+Wire Wire Line
+	15250 1600 15150 1600
+Wire Wire Line
+	15150 1600 15150 1850
+Wire Wire Line
+	15250 1850 15150 1850
+Connection ~ 15150 1850
+Wire Wire Line
+	15150 1850 15150 2100
+Wire Wire Line
+	15250 2100 15150 2100
+Connection ~ 15150 2100
+Wire Wire Line
+	15150 2100 15150 2350
+Wire Wire Line
+	15250 2450 15200 2450
+Connection ~ 15200 2450
+Wire Wire Line
+	15200 2450 15200 2500
+Wire Wire Line
+	15250 2200 15200 2200
+Connection ~ 15200 2200
+Wire Wire Line
+	15200 2200 15200 2450
+Wire Wire Line
+	15250 1950 15200 1950
+Connection ~ 15200 1950
+Wire Wire Line
+	15200 1950 15200 2200
+Wire Wire Line
+	15250 1700 15200 1700
+Wire Wire Line
+	15200 1700 15200 1950
+Text GLabel 2600 5600 2    50   Input ~ 0
+48V
+Wire Wire Line
+	2600 5600 2600 5750
+Text GLabel 15150 1450 2    50   Input ~ 0
+48V
+Wire Wire Line
+	15150 1450 15150 1600
+Connection ~ 15150 1600
+Wire Notes Line width 10 style solid
+	12950 1050 15900 1050
+Wire Notes Line width 10 style solid
+	12950 1050 12950 3650
+Wire Notes Line width 10 style solid
+	15900 1050 15900 3650
+Wire Notes Line width 10 style solid
+	12950 3650 15900 3650
+Wire Wire Line
+	13550 2850 13400 2850
+Wire Wire Line
+	13400 2850 13400 2800
+Wire Wire Line
+	13400 2950 13550 2950
+Wire Wire Line
+	10500 8850 10700 8850
+Wire Wire Line
+	10500 8950 10700 8950
+$Comp
+L Connector:Conn_01x04_Female J17
+U 1 1 5BC128B3
+P 11550 5550
+F 0 "J17" H 11577 5526 50  0000 L CNN
+F 1 "MB_interface" H 11577 5435 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 11550 5550 50  0001 C CNN
+F 3 "~" H 11550 5550 50  0001 C CNN
+	1    11550 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0159
+U 1 1 5BC39A5C
+P 11350 5400
+F 0 "#PWR0159" H 11350 5250 50  0001 C CNN
+F 1 "+5V" H 11365 5573 50  0000 C CNN
+F 2 "" H 11350 5400 50  0001 C CNN
+F 3 "" H 11350 5400 50  0001 C CNN
+	1    11350 5400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0160
+U 1 1 5BC39AEB
+P 11350 5800
+F 0 "#PWR0160" H 11350 5550 50  0001 C CNN
+F 1 "GNDREF" H 11355 5627 50  0000 C CNN
+F 2 "" H 11350 5800 50  0001 C CNN
+F 3 "" H 11350 5800 50  0001 C CNN
+	1    11350 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11350 5450 11350 5400
+Wire Wire Line
+	11350 5800 11350 5750
+Text GLabel 11250 5550 0    50   Input ~ 0
+CANH
+Text GLabel 11250 5650 0    50   Input ~ 0
 CANL
 Wire Wire Line
-	10700 8850 10600 8850
+	11350 5550 11250 5550
 Wire Wire Line
-	10700 8950 10600 8950
+	11250 5650 11350 5650
+Wire Notes Line width 10 style solid
+	12150 6150 10700 6150
+Wire Notes Line width 10 style solid
+	10700 4750 12150 4750
+Text Notes 11000 5250 0    100  ~ 0
+Main Board \nInterface\n\n
+Wire Notes Line width 10 style solid
+	10700 4750 10700 6150
+Wire Notes Line width 10 style solid
+	12150 4750 12150 6150
 $EndSCHEMATC
