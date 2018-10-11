@@ -1,4 +1,4 @@
-update=9/9/2018 3:52:53 PM
+update=10/7/2018 5:07:30 PM
 version=1
 last_client=kicad
 [general]
@@ -33,7 +33,7 @@ LibDir=
 [eeschema/libraries]
 [schematic_editor]
 version=1
-PageLayoutDescrFile=C:/Users/camkn/OneDrive/Documents/Design team/standard-11x17.kicad_wks
+PageLayoutDescrFile=C:/URT/kicad-stuff/layouts/standard-11x17.kicad_wks
 PlotDirectoryName=
 SubpartIdSeparator=0
 SubpartFirstId=65
