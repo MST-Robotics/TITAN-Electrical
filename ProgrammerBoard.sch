@@ -6,7 +6,7 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 1
 Title "Programmer Board"
-Date "2018-09-19"
+Date "2018-10-10"
 Rev "0.0.2"
 Comp "Missouri University of Science and Techology - Underwater Robotics"
 Comment1 "This board is the programmer for Titan Modules"

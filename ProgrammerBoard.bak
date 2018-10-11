@@ -2,17 +2,17 @@ EESchema Schematic File Version 4
 LIBS:ProgrammerBoard-cache
 EELAYER 26 0
 EELAYER END
-$Descr A4 11693 8268
+$Descr B 17000 11000
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
-Comment3 ""
-Comment4 ""
+Title "Programmer Board"
+Date "2018-09-19"
+Rev "0.0.2"
+Comp "Missouri University of Science and Techology - Underwater Robotics"
+Comment1 "This board is the programmer for Titan Modules"
+Comment2 "https://github.com/MST-Robotics/TITAN-Electrical.git"
+Comment3 "programmer"
+Comment4 "NOTICE: The Missouri S&T Underwater Robotics Team makes no claim to the accuracy or usability of this document. Email mstrobotics@mst.edu for more information. Printed copies are not maintained."
 $EndDescr
 $Comp
 L Interface_USB:FT232RL IC1
