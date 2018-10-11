@@ -1315,23 +1315,23 @@ $EndComp
 $Comp
 L power:+48V #PWR0121
 U 1 1 5BAEA3D2
-P 2000 5350
-F 0 "#PWR0121" H 2000 5200 50  0001 C CNN
-F 1 "+48V" H 2015 5523 50  0000 C CNN
-F 2 "" H 2000 5350 50  0001 C CNN
-F 3 "" H 2000 5350 50  0001 C CNN
-	1    2000 5350
+P 2000 5300
+F 0 "#PWR0121" H 2000 5150 50  0001 C CNN
+F 1 "+48V" H 2015 5473 50  0000 C CNN
+F 2 "" H 2000 5300 50  0001 C CNN
+F 3 "" H 2000 5300 50  0001 C CNN
+	1    2000 5300
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+48V #PWR0126
 U 1 1 5BAEA445
-P 2000 4100
-F 0 "#PWR0126" H 2000 3950 50  0001 C CNN
-F 1 "+48V" H 2015 4273 50  0000 C CNN
-F 2 "" H 2000 4100 50  0001 C CNN
-F 3 "" H 2000 4100 50  0001 C CNN
-	1    2000 4100
+P 2000 4050
+F 0 "#PWR0126" H 2000 3900 50  0001 C CNN
+F 1 "+48V" H 2015 4223 50  0000 C CNN
+F 2 "" H 2000 4050 50  0001 C CNN
+F 3 "" H 2000 4050 50  0001 C CNN
+	1    2000 4050
 	1    0    0    -1  
 $EndComp
 Text GLabel 2750 8800 2    50   Input ~ 0
@@ -1881,28 +1881,6 @@ Wire Wire Line
 	2500 8800 2500 8900
 Text GLabel 1500 4550 0    50   Input ~ 0
 SHUTOFF
-$Comp
-L Power_Management:BTS6163D U6
-U 1 1 5BB216EF
-P 2000 4550
-F 0 "U6" H 2000 4176 50  0000 C CNN
-F 1 "BTS6163D" H 2000 4085 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-252-4" H 2000 4150 50  0001 C CNN
-F 3 "http://www.infineon.com/dgdl/Infineon-BTS6163D-DS-v01_00-EN.pdf?fileId=5546d4625a888733015aa3da01a1101e" H 2000 4150 50  0001 C CNN
-	1    2000 4550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Power_Management:BTS6163D U8
-U 1 1 5BB3D1D7
-P 2000 5800
-F 0 "U8" H 2000 5426 50  0000 C CNN
-F 1 "BTS6163D" H 2000 5335 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:TO-252-4" H 2000 5400 50  0001 C CNN
-F 3 "http://www.infineon.com/dgdl/Infineon-BTS6163D-DS-v01_00-EN.pdf?fileId=5546d4625a888733015aa3da01a1101e" H 2000 5400 50  0001 C CNN
-	1    2000 5800
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2400 4450 2400 4500
 Connection ~ 2400 4500
@@ -1925,14 +1903,14 @@ Wire Wire Line
 Connection ~ 2850 4800
 Connection ~ 2600 4500
 Wire Wire Line
-	2600 4500 2400 4500
+	2600 4500 2450 4500
 Wire Wire Line
 	2600 4500 2900 4500
 Wire Wire Line
 	2600 4800 2850 4800
 Connection ~ 2600 5750
 Wire Wire Line
-	2600 5750 2400 5750
+	2600 5750 2450 5750
 Wire Wire Line
 	2850 6050 2600 6050
 Wire Wire Line
@@ -1943,10 +1921,6 @@ Wire Wire Line
 	1600 4550 1500 4550
 Wire Wire Line
 	1500 5800 1600 5800
-Wire Wire Line
-	2000 5400 2000 5350
-Wire Wire Line
-	2000 4150 2000 4100
 Wire Notes Line width 10 style solid
 	1050 3300 4550 3300
 Wire Notes Line width 10 style solid
@@ -1954,7 +1928,7 @@ Wire Notes Line width 10 style solid
 Wire Wire Line
 	1550 8550 1800 8550
 Text Notes 1100 6750 0    75   ~ 0
-BTS6163D is a high side load driver. 60V, 21.5A Max\nShould disspiate < 20W of power each. (Ids^2*Ron)\n
+BTS50085 is a high side load driver. 60V, 21.5A Max\nShould disspiate < 20W of power each. (Ids^2*Ron)\n
 Wire Notes Line width 10 style solid
 	4550 6800 4550 3300
 Wire Notes Line width 10 style solid
@@ -2267,4 +2241,66 @@ Wire Notes Line width 10 style solid
 	10700 4750 10700 6150
 Wire Notes Line width 10 style solid
 	12150 4750 12150 6150
+$Comp
+L Power_Management:BTS50085-1TMA U8
+U 1 1 5BC0879A
+P 2000 5800
+F 0 "U8" H 2000 5426 50  0000 C CNN
+F 1 "BTS50085-1TMA" H 2000 5335 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:Infineon_PG-TO-220-7Lead_TabPin8" H 2000 5400 50  0001 C CNN
+F 3 "http://www.infineon.com/dgdl/Infineon-BTS50085-1TMA-DS-v01_00-EN.pdf?fileId=5546d4625a888733015aa435bccd114b" H 2000 5400 50  0001 C CNN
+	1    2000 5800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 5600 2450 5600
+Wire Wire Line
+	2450 5600 2450 5750
+Connection ~ 2450 5750
+Wire Wire Line
+	2450 5750 2400 5750
+Wire Wire Line
+	2400 5900 2450 5900
+Wire Wire Line
+	2450 5900 2450 5750
+Wire Wire Line
+	2000 5300 2000 5350
+Wire Wire Line
+	1900 5400 1900 5350
+Wire Wire Line
+	1900 5350 2000 5350
+Connection ~ 2000 5350
+Wire Wire Line
+	2000 5350 2000 5400
+$Comp
+L Power_Management:BTS50085-1TMA U6
+U 1 1 5BC5BD8A
+P 2000 4550
+F 0 "U6" H 2000 4176 50  0000 C CNN
+F 1 "BTS50085-1TMA" H 2000 4085 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:Infineon_PG-TO-220-7Lead_TabPin8" H 2000 4150 50  0001 C CNN
+F 3 "http://www.infineon.com/dgdl/Infineon-BTS50085-1TMA-DS-v01_00-EN.pdf?fileId=5546d4625a888733015aa435bccd114b" H 2000 4150 50  0001 C CNN
+	1    2000 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2400 4350 2450 4350
+Wire Wire Line
+	2450 4350 2450 4500
+Connection ~ 2450 4500
+Wire Wire Line
+	2450 4500 2400 4500
+Wire Wire Line
+	2400 4650 2450 4650
+Wire Wire Line
+	2450 4650 2450 4500
+Wire Wire Line
+	2000 4050 2000 4100
+Wire Wire Line
+	1900 4150 1900 4100
+Wire Wire Line
+	1900 4100 2000 4100
+Connection ~ 2000 4100
+Wire Wire Line
+	2000 4100 2000 4150
 $EndSCHEMATC
