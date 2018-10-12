@@ -1964,9 +1964,9 @@ F 3 "~" H 10900 8850 50  0001 C CNN
 	1    10900 8850
 	1    0    0    -1  
 $EndComp
-Text GLabel 10500 8850 0    50   Input ~ 0
-CANH
 Text GLabel 10500 8950 0    50   Input ~ 0
+CANH
+Text GLabel 10500 8850 0    50   Input ~ 0
 CANL
 $Comp
 L Connector:Screw_Terminal_01x02 J19
