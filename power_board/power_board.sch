@@ -302,12 +302,12 @@ Text Notes 1950 3750 0    75   ~ 0
 $Comp
 L Connector:Conn_01x02_Female J4
 U 1 1 5BA58C27
-P 1150 8250
-F 0 "J4" H 1050 8050 50  0000 C CNN
-F 1 "Conn_01x02_Female" H 1044 8016 50  0001 C CNN
-F 2 "Connector_JST:JST_GH_BM02B-GHS-TBT_1x02-1MP_P1.25mm_Vertical" H 1150 8250 50  0001 C CNN
-F 3 "~" H 1150 8250 50  0001 C CNN
-	1    1150 8250
+P 1150 8400
+F 0 "J4" H 1050 8200 50  0000 C CNN
+F 1 "Conn_01x02_Female" H 1044 8166 50  0001 C CNN
+F 2 "Connector_JST:JST_GH_BM02B-GHS-TBT_1x02-1MP_P1.25mm_Vertical" H 1150 8400 50  0001 C CNN
+F 3 "~" H 1150 8400 50  0001 C CNN
+	1    1150 8400
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -333,14 +333,9 @@ F 3 "" H 1450 8700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1350 8650 1450 8650
+	1350 8650 1400 8650
 Wire Wire Line
 	1450 8650 1450 8700
-Wire Wire Line
-	1350 8250 1450 8250
-Wire Wire Line
-	1450 8250 1450 8650
-Connection ~ 1450 8650
 Text Notes 1400 7800 0    100  ~ 0
 Leak Sensor Support
 Text Notes 1250 1250 0    100  ~ 0
@@ -1535,13 +1530,6 @@ F 3 "" H 13400 2800 50  0001 C CNN
 	1    13400 2800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1350 8150 1550 8150
-Wire Wire Line
-	1550 8150 1550 8550
-Wire Wire Line
-	1350 8550 1550 8550
-Connection ~ 1550 8550
 $Comp
 L power:+5VA #PWR0157
 U 1 1 5BEA61CA
@@ -1925,8 +1913,6 @@ Wire Notes Line width 10 style solid
 	1050 3300 4550 3300
 Wire Notes Line width 10 style solid
 	1050 6800 4550 6800
-Wire Wire Line
-	1550 8550 1800 8550
 Text Notes 1100 6750 0    75   ~ 0
 BTS50085 is a high side load driver. 60V, 21.5A Max\nShould disspiate < 20W of power each. (Ids^2*Ron)\n
 Wire Notes Line width 10 style solid
@@ -2303,4 +2289,41 @@ Wire Wire Line
 Connection ~ 2000 4100
 Wire Wire Line
 	2000 4100 2000 4150
+Wire Wire Line
+	1350 8550 1500 8550
+$Comp
+L Connector:Conn_01x02_Female J18
+U 1 1 5BC10D2D
+P 1150 8150
+F 0 "J18" H 1050 7950 50  0000 C CNN
+F 1 "Conn_01x02_Female" H 1044 7916 50  0001 C CNN
+F 2 "Connector_JST:JST_GH_BM02B-GHS-TBT_1x02-1MP_P1.25mm_Vertical" H 1150 8150 50  0001 C CNN
+F 3 "~" H 1150 8150 50  0001 C CNN
+	1    1150 8150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1350 8300 1500 8300
+Wire Wire Line
+	1500 8300 1500 8550
+Connection ~ 1500 8550
+Wire Wire Line
+	1500 8550 1800 8550
+Wire Wire Line
+	1350 8050 1500 8050
+Wire Wire Line
+	1500 8050 1500 8300
+Connection ~ 1500 8300
+Wire Wire Line
+	1350 8150 1400 8150
+Wire Wire Line
+	1400 8150 1400 8400
+Connection ~ 1400 8650
+Wire Wire Line
+	1400 8650 1450 8650
+Wire Wire Line
+	1350 8400 1400 8400
+Connection ~ 1400 8400
+Wire Wire Line
+	1400 8400 1400 8650
 $EndSCHEMATC
