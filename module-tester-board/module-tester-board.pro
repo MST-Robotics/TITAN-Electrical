@@ -1,4 +1,4 @@
-update=9/30/2018 6:04:21 PM
+update=10/5/2018 8:11:18 PM
 version=1
 last_client=kicad
 [general]
@@ -33,7 +33,7 @@ LibDir=
 [eeschema/libraries]
 [schematic_editor]
 version=1
-PageLayoutDescrFile=C:/Users/Sean/Documents/Underwater Robotics/KiCAD UR Fall 2018/kicad-stuff/layouts/standard-11x17.kicad_wks
+PageLayoutDescrFile=../../kicad-stuff/layouts/standard-11x17.kicad_wks
 PlotDirectoryName=../plots/
 SubpartIdSeparator=0
 SubpartFirstId=65
