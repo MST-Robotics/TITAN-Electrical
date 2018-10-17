@@ -293,6 +293,10 @@ Wire Wire Line
 	4800 5250 4800 5150
 Text GLabel 1700 5350 0    50   Input ~ 0
 SS
+Text GLabel 1700 5150 0    50   Input ~ 0
+SI
+Text GLabel 1700 5250 0    50   Input ~ 0
+SO
 Text GLabel 1700 5450 0    50   Input ~ 0
 SCK
 Text GLabel 4450 5550 2    50   Input ~ 0
@@ -527,16 +531,4 @@ Wire Wire Line
 Connection ~ 3200 4850
 Wire Wire Line
 	3200 4850 3200 5550
-Wire Wire Line
-	1900 2200 1250 2200
-Wire Wire Line
-	1250 2200 1250 5250
-Wire Wire Line
-	1250 5250 1700 5250
-Wire Wire Line
-	1700 5150 1350 5150
-Wire Wire Line
-	1350 5150 1350 2300
-Wire Wire Line
-	1350 2300 1900 2300
 $EndSCHEMATC
