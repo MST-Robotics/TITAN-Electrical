@@ -36,17 +36,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-2549-8-bit-AVR-Microc
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x04_Female J?
-U 1 1 5BBE9559
-P 15550 8350
-F 0 "J?" H 15577 8326 50  0000 L CNN
-F 1 "Conn_01x04_Female" H 15577 8235 50  0000 L CNN
-F 2 "" H 15550 8350 50  0001 C CNN
-F 3 "~" H 15550 8350 50  0001 C CNN
-	1    15550 8350
-	1    0    0    -1  
-$EndComp
-$Comp
 L 2450BM08B0003T:2450BM08B0003T U?
 U 1 1 5BBEA7BF
 P 10800 1850
@@ -899,4 +888,98 @@ F 3 "" H 8700 6800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8500 6800 8700 6800
+Text GLabel 6300 1650 2    50   Input ~ 0
+VID00
+Text GLabel 6300 1750 2    50   Input ~ 0
+VID01
+Text GLabel 6300 1850 2    50   Input ~ 0
+VID02
+Text GLabel 6300 1950 2    50   Input ~ 0
+VID10
+Text GLabel 6300 2050 2    50   Input ~ 0
+VID11
+Text GLabel 6300 2150 2    50   Input ~ 0
+VID12
+Text GLabel 3500 1650 2    50   Input ~ 0
+M0
+Text GLabel 3500 1750 2    50   Input ~ 0
+M1
+Text GLabel 3500 1850 2    50   Input ~ 0
+M2
+Text GLabel 3500 1950 2    50   Input ~ 0
+M3
+Text GLabel 3500 2050 2    50   Input ~ 0
+M4
+Text GLabel 3500 2150 2    50   Input ~ 0
+M5
+Text GLabel 3500 2250 2    50   Input ~ 0
+M6
+Text GLabel 3500 2350 2    50   Input ~ 0
+M7
+Text GLabel 6300 3450 2    50   Input ~ 0
+T0
+Text GLabel 6300 3550 2    50   Input ~ 0
+T1
+Text GLabel 6300 3650 2    50   Input ~ 0
+T2
+Text GLabel 6300 3750 2    50   Input ~ 0
+T3
+Text GLabel 6300 3850 2    50   Input ~ 0
+T4
+Text GLabel 6300 3950 2    50   Input ~ 0
+T5
+Text GLabel 6300 4050 2    50   Input ~ 0
+T6
+Text GLabel 6300 4150 2    50   Input ~ 0
+T7
+$Comp
+L Connector:Conn_01x05_Male J?
+U 1 1 5BCA3C8B
+P 10750 8150
+F 0 "J?" H 10500 8250 50  0000 C CNN
+F 1 "PROGRAMMER" H 10450 8350 50  0000 C CNN
+F 2 "" H 10750 8150 50  0001 C CNN
+F 3 "~" H 10750 8150 50  0001 C CNN
+	1    10750 8150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5BCA42E8
+P 10950 8350
+F 0 "#PWR?" H 10950 8100 50  0001 C CNN
+F 1 "GND" H 10955 8177 50  0000 C CNN
+F 2 "" H 10950 8350 50  0001 C CNN
+F 3 "" H 10950 8350 50  0001 C CNN
+	1    10950 8350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5BCA444A
+P 10950 7950
+F 0 "#PWR?" H 10950 7800 50  0001 C CNN
+F 1 "+5V" H 10965 8123 50  0000 C CNN
+F 2 "" H 10950 7950 50  0001 C CNN
+F 3 "" H 10950 7950 50  0001 C CNN
+	1    10950 7950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 5BCA44F9
+P 11100 8050
+F 0 "#PWR?" H 11100 7900 50  0001 C CNN
+F 1 "+3V3" H 11115 8223 50  0000 C CNN
+F 2 "" H 11100 8050 50  0001 C CNN
+F 3 "" H 11100 8050 50  0001 C CNN
+	1    11100 8050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10950 8050 11100 8050
+Text GLabel 10950 8150 2    50   Input ~ 0
+PROG-TX
+Text GLabel 10950 8250 2    50   Input ~ 0
+PROG-RX
 $EndSCHEMATC
