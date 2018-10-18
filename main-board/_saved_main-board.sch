@@ -36,17 +36,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-2549-8-bit-AVR-Microc
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x04_Female J?
-U 1 1 5BBE9559
-P 15550 8350
-F 0 "J?" H 15577 8326 50  0000 L CNN
-F 1 "Conn_01x04_Female" H 15577 8235 50  0000 L CNN
-F 2 "" H 15550 8350 50  0001 C CNN
-F 3 "~" H 15550 8350 50  0001 C CNN
-	1    15550 8350
-	1    0    0    -1  
-$EndComp
-$Comp
 L 2450BM08B0003T:2450BM08B0003T U?
 U 1 1 5BBEA7BF
 P 10800 1850
@@ -899,4 +888,16 @@ F 3 "" H 8700 6800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8500 6800 8700 6800
+Text GLabel 6300 1650 2    50   Input ~ 0
+VID00
+Text GLabel 6300 1750 2    50   Input ~ 0
+VID01
+Text GLabel 6300 1850 2    50   Input ~ 0
+VID02
+Text GLabel 6300 1950 2    50   Input ~ 0
+VID10
+Text GLabel 6300 2050 2    50   Input ~ 0
+VID11
+Text GLabel 6300 2150 2    50   Input ~ 0
+VID12
 $EndSCHEMATC
