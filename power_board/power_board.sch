@@ -752,77 +752,16 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf" H 7700 7750 50 
 	1    0    0    -1  
 $EndComp
 $Comp
-L Interface_CAN_LIN:MCP2551-I-SN U5
-U 1 1 5BA69EE0
-P 9850 8200
-F 0 "U5" H 9950 8800 50  0000 C CNN
-F 1 "MCP2551-I-SN" H 10200 8700 50  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9850 7700 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/devicedoc/21667d.pdf" H 9850 8200 50  0001 C CNN
-	1    9850 8200
-	1    0    0    -1  
-$EndComp
-Text GLabel 9300 8000 0    50   Input ~ 0
-CAN_TX
-Text GLabel 9300 8100 0    50   Input ~ 0
-CAN_RX
-$Comp
-L power:+5V #PWR0143
-U 1 1 5BA77637
-P 9850 7550
-F 0 "#PWR0143" H 9850 7400 50  0001 C CNN
-F 1 "+5V" H 9865 7723 50  0000 C CNN
-F 2 "" H 9850 7550 50  0001 C CNN
-F 3 "" H 9850 7550 50  0001 C CNN
-	1    9850 7550
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GNDREF #PWR0144
-U 1 1 5BA77D6B
-P 9850 8750
-F 0 "#PWR0144" H 9850 8500 50  0001 C CNN
-F 1 "GNDREF" H 9855 8577 50  0000 C CNN
-F 2 "" H 9850 8750 50  0001 C CNN
-F 3 "" H 9850 8750 50  0001 C CNN
-	1    9850 8750
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C10
 U 1 1 5BA784CE
-P 9400 7550
-F 0 "C10" H 9515 7596 50  0000 L CNN
-F 1 "0.1uF" H 9515 7505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9438 7400 50  0001 C CNN
-F 3 "~" H 9400 7550 50  0001 C CNN
-	1    9400 7550
-	0    1    1    0   
-$EndComp
-$Comp
-L power:GNDREF #PWR0145
-U 1 1 5BA788D6
-P 9150 7650
-F 0 "#PWR0145" H 9150 7400 50  0001 C CNN
-F 1 "GNDREF" H 9155 7477 50  0000 C CNN
-F 2 "" H 9150 7650 50  0001 C CNN
-F 3 "" H 9150 7650 50  0001 C CNN
-	1    9150 7650
+P 9050 8600
+F 0 "C10" H 8800 8700 50  0000 L CNN
+F 1 "0.1uF" H 8750 8600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9088 8450 50  0001 C CNN
+F 3 "~" H 9050 8600 50  0001 C CNN
+	1    9050 8600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9850 7550 9850 7800
-Wire Wire Line
-	9550 7550 9850 7550
-Connection ~ 9850 7550
-Wire Wire Line
-	9250 7550 9150 7550
-Wire Wire Line
-	9150 7550 9150 7650
-Wire Wire Line
-	9300 8000 9350 8000
-Wire Wire Line
-	9300 8100 9350 8100
 $Comp
 L power:+5V #PWR0146
 U 1 1 5BA98D10
@@ -1024,28 +963,6 @@ Wire Wire Line
 	8200 7950 8250 7950
 Wire Wire Line
 	8200 8050 8250 8050
-$Comp
-L Device:R_US R9
-U 1 1 5BB7FA96
-P 9350 8600
-F 0 "R9" V 9555 8600 50  0000 C CNN
-F 1 "4.7k" V 9464 8600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9390 8590 50  0001 C CNN
-F 3 "~" H 9350 8600 50  0001 C CNN
-	1    9350 8600
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9350 8400 9350 8450
-Wire Wire Line
-	9350 8750 9850 8750
-Wire Wire Line
-	9850 8600 9850 8750
-Connection ~ 9850 8750
-Text GLabel 10600 8100 2    50   Input ~ 0
-CANH
-Text GLabel 10600 8300 2    50   Input ~ 0
-CANL
 Text GLabel 8250 8550 2    50   Input ~ 0
 CAN_INT
 Wire Wire Line
@@ -1169,10 +1086,6 @@ Text Notes 1150 2500 0    75   ~ 0
 WARNING: +5VA will always be present.
 Text Notes 2150 3500 0    100  ~ 0
 Power Regulation
-Wire Wire Line
-	10350 8300 10600 8300
-Wire Wire Line
-	10350 8100 10600 8100
 Text Notes 8800 6400 0    100  ~ 20
 VERIFY PIN ORDER!!!\n\n
 $Comp
@@ -1791,7 +1704,6 @@ NoConn ~ 2400 4750
 NoConn ~ 2400 6000
 NoConn ~ 3950 5900
 NoConn ~ 3950 4650
-NoConn ~ 9350 8300
 NoConn ~ 15050 7400
 NoConn ~ 15050 5000
 NoConn ~ 15050 5100
@@ -1815,17 +1727,17 @@ Wire Wire Line
 $Comp
 L Connector:Screw_Terminal_01x02 J16
 U 1 1 5BEFA5C2
-P 10900 8850
-F 0 "J16" H 10900 8950 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 10900 9400 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 10900 8850 50  0001 C CNN
-F 3 "~" H 10900 8850 50  0001 C CNN
-	1    10900 8850
+P 13100 8800
+F 0 "J16" H 13100 8900 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 13100 9350 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 13100 8800 50  0001 C CNN
+F 3 "~" H 13100 8800 50  0001 C CNN
+	1    13100 8800
 	1    0    0    -1  
 $EndComp
-Text GLabel 10500 8950 0    50   Input ~ 0
+Text GLabel 12700 8900 0    50   Input ~ 0
 CANH
-Text GLabel 10500 8850 0    50   Input ~ 0
+Text GLabel 12700 8800 0    50   Input ~ 0
 CANL
 $Comp
 L Connector:Screw_Terminal_01x02 J19
@@ -2000,9 +1912,9 @@ Wire Wire Line
 Wire Wire Line
 	13400 2950 13550 2950
 Wire Wire Line
-	10500 8850 10700 8850
+	12700 8800 12900 8800
 Wire Wire Line
-	10500 8950 10700 8950
+	12700 8900 12900 8900
 $Comp
 L power:+5V #PWR0159
 U 1 1 5BC39A5C
@@ -2590,4 +2502,104 @@ Text GLabel 4550 8550 0    50   Input ~ 0
 V_MCU
 Wire Wire Line
 	4550 8550 4550 8750
+$Comp
+L URT_cache:ATA6560,1 U5
+U 1 1 5BCC7310
+P 10150 8350
+F 0 "U5" H 10150 8915 50  0000 C CNN
+F 1 "ATA6560,1" H 10150 8824 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 10150 8850 50  0001 C CNN
+F 3 "" H 10150 8850 50  0001 C CNN
+	1    10150 8350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GNDREF #PWR0143
+U 1 1 5BD211AA
+P 9250 8900
+F 0 "#PWR0143" H 9250 8650 50  0001 C CNN
+F 1 "GNDREF" H 9255 8727 50  0000 C CNN
+F 2 "" H 9250 8900 50  0001 C CNN
+F 3 "" H 9250 8900 50  0001 C CNN
+	1    9250 8900
+	1    0    0    -1  
+$EndComp
+Text GLabel 9650 8650 0    50   Input ~ 0
+CAN_RX
+Text GLabel 9650 8050 0    50   Input ~ 0
+CAN_TX
+$Comp
+L power:+5V #PWR0144
+U 1 1 5BD3FC89
+P 9200 7800
+F 0 "#PWR0144" H 9200 7650 50  0001 C CNN
+F 1 "+5V" H 9215 7973 50  0000 C CNN
+F 2 "" H 9200 7800 50  0001 C CNN
+F 3 "" H 9200 7800 50  0001 C CNN
+	1    9200 7800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 7800 9200 8450
+Text GLabel 10700 8450 2    50   Input ~ 0
+CANL
+Text GLabel 10700 8250 2    50   Input ~ 0
+CANH
+Wire Wire Line
+	10650 8250 10700 8250
+Wire Wire Line
+	10650 8450 10700 8450
+Wire Wire Line
+	9250 8250 9250 8750
+Wire Wire Line
+	9200 8450 9650 8450
+Wire Wire Line
+	9250 8250 9650 8250
+Wire Wire Line
+	9050 8450 9200 8450
+Connection ~ 9200 8450
+Wire Wire Line
+	9050 8750 9250 8750
+Connection ~ 9250 8750
+Wire Wire Line
+	9250 8750 9250 8900
+$Comp
+L Device:R_US R9
+U 1 1 5BE74A3F
+P 10850 8650
+F 0 "R9" V 10750 8750 50  0000 C CNN
+F 1 "4.7k" V 10750 8600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 10890 8640 50  0001 C CNN
+F 3 "~" H 10850 8650 50  0001 C CNN
+	1    10850 8650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	10650 8650 10700 8650
+$Comp
+L power:+5V #PWR0145
+U 1 1 5BE94E58
+P 11050 8650
+F 0 "#PWR0145" H 11050 8500 50  0001 C CNN
+F 1 "+5V" H 11065 8823 50  0000 C CNN
+F 2 "" H 11050 8650 50  0001 C CNN
+F 3 "" H 11050 8650 50  0001 C CNN
+	1    11050 8650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11000 8650 11050 8650
+$Comp
+L power:GNDREF #PWR0152
+U 1 1 5BEB4CDE
+P 11150 8050
+F 0 "#PWR0152" H 11150 7800 50  0001 C CNN
+F 1 "GNDREF" H 11155 7877 50  0000 C CNN
+F 2 "" H 11150 8050 50  0001 C CNN
+F 3 "" H 11150 8050 50  0001 C CNN
+	1    11150 8050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10650 8050 11150 8050
 $EndSCHEMATC
