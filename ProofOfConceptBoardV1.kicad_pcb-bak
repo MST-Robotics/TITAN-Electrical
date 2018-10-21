@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 0)
+    (drawings 5)
     (tracks 451)
     (zones 0)
     (modules 37)
@@ -2001,6 +2001,12 @@
       (rotate (xyz 0 0 0))
     )
   )
+
+  (gr_line (start 234.696 120.396) (end 234.696 121.666) (layer F.SilkS) (width 0.2))
+  (gr_line (start 28.448 121.666) (end 234.696 121.666) (layer F.SilkS) (width 0.2))
+  (gr_line (start 28.448 40.64) (end 28.448 121.666) (layer F.SilkS) (width 0.2))
+  (gr_line (start 234.696 40.64) (end 28.448 40.64) (layer F.SilkS) (width 0.2))
+  (gr_line (start 234.696 120.396) (end 234.696 40.64) (layer F.SilkS) (width 0.2))
 
   (segment (start 103.6575 82.042) (end 105.41 82.042) (width 0.25) (layer F.Cu) (net 4))
   (segment (start 105.41 82.042) (end 105.41 94.996) (width 0.25) (layer F.Cu) (net 4))
