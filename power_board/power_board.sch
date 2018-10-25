@@ -147,8 +147,8 @@ $Comp
 L power_board-rescue:ATmega328P-AU-MCU_Microchip_ATmega U7
 U 1 1 5BA477AD
 P 14450 6200
-F 0 "U7" H 14600 4750 50  0000 C CNN
-F 1 "ATmega328P-AU" H 14850 4650 50  0000 C CNN
+F 0 "U7" H 13850 4750 50  0000 C CNN
+F 1 "ATmega328P-AU" H 14100 4650 50  0000 C CNN
 F 2 "Package_QFP:TQFP-32_7x7mm_P0.8mm" H 14450 6200 50  0001 C CIN
 F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/ATmega328_P%20AVR%20MCU%20with%20picoPower%20Technology%20Data%20Sheet%2040001984A.pdf" H 14450 6200 50  0001 C CNN
 	1    14450 6200
@@ -599,7 +599,7 @@ Wire Notes Line width 10 style solid
 Text Notes 13850 4050 0    100  ~ 0
 Microcontroller 328p\n
 Wire Notes Line width 10 style solid
-	16200 8250 13100 8250
+	16200 8500 13100 8500
 Wire Notes Line width 10 style solid
 	13100 3900 16200 3900
 $Comp
@@ -1723,17 +1723,17 @@ Wire Wire Line
 $Comp
 L Connector:Screw_Terminal_01x02 J16
 U 1 1 5BEFA5C2
-P 13100 8800
-F 0 "J16" H 13100 8900 50  0000 C CNN
-F 1 "Screw_Terminal_01x02" H 13100 9350 50  0001 C CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 13100 8800 50  0001 C CNN
-F 3 "~" H 13100 8800 50  0001 C CNN
-	1    13100 8800
+P 10800 9000
+F 0 "J16" H 10800 9100 50  0000 C CNN
+F 1 "Screw_Terminal_01x02" H 10800 9550 50  0001 C CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 10800 9000 50  0001 C CNN
+F 3 "~" H 10800 9000 50  0001 C CNN
+	1    10800 9000
 	1    0    0    -1  
 $EndComp
-Text GLabel 12700 8900 0    50   Input ~ 0
+Text GLabel 10400 9100 0    50   Input ~ 0
 CANH
-Text GLabel 12700 8800 0    50   Input ~ 0
+Text GLabel 10400 9000 0    50   Input ~ 0
 CANL
 $Comp
 L Connector:Screw_Terminal_01x02 J19
@@ -1908,9 +1908,9 @@ Wire Wire Line
 Wire Wire Line
 	13400 2950 13550 2950
 Wire Wire Line
-	12700 8800 12900 8800
+	10400 9000 10600 9000
 Wire Wire Line
-	12700 8900 12900 8900
+	10400 9100 10600 9100
 $Comp
 L power:+5V #PWR0159
 U 1 1 5BC39A5C
@@ -2458,10 +2458,6 @@ Wire Wire Line
 	14800 4400 14850 4400
 Wire Wire Line
 	14200 4400 14150 4400
-Wire Notes Line width 10 style solid
-	16200 3900 16200 8250
-Wire Notes Line width 10 style solid
-	13100 3900 13100 8250
 Wire Wire Line
 	9350 5250 9250 5250
 Wire Notes Line width 10 style solid
@@ -2615,4 +2611,118 @@ Connection ~ 4100 3900
 Wire Wire Line
 	4100 4200 4400 4200
 Connection ~ 4100 4200
+$Comp
+L Connector:TestPoint TP4
+U 1 1 5BD2ED06
+P 15850 7950
+F 0 "TP4" V 15900 8000 50  0000 C CNN
+F 1 "+5V" V 15850 8200 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 16050 7950 50  0001 C CNN
+F 3 "~" H 16050 7950 50  0001 C CNN
+	1    15850 7950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP5
+U 1 1 5BD2FA15
+P 15850 8100
+F 0 "TP5" V 15900 8150 50  0000 C CNN
+F 1 "MOSI" V 15850 8350 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 16050 8100 50  0001 C CNN
+F 3 "~" H 16050 8100 50  0001 C CNN
+	1    15850 8100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5BD2FAD5
+P 15850 8250
+F 0 "TP6" V 15900 8300 50  0000 C CNN
+F 1 "GND" V 15850 8500 50  0000 C CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 16050 8250 50  0001 C CNN
+F 3 "~" H 16050 8250 50  0001 C CNN
+	1    15850 8250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5BD4DF89
+P 15100 7950
+F 0 "TP1" V 15050 7950 50  0000 L CNN
+F 1 "MISO" V 15100 8150 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 15300 7950 50  0001 C CNN
+F 3 "~" H 15300 7950 50  0001 C CNN
+	1    15100 7950
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5BD4E101
+P 15100 8100
+F 0 "TP2" V 15050 8100 50  0000 L CNN
+F 1 "SCK" V 15100 8300 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 15300 8100 50  0001 C CNN
+F 3 "~" H 15300 8100 50  0001 C CNN
+	1    15100 8100
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP3
+U 1 1 5BD4E1BB
+P 15100 8250
+F 0 "TP3" V 15050 8250 50  0000 L CNN
+F 1 "RST" V 15100 8450 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.0mm" H 15300 8250 50  0001 C CNN
+F 3 "~" H 15300 8250 50  0001 C CNN
+	1    15100 8250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GNDREF #PWR0154
+U 1 1 5BE45069
+P 15950 8250
+F 0 "#PWR0154" H 15950 8000 50  0001 C CNN
+F 1 "GNDREF" H 15955 8077 50  0000 C CNN
+F 2 "" H 15950 8250 50  0001 C CNN
+F 3 "" H 15950 8250 50  0001 C CNN
+	1    15950 8250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VPP #PWR0167
+U 1 1 5BE633DD
+P 15950 7950
+F 0 "#PWR0167" H 15950 7800 50  0001 C CNN
+F 1 "VPP" H 15965 8123 50  0000 C CNN
+F 2 "" H 15950 7950 50  0001 C CNN
+F 3 "" H 15950 7950 50  0001 C CNN
+	1    15950 7950
+	1    0    0    -1  
+$EndComp
+Wire Notes Line width 10 style solid
+	13100 3900 13100 8500
+Wire Notes Line width 10 style solid
+	16200 3900 16200 8500
+Text GLabel 15900 8100 2    50   Input ~ 0
+MOSI
+Text GLabel 15050 8100 0    50   Input ~ 0
+SCK
+Text GLabel 15050 7950 0    50   Input ~ 0
+MISO
+Text GLabel 15050 8250 0    50   Input ~ 0
+RESET
+Wire Wire Line
+	15850 7950 15950 7950
+Wire Wire Line
+	15850 8100 15900 8100
+Wire Wire Line
+	15850 8250 15950 8250
+Wire Wire Line
+	15050 7950 15100 7950
+Wire Wire Line
+	15050 8100 15100 8100
+Wire Wire Line
+	15050 8250 15100 8250
+Text Notes 14850 7800 0    75   ~ 0
+ICSP Connections\n
 $EndSCHEMATC
