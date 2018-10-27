@@ -318,17 +318,17 @@ F 3 "" H 9500 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 6300 1650 2    50   Input ~ 0
-VID00
+VID0-0
 Text GLabel 6300 1750 2    50   Input ~ 0
-VID01
+VID0-1
 Text GLabel 6300 1850 2    50   Input ~ 0
-VID02
+VID0-2
 Text GLabel 6300 1950 2    50   Input ~ 0
-VID10
+VID1-0
 Text GLabel 6300 2050 2    50   Input ~ 0
-VID11
+VID1-1
 Text GLabel 6300 2150 2    50   Input ~ 0
-VID12
+VID1-2
 Text GLabel 4700 6650 0    50   Input ~ 0
 M0
 Text GLabel 6300 5550 2    50   Input ~ 0
