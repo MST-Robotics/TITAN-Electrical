@@ -6,8 +6,8 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 1
 Title "Power Board"
-Date "2018-09-20"
-Rev "1.1.1"
+Date "2018-10-29"
+Rev "1.0.0"
 Comp "Missouri University of Science and Technology"
 Comment1 "PCB for the ROV's Power System"
 Comment2 "https://github.com/MST-Robotics/TITAN-Electrical.git"
@@ -1044,7 +1044,7 @@ U 1 1 5BCF2626
 P 7000 2100
 F 0 "D2" H 7000 2000 50  0000 C CNN
 F 1 "1N5824" H 7000 2200 50  0000 C CNN
-F 2 "Diode_SMD:D_SMB" H 7000 2100 50  0001 C CNN
+F 2 "Diode_SMD:D_SMC" H 7000 2100 50  0001 C CNN
 F 3 "~" H 7000 2100 50  0001 C CNN
 	1    7000 2100
 	0    1    1    0   
