@@ -279,9 +279,9 @@ F 3 "" H 9650 3000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 9650 3400 2    50   Input ~ 0
-VID0
+VID-CAM0
 Text GLabel 11100 3400 2    50   Input ~ 0
-VID1
+VID-CAM1
 $Comp
 L power:GND #PWR034
 U 1 1 5BC9ADF0
