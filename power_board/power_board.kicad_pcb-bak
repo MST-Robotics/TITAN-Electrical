@@ -34,7 +34,7 @@
   )
 
   (setup
-    (last_trace_width 0.6096)
+    (last_trace_width 0.3048)
     (user_trace_width 0.3048)
     (user_trace_width 0.6096)
     (trace_clearance 0.2)
@@ -5872,8 +5872,8 @@
   (gr_text 48V-1 (at 214.376 144.272 90) (layer F.SilkS) (tstamp 5BCC055D)
     (effects (font (size 1.5 1.5) (thickness 0.375)))
   )
-  (gr_text "POWER BOARD - REV 1.0" (at 157.6578 112.903) (layer F.SilkS) (tstamp 5BDC12CC)
-    (effects (font (size 1.5 1.5) (thickness 0.375)))
+  (gr_text "POWER BOARD - SCH 1.0.0 PCB 1.0.1" (at 157.6578 112.903) (layer F.SilkS) (tstamp 5BDC12CC)
+    (effects (font (size 1.5 1) (thickness 0.25)))
   )
 
   (via (at 152.527 59.563) (size 1.905) (drill 0.5842) (layers F.Cu B.Cu) (net 1) (tstamp 5BCBD945))
