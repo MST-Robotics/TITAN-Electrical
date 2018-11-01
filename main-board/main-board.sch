@@ -6,8 +6,8 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 1
 Title "TITAN-II Main Board"
-Date "2018-10-31"
-Rev "1.0.0"
+Date "2018-11-01"
+Rev "1.0.1"
 Comp "Missouri University of Science and Technology - Underwater Robotics Team"
 Comment1 "The main logic board / motherboard of the TITAN-II 2018-2019 UROV"
 Comment2 "https://github.com/MST-Robotics/TITAN-Electrical.git"
@@ -157,38 +157,22 @@ Text GLabel 7200 1050 0    50   Input ~ 0
 VID0-1
 Text GLabel 7200 1150 0    50   Input ~ 0
 VID0-2
-Text GLabel 9100 1250 0    50   Input ~ 0
-CAM0
-Text GLabel 9100 1350 0    50   Input ~ 0
-CAM1
-Text GLabel 9100 1450 0    50   Input ~ 0
-CAM2
-Text GLabel 9100 1550 0    50   Input ~ 0
-CAM3
 Text GLabel 9100 1650 0    50   Input ~ 0
-CAM4
-Text GLabel 9100 1750 0    50   Input ~ 0
-CAM5
-Text GLabel 9100 1850 0    50   Input ~ 0
-CAM6
-Text GLabel 9100 1950 0    50   Input ~ 0
-CAM7
-Text GLabel 7200 1950 0    50   Input ~ 0
-CAM7
-Text GLabel 7200 1850 0    50   Input ~ 0
-CAM6
-Text GLabel 7200 1750 0    50   Input ~ 0
-CAM5
-Text GLabel 7200 1650 0    50   Input ~ 0
-CAM4
-Text GLabel 7200 1550 0    50   Input ~ 0
-CAM3
-Text GLabel 7200 1450 0    50   Input ~ 0
-CAM2
-Text GLabel 7200 1350 0    50   Input ~ 0
-CAM1
-Text GLabel 7200 1250 0    50   Input ~ 0
 CAM0
+Text GLabel 9100 1450 0    50   Input ~ 0
+CAM1
+Text GLabel 9100 1850 0    50   Input ~ 0
+CAM2
+Text GLabel 9100 1350 0    50   Input ~ 0
+CAM3
+Text GLabel 9100 1950 0    50   Input ~ 0
+CAM4
+Text GLabel 9100 1250 0    50   Input ~ 0
+CAM5
+Text GLabel 9100 1750 0    50   Input ~ 0
+CAM6
+Text GLabel 9100 1550 0    50   Input ~ 0
+CAM7
 $Comp
 L power:+5V #PWR046
 U 1 1 5BC98F1E
@@ -2542,7 +2526,7 @@ U 1 1 5BE91ABC
 P 7150 4750
 F 0 "J11" H 7200 5067 50  0000 C CNN
 F 1 "CAM0" H 7200 4976 50  0000 C CNN
-F 2 "" H 7150 4750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 7150 4750 50  0001 C CNN
 F 3 "~" H 7150 4750 50  0001 C CNN
 	1    7150 4750
 	1    0    0    -1  
@@ -2553,7 +2537,7 @@ U 1 1 5BDB21BC
 P 7150 5450
 F 0 "J12" H 7200 5767 50  0000 C CNN
 F 1 "CAM1" H 7200 5676 50  0000 C CNN
-F 2 "" H 7150 5450 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 7150 5450 50  0001 C CNN
 F 3 "~" H 7150 5450 50  0001 C CNN
 	1    7150 5450
 	1    0    0    -1  
@@ -2564,7 +2548,7 @@ U 1 1 5BDB40CB
 P 7150 6100
 F 0 "J13" H 7200 6417 50  0000 C CNN
 F 1 "CAM2" H 7200 6326 50  0000 C CNN
-F 2 "" H 7150 6100 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 7150 6100 50  0001 C CNN
 F 3 "~" H 7150 6100 50  0001 C CNN
 	1    7150 6100
 	1    0    0    -1  
@@ -2575,7 +2559,7 @@ U 1 1 5BDB482B
 P 7150 6750
 F 0 "J14" H 7200 7067 50  0000 C CNN
 F 1 "CAM3" H 7200 6976 50  0000 C CNN
-F 2 "" H 7150 6750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 7150 6750 50  0001 C CNN
 F 3 "~" H 7150 6750 50  0001 C CNN
 	1    7150 6750
 	1    0    0    -1  
@@ -2586,7 +2570,7 @@ U 1 1 5BDB57E8
 P 8450 4750
 F 0 "J15" H 8500 5067 50  0000 C CNN
 F 1 "CAM4" H 8500 4976 50  0000 C CNN
-F 2 "" H 8450 4750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 8450 4750 50  0001 C CNN
 F 3 "~" H 8450 4750 50  0001 C CNN
 	1    8450 4750
 	1    0    0    -1  
@@ -2597,7 +2581,7 @@ U 1 1 5BDB57EF
 P 8450 5450
 F 0 "J16" H 8500 5767 50  0000 C CNN
 F 1 "CAM5" H 8500 5676 50  0000 C CNN
-F 2 "" H 8450 5450 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 8450 5450 50  0001 C CNN
 F 3 "~" H 8450 5450 50  0001 C CNN
 	1    8450 5450
 	1    0    0    -1  
@@ -2608,7 +2592,7 @@ U 1 1 5BDB57F6
 P 8450 6100
 F 0 "J17" H 8500 6417 50  0000 C CNN
 F 1 "CAM6" H 8500 6326 50  0000 C CNN
-F 2 "" H 8450 6100 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 8450 6100 50  0001 C CNN
 F 3 "~" H 8450 6100 50  0001 C CNN
 	1    8450 6100
 	1    0    0    -1  
@@ -2619,9 +2603,25 @@ U 1 1 5BDB57FD
 P 8450 6750
 F 0 "J18" H 8500 7067 50  0000 C CNN
 F 1 "CAM7" H 8500 6976 50  0000 C CNN
-F 2 "" H 8450 6750 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 8450 6750 50  0001 C CNN
 F 3 "~" H 8450 6750 50  0001 C CNN
 	1    8450 6750
 	1    0    0    -1  
 $EndComp
+Text GLabel 7200 1650 0    50   Input ~ 0
+CAM0
+Text GLabel 7200 1450 0    50   Input ~ 0
+CAM1
+Text GLabel 7200 1850 0    50   Input ~ 0
+CAM2
+Text GLabel 7200 1350 0    50   Input ~ 0
+CAM3
+Text GLabel 7200 1950 0    50   Input ~ 0
+CAM4
+Text GLabel 7200 1250 0    50   Input ~ 0
+CAM5
+Text GLabel 7200 1750 0    50   Input ~ 0
+CAM6
+Text GLabel 7200 1550 0    50   Input ~ 0
+CAM7
 $EndSCHEMATC
