@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector:Conn_01x08_Male
+# Connector_Conn_01x08_Male
 #
-DEF Connector:Conn_01x08_Male J 0 40 Y N 1 F N
+DEF Connector_Conn_01x08_Male J 0 40 Y N 1 F N
 F0 "J" 0 400 50 H V C CNN
-F1 "Connector:Conn_01x08_Male" 0 -500 50 H V C CNN
+F1 "Connector_Conn_01x08_Male" 0 -500 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -39,11 +39,11 @@ X Pin_8 8 200 -400 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Connector:USB_B_Micro
+# Connector_USB_B_Micro
 #
-DEF Connector:USB_B_Micro J 0 40 Y Y 1 F N
+DEF Connector_USB_B_Micro J 0 40 Y Y 1 F N
 F0 "J" -200 450 50 H V L CNN
-F1 "Connector:USB_B_Micro" -200 350 50 H V L CNN
+F1 "Connector_USB_B_Micro" -200 350 50 H V L CNN
 F2 "" 150 -50 50 H I C CNN
 F3 "" 150 -50 50 H I C CNN
 ALIAS USB_B_Mini
@@ -75,11 +75,11 @@ X Shield 6 -100 -400 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:C
+# Device_C
 #
-DEF Device:C C 0 10 N Y 1 F N
+DEF Device_C C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "Device:C" 25 -100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -93,11 +93,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:Fuse
+# Device_Fuse
 #
-DEF Device:Fuse F 0 0 N Y 1 F N
+DEF Device_Fuse F 0 0 N Y 1 F N
 F0 "F" 80 0 50 V V C CNN
-F1 "Device:Fuse" -75 0 50 V V C CNN
+F1 "Device_Fuse" -75 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -111,11 +111,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:LED
+# Device_LED
 #
-DEF Device:LED D 0 40 N N 1 F N
+DEF Device_LED D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Device:LED" 0 -100 50 H V C CNN
+F1 "Device_LED" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -134,11 +134,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:R
+# Device_R
 #
-DEF Device:R R 0 0 N Y 1 F N
+DEF Device_R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "Device:R" 0 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -151,11 +151,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Interface_USB:FT232RL
+# Interface_USB_FT232RL
 #
-DEF Interface_USB:FT232RL U 0 40 Y Y 1 F N
+DEF Interface_USB_FT232RL U 0 40 Y Y 1 F N
 F0 "U" -650 900 50 H V L CNN
-F1 "Interface_USB:FT232RL" 400 900 50 H V L CNN
+F1 "Interface_USB_FT232RL" 400 900 50 H V L CNN
 F2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -192,11 +192,11 @@ X DCR 9 800 200 150 L 50 50 1 1 I L
 ENDDRAW
 ENDDEF
 #
-# power:+5V
+# power_+5V
 #
-DEF power:+5V #PWR 0 0 Y Y 1 F P
+DEF power_+5V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+5V" 0 140 50 H V C CNN
+F1 "power_+5V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -207,19 +207,16 @@ X +5V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:GNDREF
+# power_GND
 #
-DEF power:GNDREF #PWR 0 0 Y Y 1 F P
+DEF power_GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power:GNDREF" 0 -150 50 H V C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
-P 2 0 1 0 -25 -75 25 -75 N
-P 2 0 1 0 -5 -100 5 -100 N
-P 2 0 1 0 0 -50 0 0 N
-P 2 0 1 0 50 -50 -50 -50 N
-X GNDREF 1 0 0 0 D 50 50 1 1 W N
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #

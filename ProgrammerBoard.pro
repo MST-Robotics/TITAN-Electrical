@@ -1,4 +1,4 @@
-update=9/19/2018 8:23:47 PM
+update=11/1/2018 8:46:01 PM
 version=1
 last_client=kicad
 [general]
@@ -34,7 +34,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=C:/URT/kicad-stuff/layouts/standard-11x17.kicad_wks
-PlotDirectoryName=
+PlotDirectoryName=../../Users/thato/Desktop/plots/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=Pcbnew
