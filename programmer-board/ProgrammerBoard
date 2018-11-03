@@ -1,0 +1,16 @@
+Source:	C:\URT\TITAN-Electrical\ProgrammerBoard.sch
+Date:	10/19/2018 2:17:02 PM
+Tool:	Eeschema (5.0.0)
+Component Count:	11
+Ref	Value	Part	Footprint	Description	Vendor
+C1	100nF	Device:C	Capacitor_SMD:C_0603_1608Metric	Unpolarized capacitor	
+F1	2A	Device:Fuse	Fuse:Fuse_0402_1005Metric	Fuse, generic	
+IC1	FT232RL	Interface_USB:FT232RL	Package_SO:SSOP-28_5.3x10.2mm_P0.65mm	USB to Serial Interface, SSOP-28	
+J1	USB_B_Micro	Connector:USB_B_Micro	Connector_USB:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal	USB Micro Type B connector	
+J2	Jumper_For_RJ45	Connector:Conn_01x08_Male	Connector_PinHeader_1.27mm:PinHeader_1x08_P1.27mm_Vertical	Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)	
+R1	1K	Device:R	Resistor_SMD:R_0402_1005Metric	Resistor	
+R2	1K	Device:R	Resistor_SMD:R_0402_1005Metric	Resistor	
+R3	100	Device:R	Resistor_SMD:R_0402_1005Metric	Resistor	
+R4	100	Device:R	Resistor_SMD:R_0402_1005Metric	Resistor	
+RX1	Blue	Device:LED	LED_SMD:LED_0603_1608Metric	LED generic	
+TX1	Green	Device:LED	LED_SMD:LED_0603_1608Metric	LED generic	
