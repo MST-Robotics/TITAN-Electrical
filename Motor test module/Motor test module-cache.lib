@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# Connector_Generic:Conn_02x04_Counter_Clockwise
+# Connector_Generic_Conn_02x04_Counter_Clockwise
 #
-DEF Connector_Generic:Conn_02x04_Counter_Clockwise J 0 40 Y N 1 F N
+DEF Connector_Generic_Conn_02x04_Counter_Clockwise J 0 40 Y N 1 F N
 F0 "J" 50 200 50 H V C CNN
-F1 "Connector_Generic:Conn_02x04_Counter_Clockwise" 50 -300 50 H V C CNN
+F1 "Connector_Generic_Conn_02x04_Counter_Clockwise" 50 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -32,11 +32,11 @@ X Pin_8 8 300 100 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:C
+# Device_C
 #
-DEF Device:C C 0 10 N Y 1 F N
+DEF Device_C C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "Device:C" 25 -100 50 H V L CNN
+F1 "Device_C" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -50,11 +50,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:CP
+# Device_CP
 #
-DEF Device:CP C 0 10 N Y 1 F N
+DEF Device_CP C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "Device:CP" 25 -100 50 H V L CNN
+F1 "Device_CP" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -73,32 +73,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:Crystal
+# Device_D
 #
-DEF Device:Crystal Y 0 40 N N 1 F N
-F0 "Y" 0 150 50 H V C CNN
-F1 "Device:Crystal" 0 -150 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Crystal*
-$ENDFPLIST
-DRAW
-S -45 100 45 -100 0 1 12 N
-P 2 0 1 0 -100 0 -75 0 N
-P 2 0 1 20 -75 -50 -75 50 N
-P 2 0 1 20 75 -50 75 50 N
-P 2 0 1 0 100 0 75 0 N
-X 1 1 -150 0 50 R 50 50 1 1 P
-X 2 2 150 0 50 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Device:D
-#
-DEF Device:D D 0 40 N N 1 F N
+DEF Device_D D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "Device:D" 0 -100 50 H V C CNN
+F1 "Device_D" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -116,11 +95,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:L
+# Device_L
 #
-DEF Device:L L 0 40 N N 1 F N
+DEF Device_L L 0 40 N N 1 F N
 F0 "L" -50 0 50 V V C CNN
-F1 "Device:L" 75 0 50 V V C CNN
+F1 "Device_L" 75 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -139,11 +118,11 @@ X 2 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Device:R
+# Device_R
 #
-DEF Device:R R 0 0 N Y 1 F N
+DEF Device_R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "Device:R" 0 0 50 V V C CNN
+F1 "Device_R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -156,11 +135,44 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Interface_CAN_LIN:MCP2515-EST
+# Device_Resonator
 #
-DEF Interface_CAN_LIN:MCP2515-EST U 0 40 Y Y 1 F N
+DEF Device_Resonator Y 0 40 Y N 1 F N
+F0 "Y" 0 225 50 H V C CNN
+F1 "Device_Resonator" 0 150 50 H V C CNN
+F2 "" -25 0 50 H I C CNN
+F3 "" -25 0 50 H I C CNN
+$FPLIST
+ Filter*
+ Resonator*
+$ENDFPLIST
+DRAW
+C -95 0 10 0 1 0 F
+C 0 -150 10 0 1 0 F
+C 95 0 10 0 1 0 F
+S -135 -125 -55 -135 0 1 0 F
+S -135 -95 -55 -105 0 1 0 F
+S -40 80 40 -80 0 1 12 N
+S 55 -125 135 -135 0 1 0 F
+S 55 -95 135 -105 0 1 0 F
+P 2 0 1 0 -95 -95 -95 0 N
+P 2 0 1 0 -75 0 -125 0 N
+P 2 0 1 20 -70 -50 -70 50 N
+P 2 0 1 20 70 -50 70 50 N
+P 2 0 1 0 75 0 100 0 N
+P 2 0 1 0 95 0 95 -100 N
+P 4 0 1 0 95 -130 95 -150 -95 -150 -95 -130 N
+X 1 1 -150 0 50 R 50 50 1 1 P
+X 2 2 0 -200 50 U 50 50 1 1 P
+X 3 3 150 0 50 L 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# Interface_CAN_LIN_MCP2515-EST
+#
+DEF Interface_CAN_LIN_MCP2515-EST U 0 40 Y Y 1 F N
 F0 "U" -400 775 50 H V R CNN
-F1 "Interface_CAN_LIN:MCP2515-EST" 750 800 50 H V R TNN
+F1 "Interface_CAN_LIN_MCP2515-EST" 750 800 50 H V R TNN
 F2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" 0 -900 50 H I C CIN
 F3 "" 100 -800 50 H I C CNN
 ALIAS MCP2515-IST
@@ -192,14 +204,34 @@ X OSC1 9 -600 -300 100 R 50 50 1 1 I C
 ENDDRAW
 ENDDEF
 #
-# MCU_Microchip_ATmega:ATmega2560-16AU
+# Motor-test-module-rescue_ATA6560,1-URT_cache
 #
-DEF MCU_Microchip_ATmega:ATmega2560-16AU U 0 20 Y Y 1 F N
+DEF Motor-test-module-rescue_ATA6560,1-URT_cache U 0 40 Y Y 1 F N
+F0 "U" 0 500 50 H V C CNN
+F1 "Motor-test-module-rescue_ATA6560,1-URT_cache" 0 -500 50 H V C CNN
+F2 "" 0 500 50 H I C CNN
+F3 "" 0 500 50 H I C CNN
+DRAW
+S -300 400 300 -400 0 1 0 N
+S 0 -200 0 -200 0 1 0 N
+X TXD 1 -500 300 200 R 50 50 1 1 I
+X GND 2 -500 100 200 R 50 50 1 1 P
+X VCC 3 -500 -100 200 R 50 50 1 1 I
+X RXD 4 -500 -300 200 R 50 50 1 1 O
+X NSIL/VIO 5 500 -300 200 L 50 50 1 1 I
+X CANL 6 500 -100 200 L 50 50 1 1 I
+X CANH 7 500 100 200 L 50 50 1 1 I
+X STBY 8 500 300 200 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# Motor-test-module-rescue_ATmega2560-16AU-MCU_Microchip_ATmega
+#
+DEF Motor-test-module-rescue_ATmega2560-16AU-MCU_Microchip_ATmega U 0 20 Y Y 1 F N
 F0 "U" 0 50 50 H V C BNN
-F1 "MCU_Microchip_ATmega:ATmega2560-16AU" 0 -50 50 H V C TNN
+F1 "Motor-test-module-rescue_ATmega2560-16AU-MCU_Microchip_ATmega" 0 -50 50 H V C TNN
 F2 "Package_QFP:TQFP-100_14x14mm_P0.5mm" 0 0 50 H I C CIN
 F3 "" 0 0 50 H I C CNN
-ALIAS ATmega640-16AU ATmega1280V-8AU ATmega1280-16AU ATmega2560V-8AU ATmega2560-16AU
 $FPLIST
  TQFP*14x14mm*P0.5mm*
 $ENDFPLIST
@@ -308,11 +340,11 @@ X GND 99 0 -2900 150 U 50 50 1 1 P N
 ENDDRAW
 ENDDEF
 #
-# Regulator_Switching:TPS63060
+# Regulator_Switching_TPS63060
 #
-DEF Regulator_Switching:TPS63060 U 0 20 Y Y 1 F N
+DEF Regulator_Switching_TPS63060 U 0 20 Y Y 1 F N
 F0 "U" -300 550 50 H V L CNN
-F1 "Regulator_Switching:TPS63060" 100 550 50 H V C CNN
+F1 "Regulator_Switching_TPS63060" 100 550 50 H V C CNN
 F2 "Package_SON:Texas_S-PWSON-N10_ThermalVias" 0 -650 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -334,32 +366,11 @@ X VOUT 9 400 200 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# URT_cache:ATA6560,1
+# h-bridge_AP1017AEN
 #
-DEF URT_cache:ATA6560,1 U 0 40 Y Y 1 F N
-F0 "U" 0 500 50 H V C CNN
-F1 "URT_cache:ATA6560,1" 0 -500 50 H V C CNN
-F2 "" 0 500 50 H I C CNN
-F3 "" 0 500 50 H I C CNN
-DRAW
-S -300 400 300 -400 0 1 0 N
-S 0 -200 0 -200 0 1 0 N
-X TXD 1 -500 300 200 R 50 50 1 1 I
-X GND 2 -500 100 200 R 50 50 1 1 P
-X VCC 3 -500 -100 200 R 50 50 1 1 I
-X RXD 4 -500 -300 200 R 50 50 1 1 O
-X NSIL/VIO 5 500 -300 200 L 50 50 1 1 I
-X CANL 6 500 -100 200 L 50 50 1 1 I
-X CANH 7 500 100 200 L 50 50 1 1 I
-X STBY 8 500 300 200 L 50 50 1 1 I
-ENDDRAW
-ENDDEF
-#
-# h-bridge:AP1017AEN
-#
-DEF h-bridge:AP1017AEN U 0 40 Y Y 1 F N
+DEF h-bridge_AP1017AEN U 0 40 Y Y 1 F N
 F0 "U" 0 350 50 H V C CNN
-F1 "h-bridge:AP1017AEN" 0 250 50 H V C CNN
+F1 "h-bridge_AP1017AEN" 0 250 50 H V C CNN
 F2 "" -350 -150 50 H I C CNN
 F3 "" -350 -150 50 H I C CNN
 DRAW
@@ -376,11 +387,11 @@ X GND 9 0 -350 100 U 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #
-# power:+12V
+# power_+12V
 #
-DEF power:+12V #PWR 0 0 Y Y 1 F P
+DEF power_+12V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+12V" 0 140 50 H V C CNN
+F1 "power_+12V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -391,11 +402,11 @@ X +12V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:+3V3
+# power_+3V3
 #
-DEF power:+3V3 #PWR 0 0 Y Y 1 F P
+DEF power_+3V3 #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+3V3" 0 140 50 H V C CNN
+F1 "power_+3V3" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 ALIAS +3.3V
@@ -407,11 +418,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:+5V
+# power_+5V
 #
-DEF power:+5V #PWR 0 0 Y Y 1 F P
+DEF power_+5V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "power:+5V" 0 140 50 H V C CNN
+F1 "power_+5V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -422,11 +433,11 @@ X +5V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# power:GNDREF
+# power_GNDREF
 #
-DEF power:GNDREF #PWR 0 0 Y Y 1 F P
+DEF power_GNDREF #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "power:GNDREF" 0 -150 50 H V C CNN
+F1 "power_GNDREF" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
