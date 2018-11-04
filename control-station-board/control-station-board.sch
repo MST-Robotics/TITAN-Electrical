@@ -42,7 +42,7 @@ U 1 1 5BB15529
 P 5550 2050
 F 0 "J2" H 5321 2041 50  0000 R CNN
 F 1 "USB_B" H 5321 1950 50  0000 R CNN
-F 2 "Connector_USB:USB_B_OST_USB-B1HSxx_Horizontal" H 5700 2000 50  0001 C CNN
+F 2 "Connector_USB:USB_B_TE_5787834_Vertical" H 5700 2000 50  0001 C CNN
 F 3 " ~" H 5700 2000 50  0001 C CNN
 	1    5550 2050
 	1    0    0    -1  
@@ -129,7 +129,7 @@ U 1 1 5BB18C5E
 P 1450 2050
 F 0 "J1" H 1221 2041 50  0000 R CNN
 F 1 "USB_B" H 1221 1950 50  0000 R CNN
-F 2 "Connector_USB:USB_B_OST_USB-B1HSxx_Horizontal" H 1600 2000 50  0001 C CNN
+F 2 "Connector_USB:USB_B_TE_5787834_Vertical" H 1600 2000 50  0001 C CNN
 F 3 " ~" H 1600 2000 50  0001 C CNN
 	1    1450 2050
 	1    0    0    -1  
@@ -1335,12 +1335,12 @@ Wire Wire Line
 Wire Wire Line
 	5850 1800 5850 1850
 $Comp
-L Interface_UART:MAX490E U?
+L Interface_UART:MAX490E U4
 U 1 1 5BE957F5
 P 2550 4550
-F 0 "U?" H 2650 5100 50  0000 C CNN
+F 0 "U4" H 2650 5100 50  0000 C CNN
 F 1 "MAX490E" H 2750 5000 50  0000 C CNN
-F 2 "" H 2550 3950 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2550 3950 50  0001 C CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX1487E-MAX491E.pdf" H 2310 5000 50  0001 C CNN
 	1    2550 4550
 	1    0    0    -1  
@@ -1366,9 +1366,9 @@ Wire Wire Line
 Wire Wire Line
 	2950 4750 2950 4950
 Text GLabel 3350 4650 2    50   Input ~ 0
-TX_H
-Text GLabel 3350 4950 2    50   Input ~ 0
 TX_L
+Text GLabel 3350 4950 2    50   Input ~ 0
+TX_H
 Wire Wire Line
 	3150 4150 3350 4150
 Connection ~ 3150 4150
@@ -1379,4 +1379,66 @@ Wire Wire Line
 	2950 4650 3350 4650
 Wire Wire Line
 	2950 4950 3350 4950
+$Comp
+L Connector_Generic:Conn_02x06_Counter_Clockwise J?
+U 1 1 5BF1F400
+P 6450 7100
+F 0 "J?" H 6500 7517 50  0000 C CNN
+F 1 "Tether Interface" H 6500 7426 50  0000 C CNN
+F 2 "" H 6450 7100 50  0001 C CNN
+F 3 "~" H 6450 7100 50  0001 C CNN
+	1    6450 7100
+	1    0    0    -1  
+$EndComp
+Text GLabel 6850 6900 2    50   Input ~ 0
+RX_H
+Text GLabel 6850 7000 2    50   Input ~ 0
+RX_L
+Text GLabel 6850 7100 2    50   Input ~ 0
+TX_H
+Text GLabel 6850 7200 2    50   Input ~ 0
+TX_L
+Text GLabel 6150 7100 0    50   Input ~ 0
+CANH
+Text GLabel 6150 7200 0    50   Input ~ 0
+CANL
+Text GLabel 6150 7000 0    50   Input ~ 0
+CAM2_OUT
+Text GLabel 6150 6900 0    50   Input ~ 0
+CAM1_OUT
+Wire Wire Line
+	6750 6900 6850 6900
+Wire Wire Line
+	6750 7000 6850 7000
+Wire Wire Line
+	6750 7100 6850 7100
+Wire Wire Line
+	6750 7200 6850 7200
+Wire Wire Line
+	6250 6900 6150 6900
+Wire Wire Line
+	6250 7000 6150 7000
+Wire Wire Line
+	6250 7100 6150 7100
+Wire Wire Line
+	6250 7200 6150 7200
+$Comp
+L Connector:Conn_01x02_Male J?
+U 1 1 5BF81CF9
+P 6050 7700
+F 0 "J?" V 6203 7513 50  0000 R CNN
+F 1 "USB D+/D-" V 6112 7513 50  0000 R CNN
+F 2 "" H 6050 7700 50  0001 C CNN
+F 3 "~" H 6050 7700 50  0001 C CNN
+	1    6050 7700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6250 7400 6150 7400
+Wire Wire Line
+	6150 7400 6150 7500
+Wire Wire Line
+	6250 7300 6050 7300
+Wire Wire Line
+	6050 7300 6050 7500
 $EndSCHEMATC
