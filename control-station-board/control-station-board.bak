@@ -1380,12 +1380,12 @@ Wire Wire Line
 Wire Wire Line
 	2950 4950 3350 4950
 $Comp
-L Connector_Generic:Conn_02x06_Counter_Clockwise J6
+L Connector_Generic:Conn_02x06_Counter_Clockwise J?
 U 1 1 5BF1F400
 P 6450 7100
-F 0 "J6" H 6500 7517 50  0000 C CNN
+F 0 "J?" H 6500 7517 50  0000 C CNN
 F 1 "Tether Interface" H 6500 7426 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 6450 7100 50  0001 C CNN
+F 2 "" H 6450 7100 50  0001 C CNN
 F 3 "~" H 6450 7100 50  0001 C CNN
 	1    6450 7100
 	1    0    0    -1  
@@ -1419,12 +1419,12 @@ Wire Wire Line
 Wire Wire Line
 	6250 7200 6150 7200
 $Comp
-L Connector:Conn_01x02_Male J5
+L Connector:Conn_01x02_Male J?
 U 1 1 5BF81CF9
 P 6050 7700
-F 0 "J5" V 6203 7513 50  0000 R CNN
+F 0 "J?" V 6203 7513 50  0000 R CNN
 F 1 "USB D+/D-" V 6112 7513 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6050 7700 50  0001 C CNN
+F 2 "" H 6050 7700 50  0001 C CNN
 F 3 "~" H 6050 7700 50  0001 C CNN
 	1    6050 7700
 	0    -1   -1   0   
