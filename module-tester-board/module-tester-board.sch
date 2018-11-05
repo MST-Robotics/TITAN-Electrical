@@ -39,7 +39,11 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf" H 8000 2500 50 
 	1    0    0    -1  
 $EndComp
 $Comp
+<<<<<<< HEAD
+L module-tester-board-rescue:ATA6560,1-URT_cache U5
+=======
 L ATA6560_1:ATA6560,1 U5
+>>>>>>> master
 U 1 1 5B822EF5
 P 9550 3000
 F 0 "U5" H 9550 3565 50  0000 C CNN
@@ -81,17 +85,6 @@ F 2 "Module:Arduino_Nano" H 3650 2500 50  0001 L CNN
 F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 3500 2450 50  0001 C CNN
 	1    3500 3450
 	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:Conn_01x08_Male J1
-U 1 1 5B833C38
-P 12650 7400
-F 0 "J1" V 12400 7350 50  0000 C CNN
-F 1 "Conn_01x08_Male" V 12550 7350 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 12650 7400 50  0001 C CNN
-F 3 "~" H 12650 7400 50  0001 C CNN
-	1    12650 7400
-	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	8900 2700 8900 2800
@@ -272,21 +265,21 @@ $EndComp
 $Comp
 L power:GND #PWR0104
 U 1 1 5B950373
-P 12450 7800
-F 0 "#PWR0104" H 12450 7550 50  0001 C CNN
-F 1 "GND" H 12455 7627 50  0000 C CNN
-F 2 "" H 12450 7800 50  0001 C CNN
-F 3 "" H 12450 7800 50  0001 C CNN
-	1    12450 7800
+P 12450 7950
+F 0 "#PWR0104" H 12450 7700 50  0001 C CNN
+F 1 "GND" H 12455 7777 50  0000 C CNN
+F 2 "" H 12450 7950 50  0001 C CNN
+F 3 "" H 12450 7950 50  0001 C CNN
+	1    12450 7950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	10850 7500 11500 7500
 Wire Wire Line
 	12450 7300 11700 7300
-Text GLabel 12450 7100 0    50   Input ~ 0
-CANH
 Text GLabel 12450 7200 0    50   Input ~ 0
+CANH
+Text GLabel 12450 7100 0    50   Input ~ 0
 CANL
 Text GLabel 10050 3100 2    50   Input ~ 0
 CANL
@@ -912,4 +905,127 @@ Connection ~ 11700 7300
 Wire Wire Line
 	10850 7400 11600 7400
 Connection ~ 11600 7400
+$Comp
+L Connector_Generic:Conn_01x09 J1
+U 1 1 5BE10046
+P 12650 7500
+F 0 "J1" H 12730 7542 50  0000 L CNN
+F 1 "Conn_01x09" H 12730 7451 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x09_P2.54mm_Vertical" H 12650 7500 50  0001 C CNN
+F 3 "~" H 12650 7500 50  0001 C CNN
+	1    12650 7500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:L7805 U2
+U 1 1 5BE1018D
+P 8750 5500
+F 0 "U2" H 8750 5742 50  0000 C CNN
+F 1 "L7805" H 8750 5651 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223" H 8775 5350 50  0001 L CIN
+F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 8750 5450 50  0001 C CNN
+	1    8750 5500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C8
+U 1 1 5BE102EA
+P 8300 5650
+F 0 "C8" H 7950 5700 50  0000 L CNN
+F 1 "100uF" H 7950 5600 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 8338 5500 50  0001 C CNN
+F 3 "~" H 8300 5650 50  0001 C CNN
+	1    8300 5650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP C9
+U 1 1 5BE10384
+P 9200 5650
+F 0 "C9" H 9318 5696 50  0000 L CNN
+F 1 "100uF" H 9318 5605 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 9238 5500 50  0001 C CNN
+F 3 "~" H 9200 5650 50  0001 C CNN
+	1    9200 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9050 5500 9200 5500
+Wire Wire Line
+	8450 5500 8300 5500
+Wire Wire Line
+	8300 5800 8750 5800
+Wire Wire Line
+	8750 5800 9200 5800
+Connection ~ 8750 5800
+$Comp
+L power:GND #PWR0118
+U 1 1 5BE201DD
+P 8750 5900
+F 0 "#PWR0118" H 8750 5650 50  0001 C CNN
+F 1 "GND" H 8755 5727 50  0000 C CNN
+F 2 "" H 8750 5900 50  0001 C CNN
+F 3 "" H 8750 5900 50  0001 C CNN
+	1    8750 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8750 5900 8750 5800
+$Comp
+L power:+5VD #PWR0119
+U 1 1 5BE245C3
+P 9300 5500
+F 0 "#PWR0119" H 9300 5350 50  0001 C CNN
+F 1 "+5VD" H 9315 5673 50  0000 C CNN
+F 2 "" H 9300 5500 50  0001 C CNN
+F 3 "" H 9300 5500 50  0001 C CNN
+	1    9300 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9200 5500 9300 5500
+Connection ~ 9200 5500
+$Comp
+L power:+12V #PWR0120
+U 1 1 5BE28A11
+P 8200 5500
+F 0 "#PWR0120" H 8200 5350 50  0001 C CNN
+F 1 "+12V" H 8200 5650 50  0000 C CNN
+F 2 "" H 8200 5500 50  0001 C CNN
+F 3 "" H 8200 5500 50  0001 C CNN
+	1    8200 5500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8300 5500 8200 5500
+Connection ~ 8300 5500
+$Comp
+L power:+5VD #PWR0121
+U 1 1 5BE2DA0F
+P 12150 7950
+F 0 "#PWR0121" H 12150 7800 50  0001 C CNN
+F 1 "+5VD" H 12165 8123 50  0000 C CNN
+F 2 "" H 12150 7950 50  0001 C CNN
+F 3 "" H 12150 7950 50  0001 C CNN
+	1    12150 7950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	12450 7800 12300 7800
+Wire Wire Line
+	12300 7800 12300 7950
+Wire Wire Line
+	12300 7950 12150 7950
+Wire Wire Line
+	12450 7900 12450 7950
+Text Notes 7950 6250 0    100  Italic 0
+Dedicated +5V Output
+Wire Notes Line
+	9700 5150 9700 6300
+Wire Notes Line
+	9700 6300 7900 6300
+Wire Notes Line
+	7900 6300 7900 5150
+Wire Notes Line
+	7900 5150 9700 5150
 $EndSCHEMATC
