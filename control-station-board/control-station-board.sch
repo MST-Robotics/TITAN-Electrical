@@ -196,13 +196,13 @@ F 3 "~" H 4100 2250 50  0001 C CNN
 	1    4100 2250
 	0    -1   -1   0   
 $EndComp
-Text GLabel 3550 1850 2    50   Input ~ 0
+Text GLabel 3550 1750 2    50   Input ~ 0
 D
 Text GLabel 2050 4650 0    50   Input ~ 0
 D
 Text GLabel 2050 4450 0    50   Input ~ 0
 R
-Text GLabel 3550 1750 2    50   Input ~ 0
+Text GLabel 3550 1850 2    50   Input ~ 0
 R
 $Comp
 L power:+5V #PWR0107
@@ -242,11 +242,11 @@ Wire Wire Line
 	5500 2450 5550 2450
 Text GLabel 6350 4300 0    50   Input ~ 0
 TXD
-Text GLabel 7800 1850 2    50   Input ~ 0
+Text GLabel 7800 1750 2    50   Input ~ 0
 TXD
 Text GLabel 6350 4900 0    50   Input ~ 0
 RXD
-Text GLabel 7800 1750 2    50   Input ~ 0
+Text GLabel 7800 1850 2    50   Input ~ 0
 RXD
 Wire Wire Line
 	6050 4500 6350 4500
@@ -1379,33 +1379,18 @@ Wire Wire Line
 	2950 4650 3350 4650
 Wire Wire Line
 	2950 4950 3350 4950
-$Comp
-L Connector_Generic:Conn_02x06_Counter_Clockwise J?
-U 1 1 5BF1F400
-P 6450 7100
-F 0 "J?" H 6500 7517 50  0000 C CNN
-F 1 "Tether Interface" H 6500 7426 50  0000 C CNN
-F 2 "" H 6450 7100 50  0001 C CNN
-F 3 "~" H 6450 7100 50  0001 C CNN
-	1    6450 7100
-	1    0    0    -1  
-$EndComp
-Text GLabel 6850 6900 2    50   Input ~ 0
+Text GLabel 6850 7400 2    50   Input ~ 0
 RX_H
-Text GLabel 6850 7000 2    50   Input ~ 0
+Text GLabel 6850 7300 2    50   Input ~ 0
 RX_L
 Text GLabel 6850 7100 2    50   Input ~ 0
 TX_H
 Text GLabel 6850 7200 2    50   Input ~ 0
 TX_L
-Text GLabel 6150 7100 0    50   Input ~ 0
+Text GLabel 6850 7000 2    50   Input ~ 0
 CANH
-Text GLabel 6150 7200 0    50   Input ~ 0
+Text GLabel 6850 6900 2    50   Input ~ 0
 CANL
-Text GLabel 6150 7000 0    50   Input ~ 0
-CAM2_OUT
-Text GLabel 6150 6900 0    50   Input ~ 0
-CAM1_OUT
 Wire Wire Line
 	6750 6900 6850 6900
 Wire Wire Line
@@ -1423,12 +1408,12 @@ Wire Wire Line
 Wire Wire Line
 	6250 7200 6150 7200
 $Comp
-L Connector:Conn_01x02_Male J?
+L Connector:Conn_01x02_Male J5
 U 1 1 5BF81CF9
 P 6050 7700
-F 0 "J?" V 6203 7513 50  0000 R CNN
+F 0 "J5" V 6203 7513 50  0000 R CNN
 F 1 "USB D+/D-" V 6112 7513 50  0000 R CNN
-F 2 "" H 6050 7700 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 6050 7700 50  0001 C CNN
 F 3 "~" H 6050 7700 50  0001 C CNN
 	1    6050 7700
 	0    -1   -1   0   
@@ -1441,4 +1426,37 @@ Wire Wire Line
 	6250 7300 6050 7300
 Wire Wire Line
 	6050 7300 6050 7500
+Text Notes 5900 6700 0    100  ~ 0
+Tether Interface
+Text GLabel 6150 7000 0    50   Input ~ 0
+CAM2+
+Text GLabel 6150 6900 0    50   Input ~ 0
+CAM2-
+Text GLabel 6150 7200 0    50   Input ~ 0
+CAM1+
+Text GLabel 6150 7100 0    50   Input ~ 0
+CAM1-
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J6
+U 1 1 5BE19CB5
+P 6450 7100
+F 0 "J6" H 6500 7425 50  0000 C CNN
+F 1 "Conn_02x06_Odd_Even" H 6500 7426 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 6450 7100 50  0001 C CNN
+F 3 "~" H 6450 7100 50  0001 C CNN
+	1    6450 7100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6750 7300 6850 7300
+Wire Wire Line
+	6750 7400 6850 7400
+Wire Notes Line
+	5750 6500 7200 6500
+Wire Notes Line
+	7200 6500 7200 7800
+Wire Notes Line
+	7200 7800 5750 7800
+Wire Notes Line
+	5750 7800 5750 6500
 $EndSCHEMATC
