@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 1
 Title "TITAN-II Main Board"
 Date "2018-11-02"
-Rev "1.0.2"
+Rev "1.0.3"
 Comp "Missouri University of Science and Technology - Underwater Robotics Team"
 Comment1 "The main logic board / motherboard of the TITAN-II 2018-2019 UROV"
 Comment2 "https://github.com/MST-Robotics/TITAN-Electrical.git"
@@ -26,7 +26,7 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-2549-8-bit-AVR-Microc
 	1    0    0    -1  
 $EndComp
 Text GLabel 1700 1500 1    50   Input ~ 0
-RESET-MAIN
+RESET_MAIN
 $Comp
 L power:GND #PWR013
 U 1 1 5BC80C0A
@@ -333,9 +333,9 @@ F 3 "" H 2650 9600 50  0001 C CNN
 	1    2650 9600
 	1    0    0    -1  
 $EndComp
-Text GLabel 7650 9400 2    50   Input ~ 0
+Text GLabel 6350 9400 0    50   Input ~ 0
 CAN-
-Text GLabel 7650 9500 2    50   Input ~ 0
+Text GLabel 6350 9500 0    50   Input ~ 0
 CAN+
 $Comp
 L main-board-rescue:ATA6560-ATA6560 U2
@@ -418,46 +418,25 @@ SS
 Text GLabel 2050 8500 0    50   Input ~ 0
 SCK
 NoConn ~ 2050 9200
-$Comp
-L Device:R_Small R1
-U 1 1 5BCB3C5C
-P 1800 9050
-F 0 "R1" V 1900 9050 50  0000 C CNN
-F 1 "10k" V 1800 9050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1800 9050 50  0001 C CNN
-F 3 "~" H 1800 9050 50  0001 C CNN
-	1    1800 9050
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	2050 9000 1950 9000
 Wire Wire Line
 	2050 9100 1950 9100
 Wire Wire Line
-	1800 8950 1950 8950
-Wire Wire Line
 	1950 8950 1950 9000
 Wire Wire Line
 	1950 9100 1950 9150
-Wire Wire Line
-	1950 9150 1800 9150
 $Comp
 L Device:Crystal_Small Y1
 U 1 1 5BCB8424
 P 1500 9050
 F 0 "Y1" H 1450 8950 50  0000 L CNN
 F 1 "20MHz" V 1700 8950 50  0000 L CNN
-F 2 "Crystal:Crystal_HC49-U_Vertical" H 1500 9050 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_Abracon_ABM7-2Pin_6.0x3.5mm" H 1500 9050 50  0001 C CNN
 F 3 "~" H 1500 9050 50  0001 C CNN
 	1    1500 9050
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	1800 9150 1500 9150
-Connection ~ 1800 9150
-Wire Wire Line
-	1500 8950 1800 8950
-Connection ~ 1800 8950
 $Comp
 L Device:C_Small C1
 U 1 1 5BCBAB3D
@@ -775,13 +754,13 @@ F 3 "" H 5050 6750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4800 6750 5050 6750
-Text GLabel 6650 9300 0    50   Input ~ 0
-VID0+
-Text GLabel 6650 9200 0    50   Input ~ 0
-VID0-
 Text GLabel 6650 9100 0    50   Input ~ 0
-VID1+
+VID0+
 Text GLabel 6650 9000 0    50   Input ~ 0
+VID0-
+Text GLabel 6650 9200 0    50   Input ~ 0
+VID1+
+Text GLabel 6650 9300 0    50   Input ~ 0
 VID1-
 Text GLabel 3650 2500 2    50   Input ~ 0
 SCK
@@ -792,7 +771,7 @@ SI
 Text GLabel 3650 2700 2    50   Input ~ 0
 SO
 Text GLabel 9900 8300 2    50   Input ~ 0
-RESET-MAIN
+RESET_MAIN
 $Comp
 L Switch:SW_SPST SW1
 U 1 1 5BCDA6E7
@@ -1318,7 +1297,7 @@ U 1 1 5BCD9FCE
 P 1400 2000
 F 0 "Y2" V 1354 2088 50  0000 L CNN
 F 1 "20MHz" V 1600 1800 50  0000 L CNN
-F 2 "Crystal:Crystal_HC49-U_Vertical" H 1400 2000 50  0001 C CNN
+F 2 "Crystal:Crystal_SMD_Abracon_ABM7-2Pin_6.0x3.5mm" H 1400 2000 50  0001 C CNN
 F 3 "~" H 1400 2000 50  0001 C CNN
 	1    1400 2000
 	0    1    1    0   
@@ -1431,17 +1410,6 @@ Wire Wire Line
 	1850 1400 1850 1500
 Wire Wire Line
 	1850 1500 1700 1500
-$Comp
-L Connector:Conn_01x04_Male J19
-U 1 1 5BD2A605
-P 9750 9300
-F 0 "J19" H 9700 9600 50  0000 C CNN
-F 1 "PowerBoard Interface" H 9850 9700 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 9750 9300 50  0001 C CNN
-F 3 "~" H 9750 9300 50  0001 C CNN
-	1    9750 9300
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:+5V #PWR0101
 U 1 1 5BD2A907
@@ -1632,17 +1600,6 @@ F 3 "" H 8500 1450 50  0001 C CNN
 $EndComp
 NoConn ~ 3650 4600
 $Comp
-L power:+5V #PWR0116
-U 1 1 5BE8B81C
-P 3650 950
-F 0 "#PWR0116" H 3650 800 50  0001 C CNN
-F 1 "+5V" H 3665 1123 50  0000 C CNN
-F 2 "" H 3650 950 50  0001 C CNN
-F 3 "" H 3650 950 50  0001 C CNN
-	1    3650 950 
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C_Small C12
 U 1 1 5BE8B822
 P 3650 1050
@@ -1670,7 +1627,6 @@ Wire Wire Line
 	3450 950  3450 1200
 Wire Wire Line
 	3450 1200 2950 1200
-Connection ~ 3650 950 
 Connection ~ 2950 1200
 $Comp
 L power:+5V #PWR0118
@@ -2344,24 +2300,24 @@ Wire Wire Line
 $Comp
 L Device:R R20
 U 1 1 5BDFC8D5
-P 7500 9500
-F 0 "R20" V 7600 9700 50  0000 C CNN
-F 1 "0" V 7500 9500 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7430 9500 50  0001 C CNN
-F 3 "~" H 7500 9500 50  0001 C CNN
-	1    7500 9500
-	0    1    1    0   
+P 6500 9500
+F 0 "R20" V 6600 9700 50  0000 C CNN
+F 1 "0" V 6500 9500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6430 9500 50  0001 C CNN
+F 3 "~" H 6500 9500 50  0001 C CNN
+	1    6500 9500
+	0    -1   1    0   
 $EndComp
 $Comp
 L Device:R R19
 U 1 1 5BE4CF75
-P 7500 9400
-F 0 "R19" V 7400 9600 50  0000 C CNN
-F 1 "0" V 7500 9400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7430 9400 50  0001 C CNN
-F 3 "~" H 7500 9400 50  0001 C CNN
-	1    7500 9400
-	0    1    1    0   
+P 6500 9400
+F 0 "R19" V 6400 9600 50  0000 C CNN
+F 1 "0" V 6500 9400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 6430 9400 50  0001 C CNN
+F 3 "~" H 6500 9400 50  0001 C CNN
+	1    6500 9400
+	0    -1   1    0   
 $EndComp
 $Comp
 L power:-5V #PWR0109
@@ -2437,7 +2393,7 @@ U 1 1 5BE8ACD3
 P 13200 1700
 F 0 "U6" H 13300 2250 50  0000 C CNN
 F 1 "MAX490E" H 13400 2150 50  0000 C CNN
-F 2 "Package_SO:SOIC-8-N7_3.9x4.9mm_P1.27mm" H 13200 1100 50  0001 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 13200 1100 50  0001 C CNN
 F 3 "https://datasheets.maximintegrated.com/en/ds/MAX1487E-MAX491E.pdf" H 12960 2150 50  0001 C CNN
 	1    13200 1700
 	1    0    0    -1  
@@ -2550,13 +2506,13 @@ Wire Wire Line
 	13600 2100 13950 2100
 Wire Wire Line
 	13600 1800 13950 1800
-Text GLabel 7350 9000 2    50   Input ~ 0
-TX_H
-Text GLabel 7350 9100 2    50   Input ~ 0
-TX_L
 Text GLabel 7350 9300 2    50   Input ~ 0
-RX_L
+TX_H
 Text GLabel 7350 9200 2    50   Input ~ 0
+TX_L
+Text GLabel 7350 9100 2    50   Input ~ 0
+RX_L
+Text GLabel 7350 9000 2    50   Input ~ 0
 RX_H
 Wire Wire Line
 	7250 9000 7350 9000
@@ -2566,21 +2522,10 @@ Wire Wire Line
 	7250 9200 7350 9200
 Wire Wire Line
 	7250 9300 7350 9300
-$Comp
-L Connector_Generic:Conn_02x06_Counter_Clockwise J5
-U 1 1 5BFD6972
-P 6950 9200
-F 0 "J5" H 7000 9617 50  0000 C CNN
-F 1 "Tether Interface" H 7000 9526 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 6950 9200 50  0001 C CNN
-F 3 "~" H 6950 9200 50  0001 C CNN
-	1    6950 9200
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	7250 9400 7350 9400
+	6750 9400 6650 9400
 Wire Wire Line
-	7250 9500 7350 9500
+	6750 9500 6650 9500
 Wire Wire Line
 	6650 9000 6750 9000
 Wire Wire Line
@@ -2589,6 +2534,41 @@ Wire Wire Line
 	6650 9200 6750 9200
 Wire Wire Line
 	6650 9300 6750 9300
-NoConn ~ 6750 9400
-NoConn ~ 6750 9500
+$Comp
+L Connector:Conn_01x02_Male J22
+U 1 1 5BE1A1EF
+P 7450 9400
+F 0 "J22" H 7450 9100 50  0000 C CNN
+F 1 "PLAN (US)B PINS" H 7450 9225 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 7450 9400 50  0001 C CNN
+F 3 "~" H 7450 9400 50  0001 C CNN
+	1    7450 9400
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J5
+U 1 1 5BE1B408
+P 6950 9200
+F 0 "J5" H 7000 9617 50  0000 C CNN
+F 1 "TETHER INTERFACE" H 7000 9526 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 6950 9200 50  0001 C CNN
+F 3 "~" H 6950 9200 50  0001 C CNN
+	1    6950 9200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Conn_01x04_Female J19
+U 1 1 5BE7B491
+P 9750 9400
+F 0 "J19" H 10125 9275 50  0000 C CNN
+F 1 "PowerBoard Interface" H 10150 9350 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 9750 9400 50  0001 C CNN
+F 3 "~" H 9750 9400 50  0001 C CNN
+	1    9750 9400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1500 9150 1950 9150
+Wire Wire Line
+	1500 8950 1950 8950
 $EndSCHEMATC
