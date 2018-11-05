@@ -6,8 +6,8 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 1
 Title "module-tester-board"
-Date "2018-10-05"
-Rev "0.0.12"
+Date "2018-11-01"
+Rev "1.0.0"
 Comp "Missouri University of Science and Technology - Underwater Robotics Team"
 Comment1 "Board for testing ROV modules away from ROV."
 Comment2 "https://github.com/MST-Robotics/TITAN-Electrical.git"
@@ -39,7 +39,11 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf" H 8000 2500 50 
 	1    0    0    -1  
 $EndComp
 $Comp
+<<<<<<< HEAD
 L module-tester-board-rescue:ATA6560,1-URT_cache U5
+=======
+L ATA6560_1:ATA6560,1 U5
+>>>>>>> master
 U 1 1 5B822EF5
 P 9550 3000
 F 0 "U5" H 9550 3565 50  0000 C CNN

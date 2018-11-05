@@ -2,8 +2,13 @@
 
   (general
     (thickness 1.6)
+<<<<<<< HEAD
     (drawings 37)
     (tracks 626)
+=======
+    (drawings 29)
+    (tracks 651)
+>>>>>>> master
     (zones 0)
     (modules 30)
     (nets 52)
@@ -13,11 +18,19 @@
   (layers
     (0 F.Cu signal)
     (31 B.Cu signal)
+<<<<<<< HEAD
     (32 B.Adhes user hide)
     (33 F.Adhes user hide)
     (34 B.Paste user hide)
     (35 F.Paste user hide)
     (36 B.SilkS user)
+=======
+    (32 B.Adhes user)
+    (33 F.Adhes user)
+    (34 B.Paste user)
+    (35 F.Paste user)
+    (36 B.SilkS user hide)
+>>>>>>> master
     (37 F.SilkS user)
     (38 B.Mask user hide)
     (39 F.Mask user hide)
@@ -34,7 +47,11 @@
   )
 
   (setup
+<<<<<<< HEAD
     (last_trace_width 1.063)
+=======
+    (last_trace_width 0.25)
+>>>>>>> master
     (user_trace_width 0.3048)
     (user_trace_width 1.063)
     (trace_clearance 0.2)
@@ -90,7 +107,11 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
+<<<<<<< HEAD
       (outputdirectory "C:/Users/User/Documents/GitHub/TITAN-Electrical/module-tester-board/"))
+=======
+      (outputdirectory "gerbers_drills/"))
+>>>>>>> master
   )
 
   (net 0 "")
@@ -707,6 +728,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
     )
+    (model "C:/urt/kicad-stuff/STEPs/arduino nano.STEP"
+      (offset (xyz 0 0 3))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 90))
+    )
   )
 
   (module Capacitor_SMD:C_0603_1608Metric (layer F.Cu) (tedit 5B301BBE) (tstamp 5BCA0D24)
@@ -1082,6 +1108,11 @@
       (net 27 +12V))
     (pad 2 thru_hole oval (at 6 0) (size 4.5 2.25) (drill 1) (layers *.Cu *.Mask)
       (net 7 GND))
+    (model C:/urt/kicad-stuff/STEPs/CUI_INC_PJ-037A.step
+      (offset (xyz 13.5 0 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz -90 0 -90))
+    )
   )
 
   (module Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical (layer F.Cu) (tedit 5BE0B9A0) (tstamp 5BCA0E0A)
@@ -1827,6 +1858,11 @@
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
     )
+    (model C:/urt/kicad-stuff/STEPs/KAS1104E.stp
+      (offset (xyz 3.5 -4 3))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 90))
+    )
   )
 
   (module logo:logo (layer B.Cu) (tedit 0) (tstamp 5BEE7721)
@@ -2179,6 +2215,7 @@
       (xy -34.541208 26.685301) (xy 34.401649 26.685301) (xy 34.401649 25.935542)) (layer B.SilkS) (width 0.01))
   )
 
+<<<<<<< HEAD
   (gr_text GND (at 177.546 117.729) (layer F.SilkS) (tstamp 5BEE78D8)
     (effects (font (size 1.016 1.016) (thickness 0.254)) (justify left))
   )
@@ -2205,6 +2242,10 @@
   )
   (gr_text "CANL\n" (at 177.038 97.536) (layer F.SilkS) (tstamp 5BEE78A9)
     (effects (font (size 1.016 1.016) (thickness 0.254)) (justify left))
+=======
+  (gr_text "12v 4A" (at 160.274 117.475) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)))
+>>>>>>> master
   )
   (gr_text "M3 to M3 width" (at 102.362 92.964 90) (layer Dwgs.User) (tstamp 5BB8DC51)
     (effects (font (size 1.5 1.5) (thickness 0.3)))
@@ -2335,8 +2376,13 @@
     (arrow2a (pts (xy 157.226 127.254) (xy 158.352504 127.840421)))
     (arrow2b (pts (xy 157.226 127.254) (xy 158.352504 126.667579)))
   )
+<<<<<<< HEAD
   (gr_text "Rev 1.0.0\nRev Date 2018-10-11\n" (at 146.685 84.709) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left))
+=======
+  (gr_text "S1.0.0 B1.0.0\nRev Date 2018-11-1" (at 183.134 68.326 90) (layer F.SilkS)
+    (effects (font (size 1.5 1.5) (thickness 0.3)) (justify right))
+>>>>>>> master
   )
   (gr_text "Module Tester Board\nMade by Sean Martin\nFor MST URT" (at 120.65 72.263) (layer F.SilkS)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify left))
@@ -2382,6 +2428,7 @@
     (arrow2b (pts (xy 211.494723 66.508876) (xy 212.082976 67.634424)))
   )
 
+  (via (at 102.87 91.44) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 0))
   (segment (start 144.055999 106.209999) (end 143.256 105.41) (width 0.3048) (layer B.Cu) (net 6))
   (segment (start 145.11241 107.26641) (end 144.055999 106.209999) (width 0.3048) (layer B.Cu) (net 6))
   (segment (start 155.78879 107.26641) (end 145.11241 107.26641) (width 0.3048) (layer B.Cu) (net 6))
@@ -2605,10 +2652,14 @@
   (via (at 186.436 112.268) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7) (tstamp 5BB8DB8B))
   (segment (start 151.638 111.664) (end 149.138 111.664) (width 0.25) (layer F.Cu) (net 7))
   (via (at 170.434 100.584) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+<<<<<<< HEAD
   (via (at 167.64 100.838) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
   (via (at 150.622 97.282) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
   (via (at 153.416 97.536) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
   (via (at 157.734 83.312) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+=======
+  (via (at 168.402 100.584) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+>>>>>>> master
   (via (at 166.116 75.438) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
   (via (at 167.64 74.93) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
   (via (at 164.338 75.438) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
@@ -2621,10 +2672,75 @@
   (segment (start 168.656 74.3966) (end 168.656 74.4514) (width 0.3048) (layer F.Cu) (net 7))
   (segment (start 168.8846 74.168) (end 168.656 74.3966) (width 0.3048) (layer F.Cu) (net 7))
   (segment (start 169.799 74.168) (end 168.8846 74.168) (width 0.3048) (layer F.Cu) (net 7))
+<<<<<<< HEAD
   (segment (start 164.436 98.65) (end 164.465 98.679) (width 0.25) (layer F.Cu) (net 7))
   (segment (start 164.436 98.175) (end 164.436 98.65) (width 0.25) (layer F.Cu) (net 7))
   (segment (start 164.465 98.679) (end 164.465 99.06) (width 0.25) (layer F.Cu) (net 7))
   (via (at 180.34 78.232) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7) (tstamp 5BEE757E))
+=======
+  (via (at 163.068 99.187) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 157.48 81.28) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 157.48 82.55) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 157.48 83.82) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 157.48 85.09) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 160.02 85.09) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 158.75 85.09) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 161.29 85.09) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 160.02 83.82) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 158.75 82.55) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 148.59 88.9) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 149.86 88.9) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 151.13 88.9) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 152.4 88.9) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 153.67 88.9) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 154.94 88.9) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 149.86 91.44) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 148.59 91.44) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 151.13 91.44) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 152.4 91.44) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 153.67 91.44) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 154.94 91.44) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 156.21 91.44) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 156.21 97.79) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 157.48 97.79) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 157.48 96.52) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 156.21 96.52) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 154.94 96.52) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 154.94 97.79) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 152.4 97.79) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 153.67 96.52) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 152.4 96.52) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 151.13 96.52) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 149.86 96.52) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 148.59 96.52) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 148.59 97.79) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 149.86 97.79) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 151.13 97.79) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 153.67 97.79) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 168.91 82.55) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 168.91 83.82) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 170.18 83.82) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 170.18 85.09) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 171.45 85.09) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 172.72 86.36) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 171.45 86.36) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 172.72 87.63) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 173.99 87.63) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 173.99 88.9) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 175.26 88.9) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 148.59 83.82) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 148.59 82.55) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 148.59 81.28) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 148.59 80.01) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 148.59 78.74) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 140.97 102.87) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 139.7 102.87) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 138.43 102.87) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 137.16 102.87) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (via (at 170.18 99.06) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 7))
+  (segment (start 164.08 98.175) (end 163.068 99.187) (width 0.25) (layer F.Cu) (net 7))
+  (segment (start 164.436 98.175) (end 164.08 98.175) (width 0.25) (layer F.Cu) (net 7))
+>>>>>>> master
   (segment (start 157.48 109.22) (end 157.226 109.22) (width 0.3048) (layer B.Cu) (net 8))
   (segment (start 159.004 107.696) (end 157.48 109.22) (width 0.3048) (layer B.Cu) (net 8))
   (segment (start 142.860998 109.22) (end 157.226 109.22) (width 0.25) (layer B.Cu) (net 8))
@@ -3009,7 +3125,11 @@
   (via (at 183.896 115.316) (size 0.8) (drill 0.4) (layers F.Cu B.Cu) (net 51))
   (segment (start 175.514 115.316) (end 183.896 115.316) (width 1.063) (layer F.Cu) (net 51))
 
+<<<<<<< HEAD
   (zone (net 7) (net_name GND) (layer F.Cu) (tstamp 5BEE78E4) (hatch edge 0.508)
+=======
+  (zone (net 7) (net_name GND) (layer F.Cu) (tstamp 5BDBA1CC) (hatch edge 0.508)
+>>>>>>> master
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -3417,7 +3537,11 @@
       )
     )
   )
+<<<<<<< HEAD
   (zone (net 7) (net_name GND) (layer B.Cu) (tstamp 5BEE78E1) (hatch edge 0.508)
+=======
+  (zone (net 7) (net_name GND) (layer B.Cu) (tstamp 5BDBA1C9) (hatch edge 0.508)
+>>>>>>> master
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 16) (thermal_gap 0.508) (thermal_bridge_width 0.508))
