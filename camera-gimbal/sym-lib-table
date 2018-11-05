@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Gimble-Goblin-rescue)(type Legacy)(uri "${KIPRJMOD}/Gimble Goblin-rescue.lib")(options "")(descr ""))
+)
