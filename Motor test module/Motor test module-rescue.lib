@@ -1,11 +1,32 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# ATA6560,1-URT_cache
+# AP1017AEN-h-bridge
 #
-DEF ATA6560,1-URT_cache U 0 40 Y Y 1 F N
+DEF AP1017AEN-h-bridge U 0 40 Y Y 1 F N
+F0 "U" 0 350 50 H V C CNN
+F1 "AP1017AEN-h-bridge" 0 250 50 H V C CNN
+F2 "" -350 -150 50 H I C CNN
+F3 "" -350 -150 50 H I C CNN
+DRAW
+S -650 200 600 -250 0 1 0 N
+X INA 1 -750 100 100 R 50 50 1 1 I
+X INB 2 -750 0 100 R 50 50 1 1 I
+X PSAVEB 3 -750 -100 100 R 50 50 1 1 I
+X OUTB 4 -750 -200 100 R 50 50 1 1 O
+X OUTA 5 700 -200 100 L 50 50 1 1 O
+X VM 6 700 -100 100 L 50 50 1 1 w
+X VC 7 700 0 100 L 50 50 1 1 w
+X EN 8 700 100 100 L 50 50 1 1 B
+X GND 9 0 -350 100 U 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# ATA6560,1-URT_cache-Motor-test-module-rescue
+#
+DEF ATA6560,1-URT_cache-Motor-test-module-rescue U 0 40 Y Y 1 F N
 F0 "U" 0 500 50 H V C CNN
-F1 "ATA6560,1-URT_cache" 0 -500 50 H V C CNN
+F1 "ATA6560,1-URT_cache-Motor-test-module-rescue" 0 -500 50 H V C CNN
 F2 "" 0 500 50 H I C CNN
 F3 "" 0 500 50 H I C CNN
 DRAW
@@ -22,11 +43,11 @@ X STBY 8 500 300 200 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# ATmega2560-16AU-MCU_Microchip_ATmega
+# ATmega2560-16AU-MCU_Microchip_ATmega-Motor-test-module-rescue
 #
-DEF ATmega2560-16AU-MCU_Microchip_ATmega U 0 20 Y Y 1 F N
+DEF ATmega2560-16AU-MCU_Microchip_ATmega-Motor-test-module-rescue U 0 20 Y Y 1 F N
 F0 "U" 0 50 50 H V C BNN
-F1 "ATmega2560-16AU-MCU_Microchip_ATmega" 0 -50 50 H V C TNN
+F1 "ATmega2560-16AU-MCU_Microchip_ATmega-Motor-test-module-rescue" 0 -50 50 H V C TNN
 F2 "Package_QFP:TQFP-100_14x14mm_P0.5mm" 0 0 50 H I C CIN
 F3 "" 0 0 50 H I C CNN
 $FPLIST

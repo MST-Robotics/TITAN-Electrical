@@ -204,11 +204,32 @@ X OSC1 9 -600 -300 100 R 50 50 1 1 I C
 ENDDRAW
 ENDDEF
 #
-# Motor-test-module-rescue_ATA6560,1-URT_cache
+# Motor-test-module-rescue_AP1017AEN-h-bridge
 #
-DEF Motor-test-module-rescue_ATA6560,1-URT_cache U 0 40 Y Y 1 F N
+DEF Motor-test-module-rescue_AP1017AEN-h-bridge U 0 40 Y Y 1 F N
+F0 "U" 0 350 50 H V C CNN
+F1 "Motor-test-module-rescue_AP1017AEN-h-bridge" 0 250 50 H V C CNN
+F2 "" -350 -150 50 H I C CNN
+F3 "" -350 -150 50 H I C CNN
+DRAW
+S -650 200 600 -250 0 1 0 N
+X INA 1 -750 100 100 R 50 50 1 1 I
+X INB 2 -750 0 100 R 50 50 1 1 I
+X PSAVEB 3 -750 -100 100 R 50 50 1 1 I
+X OUTB 4 -750 -200 100 R 50 50 1 1 O
+X OUTA 5 700 -200 100 L 50 50 1 1 O
+X VM 6 700 -100 100 L 50 50 1 1 w
+X VC 7 700 0 100 L 50 50 1 1 w
+X EN 8 700 100 100 L 50 50 1 1 B
+X GND 9 0 -350 100 U 50 50 1 1 B
+ENDDRAW
+ENDDEF
+#
+# Motor-test-module-rescue_ATA6560,1-URT_cache-Motor-test-module-rescue
+#
+DEF Motor-test-module-rescue_ATA6560,1-URT_cache-Motor-test-module-rescue U 0 40 Y Y 1 F N
 F0 "U" 0 500 50 H V C CNN
-F1 "Motor-test-module-rescue_ATA6560,1-URT_cache" 0 -500 50 H V C CNN
+F1 "Motor-test-module-rescue_ATA6560,1-URT_cache-Motor-test-module-rescue" 0 -500 50 H V C CNN
 F2 "" 0 500 50 H I C CNN
 F3 "" 0 500 50 H I C CNN
 DRAW
@@ -225,11 +246,11 @@ X STBY 8 500 300 200 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# Motor-test-module-rescue_ATmega2560-16AU-MCU_Microchip_ATmega
+# Motor-test-module-rescue_ATmega2560-16AU-MCU_Microchip_ATmega-Motor-test-module-rescue
 #
-DEF Motor-test-module-rescue_ATmega2560-16AU-MCU_Microchip_ATmega U 0 20 Y Y 1 F N
+DEF Motor-test-module-rescue_ATmega2560-16AU-MCU_Microchip_ATmega-Motor-test-module-rescue U 0 20 Y Y 1 F N
 F0 "U" 0 50 50 H V C BNN
-F1 "Motor-test-module-rescue_ATmega2560-16AU-MCU_Microchip_ATmega" 0 -50 50 H V C TNN
+F1 "Motor-test-module-rescue_ATmega2560-16AU-MCU_Microchip_ATmega-Motor-test-module-rescue" 0 -50 50 H V C TNN
 F2 "Package_QFP:TQFP-100_14x14mm_P0.5mm" 0 0 50 H I C CIN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -363,27 +384,6 @@ X VAUX 6 -400 0 100 R 50 50 1 1 P
 X GND 7 -100 -600 100 U 50 50 1 1 W
 X FB 8 400 0 100 L 50 50 1 1 I
 X VOUT 9 400 200 100 L 50 50 1 1 w
-ENDDRAW
-ENDDEF
-#
-# h-bridge_AP1017AEN
-#
-DEF h-bridge_AP1017AEN U 0 40 Y Y 1 F N
-F0 "U" 0 350 50 H V C CNN
-F1 "h-bridge_AP1017AEN" 0 250 50 H V C CNN
-F2 "" -350 -150 50 H I C CNN
-F3 "" -350 -150 50 H I C CNN
-DRAW
-S -650 200 600 -250 0 1 0 N
-X INA 1 -750 100 100 R 50 50 1 1 I
-X INB 2 -750 0 100 R 50 50 1 1 I
-X PSAVEB 3 -750 -100 100 R 50 50 1 1 I
-X OUTB 4 -750 -200 100 R 50 50 1 1 O
-X OUTA 5 700 -200 100 L 50 50 1 1 O
-X VM 6 700 -100 100 L 50 50 1 1 w
-X VC 7 700 0 100 L 50 50 1 1 w
-X EN 8 700 100 100 L 50 50 1 1 B
-X GND 9 0 -350 100 U 50 50 1 1 B
 ENDDRAW
 ENDDEF
 #

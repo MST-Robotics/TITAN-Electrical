@@ -31,12 +31,12 @@ Text GLabel 3400 6300 0    50   Input ~ 0
 E1
 NoConn ~ 13400 3700
 $Comp
-L h-bridge:AP1017AEN U5
+L Motor-test-module-rescue:AP1017AEN-h-bridge U5
 U 1 1 5B95AAAE
 P 9850 8700
 F 0 "U5" H 9825 9065 50  0000 C CNN
 F 1 "AP1017AEN" H 9825 8974 50  0000 C CNN
-F 2 "Package_SON:SON-8-1EP_3x2mm_P0.5mm_EP1.4x1.6mm" H 9500 8550 50  0001 C CNN
+F 2 "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm" H 9500 8550 50  0001 C CNN
 F 3 "" H 9500 8550 50  0001 C CNN
 	1    9850 8700
 	1    0    0    -1  
@@ -290,12 +290,12 @@ $EndComp
 Wire Wire Line
 	13300 5750 13700 5750
 $Comp
-L h-bridge:AP1017AEN U7
+L Motor-test-module-rescue:AP1017AEN-h-bridge U7
 U 1 1 5B9BFA22
 P 9850 3950
 F 0 "U7" H 9825 4315 50  0000 C CNN
 F 1 "AP1017AEN" H 9825 4224 50  0000 C CNN
-F 2 "Package_SON:SON-8-1EP_3x2mm_P0.5mm_EP1.4x1.6mm" H 9500 3800 50  0001 C CNN
+F 2 "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm" H 9500 3800 50  0001 C CNN
 F 3 "" H 9500 3800 50  0001 C CNN
 	1    9850 3950
 	1    0    0    -1  
@@ -349,12 +349,12 @@ Wire Wire Line
 Wire Wire Line
 	8700 3700 8700 4050
 $Comp
-L h-bridge:AP1017AEN U4
+L Motor-test-module-rescue:AP1017AEN-h-bridge U4
 U 1 1 5B9C00A7
 P 7550 8700
 F 0 "U4" H 7525 9065 50  0000 C CNN
 F 1 "AP1017AEN" H 7525 8974 50  0000 C CNN
-F 2 "Package_SON:SON-8-1EP_3x2mm_P0.5mm_EP1.4x1.6mm" H 7200 8550 50  0001 C CNN
+F 2 "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm" H 7200 8550 50  0001 C CNN
 F 3 "" H 7200 8550 50  0001 C CNN
 	1    7550 8700
 	1    0    0    -1  
@@ -510,12 +510,12 @@ Wire Wire Line
 Wire Wire Line
 	6300 3700 6300 4050
 $Comp
-L h-bridge:AP1017AEN U2
+L Motor-test-module-rescue:AP1017AEN-h-bridge U2
 U 1 1 5BACC3D1
 P 9850 5100
 F 0 "U2" H 9825 5465 50  0000 C CNN
 F 1 "AP1017AEN" H 9825 5374 50  0000 C CNN
-F 2 "Package_SON:SON-8-1EP_3x2mm_P0.5mm_EP1.4x1.6mm" H 9500 4950 50  0001 C CNN
+F 2 "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm" H 9500 4950 50  0001 C CNN
 F 3 "" H 9500 4950 50  0001 C CNN
 	1    9850 5100
 	1    0    0    -1  
@@ -554,12 +554,12 @@ F 3 "" H 8700 4850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L h-bridge:AP1017AEN U3
+L Motor-test-module-rescue:AP1017AEN-h-bridge U3
 U 1 1 5BACC3FB
 P 7500 3950
 F 0 "U3" H 7475 4315 50  0000 C CNN
 F 1 "AP1017AEN" H 7475 4224 50  0000 C CNN
-F 2 "Package_SON:SON-8-1EP_3x2mm_P0.5mm_EP1.4x1.6mm" H 7150 3800 50  0001 C CNN
+F 2 "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm" H 7150 3800 50  0001 C CNN
 F 3 "" H 7150 3800 50  0001 C CNN
 	1    7500 3950
 	1    0    0    -1  
@@ -997,7 +997,7 @@ TX2
 Text GLabel 10500 2350 2    50   Input ~ 0
 Reset
 $Comp
-L Motor-test-module-rescue:ATA6560,1-URT_cache U10
+L Motor-test-module-rescue:ATA6560,1-URT_cache-Motor-test-module-rescue U10
 U 1 1 5BFBD538
 P 12650 1750
 F 0 "U10" H 12650 2315 50  0000 C CNN
@@ -1197,7 +1197,7 @@ NoConn ~ 3400 6100
 NoConn ~ 3400 6000
 NoConn ~ 3400 5900
 $Comp
-L Motor-test-module-rescue:ATmega2560-16AU-MCU_Microchip_ATmega U8
+L Motor-test-module-rescue:ATmega2560-16AU-MCU_Microchip_ATmega-Motor-test-module-rescue U8
 U 1 1 5BD5AF2A
 P 4200 6500
 F 0 "U8" H 4200 3300 50  0000 C CNN
@@ -1375,12 +1375,12 @@ Wire Notes Line
 Wire Notes Line
 	6050 3400 11000 3400
 $Comp
-L h-bridge:AP1017AEN U6
+L Motor-test-module-rescue:AP1017AEN-h-bridge U6
 U 1 1 5BCC6E90
 P 7500 5100
 F 0 "U6" H 7475 5465 50  0000 C CNN
 F 1 "AP1017AEN" H 7475 5374 50  0000 C CNN
-F 2 "Package_SON:SON-8-1EP_3x2mm_P0.5mm_EP1.4x1.6mm" H 7150 4950 50  0001 C CNN
+F 2 "Package_SON:WSON-8-1EP_2x2mm_P0.5mm_EP0.9x1.6mm" H 7150 4950 50  0001 C CNN
 F 3 "" H 7150 4950 50  0001 C CNN
 	1    7500 5100
 	1    0    0    -1  
