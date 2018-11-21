@@ -6,8 +6,8 @@ $Descr B 17000 11000
 encoding utf-8
 Sheet 1 1
 Title "Power Board"
-Date "2018-09-20"
-Rev "1.1.1"
+Date "2018-10-29"
+Rev "1.0.0"
 Comp "Missouri University of Science and Technology"
 Comment1 "PCB for the ROV's Power System"
 Comment2 "https://github.com/MST-Robotics/TITAN-Electrical.git"
@@ -1130,7 +1130,7 @@ F 3 "" H 2000 4050 50  0001 C CNN
 	1    2000 4050
 	1    0    0    -1  
 $EndComp
-Text GLabel 2750 8800 2    50   Input ~ 0
+Text GLabel 2500 8250 2    50   Input ~ 0
 SHUTOFF
 $Comp
 L Connector:Screw_Terminal_01x02 J2
@@ -1559,47 +1559,14 @@ Wire Wire Line
 Wire Wire Line
 	2850 4800 2850 4950
 $Comp
-L Device:Q_PNP_BCE Q1
-U 1 1 5BCD011E
-P 2400 8550
-F 0 "Q1" H 2591 8596 50  0000 L CNN
-F 1 "2N3906" H 2591 8505 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 2600 8650 50  0001 C CNN
-F 3 "~" H 2400 8550 50  0001 C CNN
-	1    2400 8550
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R_US R6
-U 1 1 5BCF4520
-P 2500 9050
-F 0 "R6" V 2295 9050 50  0000 C CNN
-F 1 "10k" V 2386 9050 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2540 9040 50  0001 C CNN
-F 3 "~" H 2500 9050 50  0001 C CNN
-	1    2500 9050
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R_US R2
-U 1 1 5BCF4727
-P 1950 8550
-F 0 "R2" V 1745 8550 50  0000 C CNN
-F 1 "1k" V 1836 8550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1990 8540 50  0001 C CNN
-F 3 "~" H 1950 8550 50  0001 C CNN
-	1    1950 8550
-	0    -1   -1   0   
-$EndComp
-$Comp
 L power:+5VA #PWR0103
 U 1 1 5BCF4A60
-P 2500 8200
-F 0 "#PWR0103" H 2500 8050 50  0001 C CNN
-F 1 "+5VA" H 2515 8373 50  0000 C CNN
-F 2 "" H 2500 8200 50  0001 C CNN
-F 3 "" H 2500 8200 50  0001 C CNN
-	1    2500 8200
+P 2150 8150
+F 0 "#PWR0103" H 2150 8000 50  0001 C CNN
+F 1 "+5VA" H 2165 8323 50  0000 C CNN
+F 2 "" H 2150 8150 50  0001 C CNN
+F 3 "" H 2150 8150 50  0001 C CNN
+	1    2150 8150
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1614,11 +1581,6 @@ F 3 "~" H 2150 8350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	2500 8350 2500 8200
-Wire Wire Line
-	2500 8200 2150 8200
-Connection ~ 2500 8200
-Wire Wire Line
 	2100 8550 2150 8550
 Wire Wire Line
 	2150 8500 2150 8550
@@ -1628,23 +1590,14 @@ Wire Wire Line
 $Comp
 L power:GNDREF #PWR0104
 U 1 1 5BD31EDE
-P 2500 9250
-F 0 "#PWR0104" H 2500 9000 50  0001 C CNN
-F 1 "GNDREF" H 2505 9077 50  0000 C CNN
-F 2 "" H 2500 9250 50  0001 C CNN
-F 3 "" H 2500 9250 50  0001 C CNN
-	1    2500 9250
+P 2500 8800
+F 0 "#PWR0104" H 2500 8550 50  0001 C CNN
+F 1 "GNDREF" H 2505 8627 50  0000 C CNN
+F 2 "" H 2500 8800 50  0001 C CNN
+F 3 "" H 2500 8800 50  0001 C CNN
+	1    2500 8800
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2500 9250 2500 9200
-Wire Wire Line
-	2500 8750 2500 8800
-Wire Wire Line
-	2750 8800 2500 8800
-Connection ~ 2500 8800
-Wire Wire Line
-	2500 8800 2500 8900
 Text GLabel 1500 4550 0    50   Input ~ 0
 SHUTOFF
 Wire Wire Line
@@ -2495,7 +2448,7 @@ V_MCU
 Wire Wire Line
 	4550 8550 4550 8750
 $Comp
-L URT_cache:ATA6560,1 U5
+L power_board-rescue:ATA6560,1-URT_cache U5
 U 1 1 5BCC7310
 P 10150 8350
 F 0 "U5" H 10150 8915 50  0000 C CNN
@@ -2725,4 +2678,21 @@ Wire Wire Line
 	15050 8250 15100 8250
 Text Notes 14850 7800 0    75   ~ 0
 ICSP Connections\n
+$Comp
+L Transistor_BJT:2N3904 Q?
+U 1 1 5BF7B85C
+P 2400 8550
+F 0 "Q?" H 2591 8596 50  0000 L CNN
+F 1 "2N3904" H 2591 8505 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2600 8475 50  0001 L CIN
+F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 2400 8550 50  0001 L CNN
+	1    2400 8550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2150 8150 2150 8200
+Wire Wire Line
+	2500 8350 2500 8250
+Wire Wire Line
+	2500 8750 2500 8800
 $EndSCHEMATC
