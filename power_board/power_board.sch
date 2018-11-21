@@ -614,17 +614,6 @@ F 3 "http://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 6750 4200 50  0
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0139
-U 1 1 5BB11F6E
-P 6750 3550
-F 0 "#PWR0139" H 6750 3400 50  0001 C CNN
-F 1 "+5V" H 6765 3723 50  0000 C CNN
-F 2 "" H 6750 3550 50  0001 C CNN
-F 3 "" H 6750 3550 50  0001 C CNN
-	1    6750 3550
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GNDREF #PWR0140
 U 1 1 5BB12459
 P 6750 4700
@@ -703,19 +692,6 @@ Wire Wire Line
 Wire Wire Line
 	7550 4300 7700 4300
 Connection ~ 7550 4300
-$Comp
-L power:+5V #PWR0142
-U 1 1 5BB53379
-P 7550 3950
-F 0 "#PWR0142" H 7550 3800 50  0001 C CNN
-F 1 "+5V" H 7565 4123 50  0000 C CNN
-F 2 "" H 7550 3950 50  0001 C CNN
-F 3 "" H 7550 3950 50  0001 C CNN
-	1    7550 3950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7550 4000 7550 3950
 $Comp
 L Connector:Screw_Terminal_01x02 J8
 U 1 1 5BB7B239
@@ -2241,17 +2217,6 @@ F 3 "http://datasheets.maximintegrated.com/en/ds/MAX31855.pdf" H 6750 5950 50  0
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR0163
-U 1 1 5C02E9E2
-P 6750 5300
-F 0 "#PWR0163" H 6750 5150 50  0001 C CNN
-F 1 "+5V" H 6765 5473 50  0000 C CNN
-F 2 "" H 6750 5300 50  0001 C CNN
-F 3 "" H 6750 5300 50  0001 C CNN
-	1    6750 5300
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GNDREF #PWR0164
 U 1 1 5C02E9E8
 P 6750 6450
@@ -2314,19 +2279,6 @@ Wire Wire Line
 Wire Wire Line
 	7550 6050 7700 6050
 Connection ~ 7550 6050
-$Comp
-L power:+5V #PWR0166
-U 1 1 5C02EA0C
-P 7550 5700
-F 0 "#PWR0166" H 7550 5550 50  0001 C CNN
-F 1 "+5V" H 7565 5873 50  0000 C CNN
-F 2 "" H 7550 5700 50  0001 C CNN
-F 3 "" H 7550 5700 50  0001 C CNN
-	1    7550 5700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7550 5750 7550 5700
 $Comp
 L Connector:Screw_Terminal_01x02 J27
 U 1 1 5C02EA13
@@ -2674,17 +2626,6 @@ Wire Wire Line
 	15050 8250 15100 8250
 Text Notes 14850 7800 0    75   ~ 0
 ICSP Connections\n
-$Comp
-L Transistor_BJT:2N3904 Q?
-U 1 1 5BF7B85C
-P 2400 8600
-F 0 "Q?" H 2591 8646 50  0000 L CNN
-F 1 "2N3904" H 2591 8555 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92_Inline" H 2600 8525 50  0001 L CIN
-F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3904.pdf" H 2400 8600 50  0001 L CNN
-	1    2400 8600
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2150 8200 2150 8250
 Wire Wire Line
@@ -2693,4 +2634,63 @@ Wire Wire Line
 	2500 8800 2500 8850
 Wire Wire Line
 	1800 8600 2150 8600
+$Comp
+L Device:Q_NPN_BEC Q1
+U 1 1 5C017B6E
+P 2400 8600
+F 0 "Q1" H 2591 8646 50  0000 L CNN
+F 1 "Q_NPN_BEC" H 2591 8555 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 2600 8700 50  0001 C CNN
+F 3 "~" H 2400 8600 50  0001 C CNN
+	1    2400 8600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 5750 7550 5700
+Wire Wire Line
+	7550 4000 7550 3950
+$Comp
+L power:+5V #PWR0142
+U 1 1 5BB53379
+P 7550 3950
+F 0 "#PWR0142" H 7550 3800 50  0001 C CNN
+F 1 "+5V" H 7565 4123 50  0000 C CNN
+F 2 "" H 7550 3950 50  0001 C CNN
+F 3 "" H 7550 3950 50  0001 C CNN
+	1    7550 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0166
+U 1 1 5C02EA0C
+P 7550 5700
+F 0 "#PWR0166" H 7550 5550 50  0001 C CNN
+F 1 "+5V" H 7565 5873 50  0000 C CNN
+F 2 "" H 7550 5700 50  0001 C CNN
+F 3 "" H 7550 5700 50  0001 C CNN
+	1    7550 5700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0163
+U 1 1 5C02E9E2
+P 6750 5300
+F 0 "#PWR0163" H 6750 5150 50  0001 C CNN
+F 1 "+5V" H 6765 5473 50  0000 C CNN
+F 2 "" H 6750 5300 50  0001 C CNN
+F 3 "" H 6750 5300 50  0001 C CNN
+	1    6750 5300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0139
+U 1 1 5BB11F6E
+P 6750 3550
+F 0 "#PWR0139" H 6750 3400 50  0001 C CNN
+F 1 "+5V" H 6765 3723 50  0000 C CNN
+F 2 "" H 6750 3550 50  0001 C CNN
+F 3 "" H 6750 3550 50  0001 C CNN
+	1    6750 3550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
