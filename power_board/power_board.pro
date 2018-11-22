@@ -1,4 +1,4 @@
-update=9/26/2018 6:55:18 PM
+update=11/22/2018 8:34:20 AM
 version=1
 last_client=kicad
 [general]
@@ -34,7 +34,7 @@ LibDir=
 [schematic_editor]
 version=1
 PageLayoutDescrFile=C:/Users/User/Documents/GitHub/kicad-stuff/layouts/standard-11x17.kicad_wks
-PlotDirectoryName=
+PlotDirectoryName=../../../../Desktop/
 SubpartIdSeparator=0
 SubpartFirstId=65
 NetFmtName=
