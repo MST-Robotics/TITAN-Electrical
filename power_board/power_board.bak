@@ -7,7 +7,7 @@ encoding utf-8
 Sheet 1 1
 Title "Power Board"
 Date "2018-10-29"
-Rev "1.0.0"
+Rev "1.0.2"
 Comp "Missouri University of Science and Technology"
 Comment1 "PCB for the ROV's Power System"
 Comment2 "https://github.com/MST-Robotics/TITAN-Electrical.git"

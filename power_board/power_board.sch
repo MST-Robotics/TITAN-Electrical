@@ -2793,34 +2793,8 @@ F 3 "" H 11150 8250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	11150 8250 11150 8200
-$Comp
-L Jumper:SolderJumper_3_Bridged12 JP1
-U 1 1 5C1D3D53
-P 10550 6850
-F 0 "JP1" H 10550 6964 50  0000 C CNN
-F 1 "SolderJumper_3_Bridged12" H 10550 6964 50  0001 C CNN
-F 2 "Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels" H 10550 6850 50  0001 C CNN
-F 3 "~" H 10550 6850 50  0001 C CNN
-	1    10550 6850
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+3.3V #PWR0166
-U 1 1 5C1D3EF1
-P 10750 6800
-F 0 "#PWR0166" H 10750 6650 50  0001 C CNN
-F 1 "+3.3V" H 10765 6973 50  0000 C CNN
-F 2 "" H 10750 6800 50  0001 C CNN
-F 3 "" H 10750 6800 50  0001 C CNN
-	1    10750 6800
-	1    0    0    -1  
-$EndComp
-Text GLabel 10350 6800 0    50   Input ~ 0
+Text GLabel 10550 7000 0    50   Input ~ 0
 V_MCU
-Wire Wire Line
-	10350 6800 10350 6850
-Wire Wire Line
-	10750 6800 10750 6850
 Wire Wire Line
 	10550 7000 10750 7000
 $Comp
