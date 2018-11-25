@@ -6036,10 +6036,10 @@
     (pad 1 np_thru_hole circle (at 0 0) (size 3.2 3.2) (drill 3.2) (layers *.Cu *.Mask))
   )
 
-  (gr_text "+ -" (at 217.678 88.646 270) (layer F.SilkS) (tstamp 5C11CF78)
+  (gr_text "+ -" (at 217.678 88.646 90) (layer F.SilkS) (tstamp 5C11CF78)
     (effects (font (size 1.5 1.5) (thickness 0.375)))
   )
-  (gr_text "+ -" (at 217.678 82.55 270) (layer F.SilkS) (tstamp 5C11CF72)
+  (gr_text "+ -" (at 217.678 82.55 90) (layer F.SilkS) (tstamp 5C11CF72)
     (effects (font (size 1.5 1.5) (thickness 0.375)))
   )
   (gr_line (start 79.8332 130.8372) (end 79.7179 129.4562) (layer Edge.Cuts) (width 0.2))
