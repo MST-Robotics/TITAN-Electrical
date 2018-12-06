@@ -2209,10 +2209,6 @@ F 3 "" H 3000 4100 50  0001 C CNN
 	1    3000 3900
 	1    0    0    -1  
 $EndComp
-Text GLabel 5000 8600 2    50   Input ~ 0
-CANH
-Text GLabel 5000 8700 2    50   Input ~ 0
-CANL
 $Comp
 L Connector:Screw_Terminal_01x02 J8
 U 1 1 5BFE6BAD
@@ -2254,17 +2250,6 @@ Wire Notes Line
 	7600 4200 6050 4200
 Wire Notes Line
 	6050 4200 6050 3350
-$Comp
-L power:+3V3 #PWR0185
-U 1 1 5C00689B
-P 1450 4100
-F 0 "#PWR0185" H 1450 3950 50  0001 C CNN
-F 1 "+3V3" H 1465 4273 50  0000 C CNN
-F 2 "" H 1450 4100 50  0001 C CNN
-F 3 "" H 1450 4100 50  0001 C CNN
-	1    1450 4100
-	1    0    0    -1  
-$EndComp
 Text GLabel 5000 7600 2    50   Input ~ 0
 Tx
 Text GLabel 5000 7500 2    50   Input ~ 0
@@ -2320,35 +2305,61 @@ F 3 "~" H 6550 1200 50  0001 C CNN
 	1    6550 1200
 	0    1    1    0   
 $EndComp
-Wire Notes Line
-	5900 850  7250 850 
-Wire Notes Line
-	5900 2100 5900 850 
-Wire Notes Line
-	7250 2100 5900 2100
-Wire Notes Line
-	7250 850  7250 2100
 $Comp
-L power:+5V #PWR?
-U 1 1 5C019AEE
-P 4300 3400
-F 0 "#PWR?" H 4300 3250 50  0001 C CNN
-F 1 "+5V" H 4315 3573 50  0000 C CNN
-F 2 "" H 4300 3400 50  0001 C CNN
-F 3 "" H 4300 3400 50  0001 C CNN
-	1    4300 3400
+L power:+5V #PWR0191
+U 1 1 5C032B9A
+P 7400 1200
+F 0 "#PWR0191" H 7400 1050 50  0001 C CNN
+F 1 "+5V" H 7415 1373 50  0000 C CNN
+F 2 "" H 7400 1200 50  0001 C CNN
+F 3 "" H 7400 1200 50  0001 C CNN
+	1    7400 1200
 	1    0    0    -1  
 $EndComp
-Connection ~ 4300 3400
 $Comp
-L power:+5V #PWR?
-U 1 1 5C032B9A
+L Device:D_x2_KCom_AAK D2
+U 1 1 5C091BCF
 P 7100 1400
-F 0 "#PWR?" H 7100 1250 50  0001 C CNN
-F 1 "+5V" H 7115 1573 50  0000 C CNN
-F 2 "" H 7100 1400 50  0001 C CNN
-F 3 "" H 7100 1400 50  0001 C CNN
+F 0 "D2" H 7100 1616 50  0000 C CNN
+F 1 "D_x2_KCom_AAK" H 7100 1525 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7100 1400 50  0001 C CNN
+F 3 "~" H 7100 1400 50  0001 C CNN
 	1    7100 1400
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	7400 1200 7400 1400
+Wire Wire Line
+	6800 1400 6750 1400
+Wire Notes Line
+	6100 1850 7600 1850
+Wire Notes Line
+	7600 1850 7600 900 
+Wire Notes Line
+	7600 900  6100 900 
+Wire Notes Line
+	6100 900  6100 1850
+Text GLabel 7100 1600 3    50   Input ~ 0
+VCC
+Text GLabel 4300 3400 1    50   Input ~ 0
+VCC
+Text GLabel 1450 4100 1    50   Input ~ 0
+VCC
+NoConn ~ 5000 8600
+NoConn ~ 5000 8700
+$Comp
+L Connector:Screw_Terminal_01x02 J9
+U 1 1 5C118EB3
+P 13200 850
+F 0 "J9" H 13280 842 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 13280 751 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 13200 850 50  0001 C CNN
+F 3 "~" H 13200 850 50  0001 C CNN
+	1    13200 850 
+	1    0    0    -1  
+$EndComp
+Text GLabel 13000 850  0    50   Input ~ 0
+CANH
+Text GLabel 13000 950  0    50   Input ~ 0
+CANL
 $EndSCHEMATC
