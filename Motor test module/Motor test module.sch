@@ -608,17 +608,6 @@ F 3 "" H 14100 4000 50  0001 C CNN
 	1    14100 4000
 	1    0    0    -1  
 $EndComp
-$Comp
-L Regulator_Switching:TPS63060 U1
-U 1 1 5BAD390C
-P 2650 1550
-F 0 "U1" H 2650 2217 50  0000 C CNN
-F 1 "TPS63060" H 2650 2126 50  0000 C CNN
-F 2 "Package_SON:Texas_S-PWSON-N10_ThermalVias" H 2650 900 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tps63060.pdf" H 2650 1550 50  0001 C CNN
-	1    2650 1550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3050 1150 3100 1150
 $Comp
@@ -644,8 +633,6 @@ Wire Wire Line
 	2650 2150 2850 2250
 Wire Wire Line
 	2250 1350 2100 1350
-Wire Wire Line
-	1200 1350 1200 1500
 $Comp
 L power:+12V #PWR0148
 U 1 1 5BB50E92
@@ -763,22 +750,6 @@ F 3 "" H 3300 2100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3300 2000 3300 2100
-Wire Wire Line
-	3200 1350 4000 1350
-$Comp
-L Device:R R3
-U 1 1 5BB88478
-P 4000 1750
-F 0 "R3" V 4100 1700 50  0000 L CNN
-F 1 "1M" V 4000 1700 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3930 1750 50  0001 C CNN
-F 3 "~" H 4000 1750 50  0001 C CNN
-	1    4000 1750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4000 1600 4000 1350
-Connection ~ 4000 1350
 Connection ~ 14550 7550
 Wire Wire Line
 	14550 8000 14550 7550
@@ -822,22 +793,6 @@ Wire Wire Line
 	1000 1350 1200 1350
 Wire Wire Line
 	1950 1550 1950 2100
-Wire Wire Line
-	1200 1500 1450 1500
-Wire Wire Line
-	1450 1500 1450 1650
-Wire Wire Line
-	950  1500 1200 1500
-Connection ~ 1200 1500
-Wire Wire Line
-	950  1950 950  2050
-Wire Wire Line
-	950  2050 1200 2050
-Wire Wire Line
-	1450 1950 1450 2050
-Wire Wire Line
-	1450 2050 1200 2050
-Connection ~ 1200 2050
 $Comp
 L power:+5V #PWR0110
 U 1 1 5BC86298
@@ -1090,8 +1045,6 @@ Text GLabel 9300 1150 0    50   Input ~ 0
 SI
 Text GLabel 9300 1250 0    50   Input ~ 0
 S0
-Text GLabel 9300 1350 0    50   Input ~ 0
-SS
 Text GLabel 9300 1450 0    50   Input ~ 0
 SCK
 $Comp
@@ -1125,8 +1078,6 @@ Text GLabel 16050 1500 2    50   Input ~ 0
 Reset
 Text GLabel 5000 5100 2    50   Input ~ 0
 S0
-Text GLabel 5000 5900 2    50   Input ~ 0
-SCK
 NoConn ~ 5000 3900
 NoConn ~ 5000 4000
 NoConn ~ 5000 4500
@@ -1275,8 +1226,6 @@ Text GLabel 3400 5100 0    50   Input ~ 0
 M2+C
 Text GLabel 3400 5000 0    50   Input ~ 0
 M1+C
-NoConn ~ 5000 4800
-NoConn ~ 5000 4900
 NoConn ~ 5000 5200
 Wire Notes Line
 	5500 3150 5500 9900
@@ -1423,8 +1372,6 @@ Wire Wire Line
 Wire Wire Line
 	2850 2250 2850 2450
 Wire Wire Line
-	1200 2050 1200 2450
-Wire Wire Line
 	1950 2400 1950 2450
 Connection ~ 1950 2450
 Wire Wire Line
@@ -1434,11 +1381,7 @@ Wire Wire Line
 Connection ~ 2550 2450
 Wire Wire Line
 	2550 2450 2850 2450
-Wire Wire Line
-	2850 2450 3050 2450
 Connection ~ 2850 2450
-Wire Wire Line
-	4000 1350 4700 1350
 Wire Wire Line
 	4700 1350 4700 2000
 Connection ~ 4700 1350
@@ -1454,19 +1397,9 @@ Wire Wire Line
 	4850 2300 5300 2300
 Wire Wire Line
 	4850 2300 4850 2450
-Wire Wire Line
-	3050 1850 3050 2450
-Wire Wire Line
-	3050 2450 4000 2450
-Connection ~ 3050 2450
 Connection ~ 4850 2450
 Wire Wire Line
 	4850 2450 4850 2500
-Wire Wire Line
-	4000 1900 4000 2450
-Connection ~ 4000 2450
-Wire Wire Line
-	4000 2450 4850 2450
 Wire Notes Line
 	5600 550  5600 3050
 Wire Notes Line
@@ -2027,25 +1960,12 @@ $EndComp
 $Comp
 L Device:C C1
 U 1 1 5BDE82C4
-P 950 1800
-F 0 "C1" H 1065 1846 50  0000 L CNN
-F 1 "10u" H 1065 1755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 988 1650 50  0001 C CNN
-F 3 "~" H 950 1800 50  0001 C CNN
-	1    950  1800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	950  1500 950  1650
-$Comp
-L Device:C C2
-U 1 1 5BDE8B0F
-P 1450 1800
-F 0 "C2" H 1565 1846 50  0000 L CNN
-F 1 "10u" H 1565 1755 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1488 1650 50  0001 C CNN
-F 3 "~" H 1450 1800 50  0001 C CNN
-	1    1450 1800
+P 1200 1800
+F 0 "C1" H 1315 1846 50  0000 L CNN
+F 1 "22u" H 1315 1755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 1238 1650 50  0001 C CNN
+F 3 "~" H 1200 1800 50  0001 C CNN
+	1    1200 1800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -2144,19 +2064,19 @@ Wire Notes Line
 $Comp
 L power:GNDREF #PWR0186
 U 1 1 5BF22AEF
-P 6350 1400
-F 0 "#PWR0186" H 6350 1150 50  0001 C CNN
-F 1 "GNDREF" H 6355 1227 50  0000 C CNN
-F 2 "" H 6350 1400 50  0001 C CNN
-F 3 "" H 6350 1400 50  0001 C CNN
-	1    6350 1400
+P 6250 1400
+F 0 "#PWR0186" H 6250 1150 50  0001 C CNN
+F 1 "GNDREF" H 6255 1227 50  0000 C CNN
+F 2 "" H 6250 1400 50  0001 C CNN
+F 3 "" H 6250 1400 50  0001 C CNN
+	1    6250 1400
 	1    0    0    -1  
 $EndComp
-Text GLabel 6450 1400 3    50   Input ~ 0
+Text GLabel 6350 1400 3    50   Input ~ 0
 Tx
-Text GLabel 6550 1400 3    50   Input ~ 0
+Text GLabel 6450 1400 3    50   Input ~ 0
 Rx
-Text GLabel 6650 1400 3    50   Input ~ 0
+Text GLabel 6550 1400 3    50   Input ~ 0
 Rst
 Wire Wire Line
 	3200 3900 3300 3900
@@ -2212,34 +2132,34 @@ $EndComp
 $Comp
 L Connector:Screw_Terminal_01x02 J8
 U 1 1 5BFE6BAD
-P 6600 3650
-F 0 "J8" H 6680 3642 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 6680 3551 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6600 3650 50  0001 C CNN
-F 3 "~" H 6600 3650 50  0001 C CNN
-	1    6600 3650
+P 6600 3600
+F 0 "J8" H 6680 3592 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 6680 3501 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6600 3600 50  0001 C CNN
+F 3 "~" H 6600 3600 50  0001 C CNN
+	1    6600 3600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+12V #PWR0189
 U 1 1 5BFE7970
-P 6400 3650
-F 0 "#PWR0189" H 6400 3500 50  0001 C CNN
-F 1 "+12V" H 6415 3823 50  0000 C CNN
-F 2 "" H 6400 3650 50  0001 C CNN
-F 3 "" H 6400 3650 50  0001 C CNN
-	1    6400 3650
+P 6400 3600
+F 0 "#PWR0189" H 6400 3450 50  0001 C CNN
+F 1 "+12V" H 6415 3773 50  0000 C CNN
+F 2 "" H 6400 3600 50  0001 C CNN
+F 3 "" H 6400 3600 50  0001 C CNN
+	1    6400 3600
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GNDREF #PWR0190
 U 1 1 5BFE7FB6
-P 6400 3750
-F 0 "#PWR0190" H 6400 3500 50  0001 C CNN
-F 1 "GNDREF" H 6405 3577 50  0000 C CNN
-F 2 "" H 6400 3750 50  0001 C CNN
-F 3 "" H 6400 3750 50  0001 C CNN
-	1    6400 3750
+P 6400 3700
+F 0 "#PWR0190" H 6400 3450 50  0001 C CNN
+F 1 "GNDREF" H 6405 3527 50  0000 C CNN
+F 2 "" H 6400 3700 50  0001 C CNN
+F 3 "" H 6400 3700 50  0001 C CNN
+	1    6400 3700
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
@@ -2262,7 +2182,7 @@ U 1 1 5C00D39E
 P 4350 2150
 F 0 "C5" H 4465 2196 50  0000 L CNN
 F 1 "22u" H 4465 2105 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_4x5.4" H 4388 2000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4388 2000 50  0001 C CNN
 F 3 "~" H 4350 2150 50  0001 C CNN
 	1    4350 2150
 	1    0    0    -1  
@@ -2275,7 +2195,7 @@ U 1 1 5C00D623
 P 4850 2150
 F 0 "C6" H 4965 2196 50  0000 L CNN
 F 1 "22u" H 4965 2105 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_4x5.4" H 4888 2000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4888 2000 50  0001 C CNN
 F 3 "~" H 4850 2150 50  0001 C CNN
 	1    4850 2150
 	1    0    0    -1  
@@ -2289,7 +2209,7 @@ U 1 1 5C00D7D4
 P 5300 2150
 F 0 "C7" H 5415 2196 50  0000 L CNN
 F 1 "22u" H 5415 2105 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_4x5.4" H 5338 2000 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 5338 2000 50  0001 C CNN
 F 3 "~" H 5300 2150 50  0001 C CNN
 	1    5300 2150
 	1    0    0    -1  
@@ -2297,12 +2217,12 @@ $EndComp
 $Comp
 L Connector:Conn_01x05_Male J7
 U 1 1 5C00276D
-P 6550 1200
-F 0 "J7" V 6400 1200 50  0000 L CNN
-F 1 "Conn_01x05_Male" V 6500 900 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 6550 1200 50  0001 C CNN
-F 3 "~" H 6550 1200 50  0001 C CNN
-	1    6550 1200
+P 6450 1200
+F 0 "J7" V 6300 1200 50  0000 L CNN
+F 1 "PROGRAM" V 6400 1000 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 6450 1200 50  0001 C CNN
+F 3 "~" H 6450 1200 50  0001 C CNN
+	1    6450 1200
 	0    1    1    0   
 $EndComp
 $Comp
@@ -2329,16 +2249,14 @@ F 3 "~" H 7100 1400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7400 1200 7400 1400
-Wire Wire Line
-	6800 1400 6750 1400
 Wire Notes Line
-	6100 1850 7600 1850
+	6100 2650 7600 2650
 Wire Notes Line
-	7600 1850 7600 900 
+	7600 2650 7600 900 
 Wire Notes Line
 	7600 900  6100 900 
 Wire Notes Line
-	6100 900  6100 1850
+	6100 900  6100 2650
 Text GLabel 7100 1600 3    50   Input ~ 0
 VCC
 Text GLabel 4300 3400 1    50   Input ~ 0
@@ -2350,16 +2268,107 @@ NoConn ~ 5000 8700
 $Comp
 L Connector:Screw_Terminal_01x02 J9
 U 1 1 5C118EB3
-P 13200 850
-F 0 "J9" H 13280 842 50  0000 L CNN
-F 1 "Screw_Terminal_01x02" H 13280 751 50  0000 L CNN
-F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 13200 850 50  0001 C CNN
-F 3 "~" H 13200 850 50  0001 C CNN
-	1    13200 850 
+P 6600 4000
+F 0 "J9" H 6680 3992 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 6680 3901 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" H 6600 4000 50  0001 C CNN
+F 3 "~" H 6600 4000 50  0001 C CNN
+	1    6600 4000
 	1    0    0    -1  
 $EndComp
-Text GLabel 13000 850  0    50   Input ~ 0
+Text GLabel 6400 4000 0    50   Input ~ 0
 CANH
-Text GLabel 13000 950  0    50   Input ~ 0
+Text GLabel 6400 4100 0    50   Input ~ 0
 CANL
+Wire Wire Line
+	3200 1350 4700 1350
+Wire Wire Line
+	1200 1950 1200 2450
+Wire Wire Line
+	1200 1350 1200 1650
+$Comp
+L Regulator_Switching:TPS63060 U1
+U 1 1 5BAD390C
+P 2650 1550
+F 0 "U1" H 2650 2217 50  0000 C CNN
+F 1 "TPS63060" H 2650 2126 50  0000 C CNN
+F 2 "Package_SON:Texas_S-PWSON-N10_ThermalVias" H 2650 900 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tps63060.pdf" H 2650 1550 50  0001 C CNN
+	1    2650 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 2450 4850 2450
+NoConn ~ 3050 1850
+Text GLabel 5000 4900 2    50   Input ~ 0
+SCK
+Text GLabel 9300 1350 0    50   Input ~ 0
+MCP_SS
+Text GLabel 5000 4100 2    50   Input ~ 0
+MCP_SS
+$Comp
+L Connector_Generic:Conn_02x03_Odd_Even J10
+U 1 1 5C521C7A
+P 6750 2200
+F 0 "J10" H 6800 2517 50  0000 C CNN
+F 1 "ICSP" H 6800 2426 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 6750 2200 50  0001 C CNN
+F 3 "~" H 6750 2200 50  0001 C CNN
+	1    6750 2200
+	1    0    0    -1  
+$EndComp
+Text GLabel 6550 2100 0    50   Input ~ 0
+S0
+Text GLabel 7050 2200 2    50   Input ~ 0
+SI
+$Comp
+L power:GNDREF #PWR0156
+U 1 1 5C526606
+P 7100 2350
+F 0 "#PWR0156" H 7100 2100 50  0001 C CNN
+F 1 "GNDREF" H 7105 2177 50  0000 C CNN
+F 2 "" H 7100 2350 50  0001 C CNN
+F 3 "" H 7100 2350 50  0001 C CNN
+	1    7100 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 2350 7100 2300
+Wire Wire Line
+	7100 2300 7050 2300
+Text GLabel 6550 2300 0    50   Input ~ 0
+Rst
+Text GLabel 6550 2200 0    50   Input ~ 0
+SCK
+NoConn ~ 5000 4800
+Wire Wire Line
+	6650 1400 6750 1400
+$Comp
+L power:VPP #PWR0185
+U 1 1 5C54F8F6
+P 6750 1400
+F 0 "#PWR0185" H 6750 1250 50  0001 C CNN
+F 1 "VPP" H 6765 1573 50  0000 C CNN
+F 2 "" H 6750 1400 50  0001 C CNN
+F 3 "" H 6750 1400 50  0001 C CNN
+	1    6750 1400
+	1    0    0    -1  
+$EndComp
+Connection ~ 6750 1400
+Wire Wire Line
+	6750 1400 6800 1400
+$Comp
+L power:VPP #PWR0192
+U 1 1 5C54F97A
+P 7300 2100
+F 0 "#PWR0192" H 7300 1950 50  0001 C CNN
+F 1 "VPP" H 7315 2273 50  0000 C CNN
+F 2 "" H 7300 2100 50  0001 C CNN
+F 3 "" H 7300 2100 50  0001 C CNN
+	1    7300 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7050 2100 7300 2100
+NoConn ~ 5000 5900
 $EndSCHEMATC
